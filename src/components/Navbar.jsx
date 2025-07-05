@@ -45,7 +45,7 @@ function Navbar() {
 
             </div>
 
-            <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-grey-900 bg-red-50 ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full border-r border-r-grey-900 bg-red-50 ease-in-out duration-500' : 'fixed left-[-100%]'}>
                 <div className='w-full m-0 flex items-center'>
                     <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
                     <h1 className='text-2xl font-semibold'>RGPGROUP.IN <p className='text-xs'>"Our Work is our Identity"</p></h1>
