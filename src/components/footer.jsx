@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className='footer flex '>
             <div className="box-1 w-1/3 relative">
                 <div className="logo flex-col items-center">
-                    <img src="./rgplogo-black.png" alt="RGP company logo featuring stylized letters RGP in blue and green, set against a white background, conveying a professional and modern tone" />
+                    <img src="./rgplogo-black.png" alt="RGP company logo featuring stylized letters RGP in blue and green, set against Link white background, conveying Link professional and modern tone" />
                     <h1 className='info text-5xl font-bold'>RGPGROUP.IN</h1>
                 </div>
                 <h1 className='quote text-2xl text-left font-medium '>"Our Work is our Identity." </h1>
@@ -23,26 +24,26 @@ const Footer = () => {
                         <span className="font-semibold">Address:</span> RGP Group , Behind Surin Auto Company, Village Bhamboli, Chakan Tal - Khed, Pune - 410505,Maharashtra, India
                     </li>
                     <li className="transition-colors duration-200 hover:text-blue-600">
-                        <span className="font-semibold">Email:</span> <a href="mailto:rgppacktech@gmail.com" className="hover:underline">rgppacktech@gmail.com</a>
+                        <span className="font-semibold">Email:</span> <Link to="mailto:rgppacktech@gmail.com" className="hover:underline">rgppacktech@gmail.com</Link>
                     </li>
                     <li className="transition-colors duration-200 hover:text-blue-600">
-                        <span className="font-semibold">Contact No:</span> <a href="tel:7083477803" className="hover:underline">7083477803 / 9226771188</a>
+                        <span className="font-semibold">Contact No:</span> <Link to="tel:7083477803" className="hover:underline">7083477803 / 9226771188</Link>
                     </li>
                 </ul>
             </div>
             <div className="box-3 w-1/3 ml-7 relative">
                 <h2 className="font-bold ">Links</h2>
                 <ul className="space-y-1">
-                    <li><a href="/" className="hover:underline">Home</a></li>
-                    <li><a href="/products" className="hover:underline">Products</a></li>
-                    <li><a href="/about" className="hover:underline">About us</a></li>
-                    <li><a href="/contact" className="hover:underline">Contact Us</a></li>
+                    <li><Link to="/" className="hover:underline">Home</Link></li>
+                    <li><Link to="/products" className="hover:underline">Products</Link></li>
+                    <li><Link to="/about" className="hover:underline">About us</Link></li>
+                    <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
                 </ul>
                 <div className="wtsp">
-                    <a href="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-70 bg-green-500 text-white rounded hover:bg-green-600 transition-colors duration-200" >
+                    <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-70 bg-green-500 text-white rounded hover:bg-green-600 transition-colors duration-200" >
                         <img src="/wtsp.svg" alt="whatsapp logo" />
                         <h1>Chat with us on WhatsApp</h1>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>)
