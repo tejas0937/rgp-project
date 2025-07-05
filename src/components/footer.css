@@ -6,7 +6,7 @@
 }
 
 .footer img {
-  width: 10vw;
+  width: 175px;
 }
 
 .footer .quote,
@@ -50,4 +50,40 @@
 .wtsp h1{
   font-weight: 500;
   padding: 10px;
+}
+@media only screen and (max-width: 950px)
+{
+  .footer{
+    padding: 0px;
+    flex-direction: column;
+  }
+  .box-1, .box-2, .box-3{
+    min-width: 100%;
+    padding: 25px;
+    margin: auto;
+  }
+  .box-2{
+    line-height: normal;
+    text-align: center;
+  }
+  .box-3{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .box-3 .wtsp{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+  }
+  .box-3 .wtsp img{
+    width: 70%;
+    position: absolute;
+    left: 6px;
+
+  }
+  .box-3 .wtsp h1{
+    display: none;
+  }
 }

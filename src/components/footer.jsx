@@ -6,7 +6,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
         <div className='footer flex '>
-            <div className="box-1 w-1/3 relative">
+            <div className="box-1 w-1/3 relative ">
                 <div className="logo flex-col items-center">
                     <img src="./rgplogo-black.png" alt="RGP company logo featuring stylized letters RGP in blue and green, set against Link white background, conveying Link professional and modern tone" />
                     <h1 className='info text-5xl font-bold'>RGPGROUP.IN</h1>
@@ -40,7 +40,7 @@ const Footer = () => {
                     <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
                 </ul>
                 <div className="wtsp">
-                    <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-70 bg-green-500 text-white rounded hover:bg-green-600 transition-colors duration-200" >
+                    <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-70 bg-green-500 rounded-[50px] text-white rounded hover:bg-green-600 transition-colors duration-200" >
                         <img src="/wtsp.svg" alt="whatsapp logo" />
                         <h1>Chat with us on WhatsApp</h1>
                     </Link>
