@@ -31,7 +31,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="box-3 w-1/3 ml-7 relative">
-                <h2 className="font-bold ml-2">Links</h2>
+                <h2 className="font-bold ">Links</h2>
                 <ul className="space-y-1">
                     <li><a href="/" className="hover:underline">Home</a></li>
                     <li><a href="/products" className="hover:underline">Products</a></li>
