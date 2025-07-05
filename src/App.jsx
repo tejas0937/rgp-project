@@ -1,13 +1,12 @@
-import WoodenBox from "./components/WoodenBox"
+
+import Navbar from "./components/Navbar"
 
 const App = () => {
   return (
     <>
     <div className="main">
-      <div className='container'>
-          <h1>Innovative and Sustainable <span>Packaging Solutions</span></h1>
-          <WoodenBox />
-      </div>
+      <Navbar />
+      
     </div>
    
     </>
