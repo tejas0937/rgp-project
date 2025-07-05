@@ -15,8 +15,8 @@ function Navbar() {
             <img src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="Logo" className='h-12' /> 
         </div>
 
-        <div className=''>
-            <ul>
+        <div className='fixed left-0 top-0 w-[60%] border-r border-r-grey-900 h-full'>
+            <ul className='pt-24'>
                 <li className='p-4'>Home</li>
                 <li className='p-4'>Product</li>
                 <li className='p-4'>About</li>
