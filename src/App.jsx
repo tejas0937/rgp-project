@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import About from "./components/about";
 import Products from "./components/products";
 import Contact from "./components/contact";
+import Hero from "./components/hero";
 
 const App = () => {
   return (
@@ -15,8 +16,9 @@ const App = () => {
       <Route path="/contact" element={<Contact />} />
       </Routes>
     
-    <div className="main">
+    <div className="main w-full">
       <Navbar />
+      <Hero />
       <div className="head w-full h-screen"></div>
       <Footer />
     </div>
