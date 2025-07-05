@@ -25,11 +25,11 @@ function Navbar() {
         </div>
 
         <div className={nav ? 'fixed left-0 top-0 w-[65%] h-full border-r border-r-grey-900 bg-red-50 ease-in-out duration-500' : 'fixed left-[-100%]'}>
-            <div className='w-full m-4 flex items-center'>
+            <div className='w-full m-0 flex items-center'>
                 <img src="/rgplogo-black.png" alt="Logo" className='h-25' /> 
                 <h1 className='text-2xl font-semibold'>RGPGROUP.IN <p className='text-xs'>"Our Work is our Identity"</p></h1>
             </div>
-            <ul className='uppercase p-4'>
+            <ul className='uppercase p-4 flex flex-col'>
                 <a href='/' className='p-4 border-b border-grey-100'>Home</a>
                 <a href='/product' className='p-4 border-b border-grey-100'>Product</a>
                 <a href='/about' className='p-4 border-b border-grey-100'>About</a>
