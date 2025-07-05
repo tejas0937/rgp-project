@@ -41,7 +41,7 @@ const Footer = () => {
                     <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
                 </ul>
                 <div className="wtsp">
-                    <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-70 bg-green-500 rounded-[50px] text-white hover:bg-green-800 transition-colors duration-500" >
+                    <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-60 bg-green-500 rounded-[50px] text-white hover:bg-green-800 transition-colors duration-500" >
                         <img src="/wtsp.svg" alt="whatsapp logo" />
                         <h1>Chat with us on WhatsApp</h1>
                     </Link>

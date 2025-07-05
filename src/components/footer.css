@@ -51,10 +51,12 @@
 }
 .wtsp img{
   padding-left: 15px;
-  width: 40%;
+  width: 30%;
 }
 .wtsp h1{
   font-weight: 500;
+  font-size: smaller;
+  line-height: normal;
   padding: 10px;
 }
 @media only screen and (max-width: 950px)
