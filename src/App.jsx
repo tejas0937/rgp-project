@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import WoodenBox from "./components/WoodenBox"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div className='t-4 bg-amber-400 flex justify-center'>HEloo
-        </div>
+    <div className="main">
+      <div className='container'>
+          <h1>Innovative and Sustainable <span>Packaging Solutions</span></h1>
+          <WoodenBox />
+      </div>
+    </div>
+   
     </>
   )
 }
