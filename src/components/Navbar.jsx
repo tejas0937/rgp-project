@@ -14,11 +14,11 @@ function Navbar() {
 
     const handleProductChange = (e) => {
         const value = e.target.value;
-        if (value) navigate(value); // ✅ navigate to selected route
+        if (value) navigate(value); 
     };
 
     return (
-        <div className='bg-red-50 text-black m-2 flex justify-between items-center rounded-xl'>
+        <div className='bg-gradient-to-r from-yellow-100 via-yellow-300 to-orange-400 text-black m-2 flex justify-between items-center rounded-xl'>
             <div className='w-full flex items-center m-1 pl-8'>
                 <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
                 <h1 className='text-2xl font-bold pl-5 hidden sm:block'>RGPGROUP.IN  <p className='text-xs'>"Our Work is our Identity"</p></h1>
@@ -45,7 +45,7 @@ function Navbar() {
 
             </div>
 
-            <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full border-r border-r-grey-900 bg-red-50 ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full border-r border-r-grey-900 bg-gradient-to-r from-yellow-100 via-yellow-300 to-orange-400 ease-in-out duration-500' : 'fixed left-[-100%]'}>
                 <div className='w-full m-0 flex items-center'>
                     <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
                     <h1 className='text-2xl font-semibold'>RGPGROUP.IN <p className='text-xs'>"Our Work is our Identity"</p></h1>

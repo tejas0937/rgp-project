@@ -9,20 +9,19 @@ import Hero from "./components/hero";
 const App = () => {
   return (
     <>
-    
+      <nav className="sticky top-2 z-50">
+        <Navbar />
+      </nav>
       <Routes>
-      <Route path="/about" element={<About />} />
-      <Route path="/products" element={<Products />} />
-      <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    
-    <div className="main w-full">
-      <Navbar />
-      <Hero />
-      <div className="head w-full h-screen"></div>
-      <Footer />
-    </div>
-    
+      <div className="main w-full relative">
+        <Hero />
+        <div className="head w-full h-screen"></div>
+        <Footer />
+      </div>
     </>
   )
 }
