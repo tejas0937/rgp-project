@@ -18,7 +18,7 @@ function Navbar() {
     };
 
     return (
-        <div className='bg-gradient-to-r from-yellow-100 via-yellow-300 to-orange-400 text-black m-2 flex justify-between items-center rounded-xl'>
+        <div className='bg-gradient-to-r from-yellow-50 to-orange-500 text-black m-2 flex justify-between items-center rounded-xl'>
             <div className='w-full flex items-center m-1 pl-8'>
                 <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
                 <h1 className='text-2xl font-bold pl-5 hidden sm:block'>RGPGROUP.IN  <p className='text-xs'>"Our Work is our Identity"</p></h1>
