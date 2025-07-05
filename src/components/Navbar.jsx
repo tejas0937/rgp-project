@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './util.css';
 import { color } from 'three/tsl';
+import Background from 'three/src/renderers/common/Background.js';
 
 
 function Navbar() {
@@ -18,12 +19,12 @@ function Navbar() {
     };
 
     return (
-        <div className='bg-gradient-to-r from-yellow-50 to-orange-500 text-black m-2 flex justify-between items-center rounded-xl'>
+        <div className=' text-black flex justify-between items-center' style={{backgroundColor: "#FFECDF"}} >
             <div className='w-full flex items-center m-1 pl-8'>
                 <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
                 <h1 className='text-2xl font-bold pl-5 hidden sm:block'>RGPGROUP.IN  <p className='text-xs'>"Our Work is our Identity"</p></h1>
             </div>
-            <ul className='justify-start items-center gap-10 text-lg mr-6 hidden lg:flex navg'>
+            <ul className='justify-start items-center gap-15 text-lg mr-16 hidden lg:flex navg'>
                 <li><Link to='/'>Home</Link></li>
                 <li>
                     <select className="nav-select" onChange={handleProductChange} defaultValue="">
@@ -39,13 +40,10 @@ function Navbar() {
             </ul>
 
             <div onClick={handleNav} className='block lg:hidden'>
-
-
                 {!nav ? <img src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="menu" className='h-10 mr-10' /> : <img src='https://cdn-icons-png.freepik.com/512/566/566013.png' alt='close' className='h-6 mr-10' />}
-
             </div>
 
-            <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full border-r border-r-grey-900 bg-gradient-to-r from-yellow-100 via-yellow-300 to-orange-400 ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full border-r border-r-grey-900 bg-gradient-to-r  ease-in-out duration-500' : 'fixed left-[-100%]'}style={{backgroundColor: "#FFECDF"}}>
                 <div className='w-full m-0 flex items-center'>
                     <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
                     <h1 className='text-2xl font-semibold'>RGPGROUP.IN <p className='text-xs'>"Our Work is our Identity"</p></h1>

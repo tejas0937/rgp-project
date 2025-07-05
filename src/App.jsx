@@ -9,7 +9,7 @@ import Hero from "./components/hero";
 const App = () => {
   return (
     <>
-      <nav className="sticky top-2 z-50">
+      <nav className="sticky z-50">
         <Navbar />
       </nav>
       <Routes>

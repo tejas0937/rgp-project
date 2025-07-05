@@ -18,6 +18,7 @@ React.useEffect(() => {
 }, [images.length]);
 
 return (
+    <div className="main-carousel">
     <div
         className="hero-carousel"
         style={{
@@ -34,7 +35,9 @@ return (
                 alt={`slide-${idx}`}
                 style={{
                     width: '100vw',
-                    height: '100vh',
+                    height: '80vh',
+                    maxWidth: '100%',
+                    maxHeight: '80vh',
                     objectFit: 'cover',
                     position: 'absolute',
                     top: 0,
@@ -46,45 +49,51 @@ return (
                 }}
             />
         ))}
-        <div
+        <div className='black-tint'
             style={{
                 position: 'absolute',
                 top: 0,
                 left: 0,
                 width: '100vw',
-                height: '100vh',
-                background: 'rgba(0,0,0,0.6)',
+                height: '80vh',
+                background: 'rgba(0,0,0,0.7)',
                 zIndex: 2
             }}
         />
-        <div
+        <div className='text-board'
             style={{
                 position: 'absolute',
-                top: '20%',
-                left: '5%',
+                top: '12%',
+                left: '-1%',
                 zIndex: 3,
                 color: '#fff',
-                fontSize: '5rem',
+                fontSize: 'clamp(2rem, 7vw, 7rem)',
+                flexWrap: 'wrap',
                 fontWeight: 'bold',
-                maxWidth: '40vw',
+                maxWidth: '50vw',
+                width: 'fit-content',
+                minWidth: '50vw',
                 height: '60vh',
                 display: 'flex',
                 alignItems: 'center',
-                textAlign: 'left',
+                textAlign: 'right',
                 lineHeight: 1.2,
-                letterSpacing: '1px',
-                background: 'rgba(0,0,0,0.3)',
+                letterSpacing: '2px',
+                background: 'rgba(255, 236, 190, 0.150)',
                 backdropFilter: 'blur(6px)',
                 borderRadius: '16px',
-                padding: '1.5rem 2.5rem',
-                textShadow: '0 4px 24px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.6)'
+                padding: '1rem 2rem 1rem 1.8rem',
+                textShadow: '0 4px 24px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.6)',
+                boxSizing: 'border-box'
             }}
         >
             {[
                 "Welcome to RGP GROUP",
-                "Innovative Plant Solutions",
-                "Sustainable Growth for the Future"
+                "Innovative Packaging Solutions",
+                "Our Work is Our Identity"
             ][current]}
+        </div>
+        
         </div>
     </div>
 )

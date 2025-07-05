@@ -1,12 +1,13 @@
-.bg-container{
+.bg-container {
     min-width: 100%;
     min-height: 100vh;
 }
-.bg-1{
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-backgrounds&psig=AOvVaw0EQKq7giDfSDZ0UNIR6q93&ust=1751823402733000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCH5O6gpo4DFQAAAAAdAAAAABAJ);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.bg-1 {
+
     min-height: 100vh;
     min-width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
 }
