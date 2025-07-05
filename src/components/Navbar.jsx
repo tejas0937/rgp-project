@@ -12,34 +12,11 @@ function Navbar() {
         setNav(!nav);
     }
 
-<<<<<<< Updated upstream
     return (
         <div className='bg-red-50 text-black m-2 flex justify-between items-center rounded-xl'>
             <div className='w-full flex items-center m-1 pl-8'>
                 <img src="/rgplogo-black.png" alt="Logo" className='h-25'/>
                 <h1 className='text-2xl font-bold pl-5'>RGPGROUP.IN  <p className='text-xs'>"Our Work is our Identity"</p></h1>
-=======
-  return (
-    <nav>
-    <div className='bg-red-50 text-black m-2 flex justify-between items-center rounded-xl'>
-        <h1 className='w-full m-4'><img src="/rgplogo-black.png" alt="Logo" className='h-25' /></h1>
-        <ul className='justify-start items-center gap-10 text-lg mr-6 hidden md:flex'>
-            <Link to='/'>Home</Link>
-            <Link to='/products'>Products</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/contact'>Contact</Link>
-        </ul>
-
-        <div onClick={handleNav} className='block md:hidden'>
-            {!nav ? <img src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="menu" className='h-10 mr-10' /> :  <img src='https://cdn-icons-png.freepik.com/512/566/566013.png' alt='close' className='h-6 mr-10' />}
-             
-        </div>
-
-        <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full border-r border-r-grey-900 bg-red-50 ease-in-out duration-500' : 'fixed left-[-100%]'}>
-            <div className='w-full m-0 flex items-center'>
-                <img src="/rgplogo-black.png" alt="Logo" className='h-25' /> 
-                <h1 className='text-2xl font-semibold'>RGPGROUP.IN <p className='text-xs'>"Our Work is our Identity"</p></h1>
->>>>>>> Stashed changes
             </div>
             <ul className='justify-start items-center gap-10 text-lg mr-6 hidden md:flex navg'>
                 <li><Link to='/'>Home</Link></li>
@@ -82,13 +59,6 @@ function Navbar() {
                 </ul>
             </div>
         </div>
-<<<<<<< Updated upstream
-    )
-=======
-    </div>
-    </nav>
   )
->>>>>>> Stashed changes
 }
-
 export default Navbar
