@@ -1,4 +1,9 @@
-
+.nvbar{
+background: #ffffff;
+background: linear-gradient(154deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 184, 112, 0.87) 42%, rgba(255, 255, 255, 0.82) 100%);
+backdrop-filter: blur(8px);
+box-shadow: 0 4px 12px -4px rgba(0,0,0,0.55);
+}
 .navg li {
     font-size: 1.2rem;
     font-weight: 500;
