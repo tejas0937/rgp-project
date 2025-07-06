@@ -47,7 +47,7 @@ const About = () => {
             loop
             style={{ display: 'block' }}
           ></video>
-          <button
+          <button className='mutebtn'
             onClick={toggleMute}
             style={{
               position: 'absolute',

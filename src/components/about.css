@@ -224,11 +224,20 @@ background: linear-gradient(145deg, rgba(255, 239, 229, 0.805) 2%, rgb(255, 164,
     text-align: center;
   }
 
-  .vision-board img,
-  .infra-board video {
+  .vision-board img {
     width: 100%;
     height: auto;
     margin: 20px 0;
+  }
+  .infra-board video{
+    height: 300px;
+    padding-left: 0;
+  }
+  .mutebtn{
+    position: absolute;
+    left: 5px;
+    filter: opacity(0.8);
+    margin-bottom: -60px;
   }
   .infra{
     width: 100%;
