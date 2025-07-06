@@ -5,10 +5,12 @@ import About from "./components/about";
 import Products from "./components/products";
 import Contact from "./components/contact";
 import Hero from "./components/hero";
+import SmoothScroll from "./components/smooth-scroll";
 
 const App = () => {
   return (
     <>
+    <SmoothScroll />
     <div className="main relative">
       <nav className="sticky z-50 top-0">
         <Navbar />
