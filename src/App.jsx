@@ -9,7 +9,8 @@ import Hero from "./components/hero";
 const App = () => {
   return (
     <>
-      <nav className="sticky z-50">
+    <div className="main relative">
+      <nav className="sticky z-50 top-0">
         <Navbar />
       </nav>
       <Routes>
@@ -19,6 +20,7 @@ const App = () => {
       </Routes>
       <div className="main w-full relative">
         <Hero />
+        </div>
         <div className="head w-full h-screen"></div>
         <Footer />
       </div>
