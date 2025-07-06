@@ -16,12 +16,12 @@ React.useEffect(() => {
 }, [images.length]);
 
 return (
-    <div className="main-carousel">
+    <div className="main-carousel overflow-hidden">
     <div
         className="hero-carousel"
         style={{
             width: '100%',
-            height: '100vh',
+            height: '80vh',
             position: 'relative',
             overflow: 'hidden'
         }}
@@ -41,9 +41,10 @@ return (
                     top: 0,
                     left: 0,
                     opacity: idx === current ? 1 : 0,
-                    transition: 'opacity 1s ease-in-out',
+                    transition: 'opacity 1s ease-in-out, transform 6s cubic-bezier(0.2,0,0.2,2)',
                     zIndex: idx === current ? 1 : 0,
-                    transform: 'none',
+                    transform: idx === current ? 'scale(1.1)' : 'scale(1)',
+                    overflow: 'hidden', 
                 }}
             />
         ))}
@@ -71,9 +72,23 @@ return (
                         text-align: center !important;
                     }
                 }
+                .slideup {
+                    animation: slideUpFade 2s cubic-bezier(0.23, 1, 0.32, 1);
+                }
+                @keyframes slideUpFade {
+                    0% {
+                        opacity: 0.8;
+                        transform: translateX(-120px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
             `}
         </style>
-        <div className='text-board'
+        <div className='text-board slideup'
+            key={current}
             style={{
                 position: 'absolute',
                 top: '12%',
