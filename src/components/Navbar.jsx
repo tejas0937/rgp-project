@@ -19,7 +19,7 @@ function Navbar() {
     const navigate = useNavigate();
 
     return (
-        <div className='text-black flex justify-between items-center shadow-navbar nvbar' >
+        <div className='text-black flex justify-between items-center shadow-navbar bg-amber-300 bg-opacity-20 backdrop-blur-md shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]' >
             <div className='w-full flex items-center m-1 pl-8'>
                 <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
                 <h1 className='text-2xl font-bold pl-5 hidden sm:block'>RGPGROUP.IN  <p className='text-xs'>"Our Work is our Identity"</p></h1>
@@ -87,7 +87,6 @@ function Navbar() {
                     <li className=' border-b border-grey-100'>
                         <NavLink
                             to='/'
-                            onClick={() => setNav(false)}
                             className={({ isActive }) =>
                                 `px-6 py-6 min-w-[160px] min-h-[56px] flex items-center justify-center${isActive ? ' text-[#964B00] font-bold' : ''}`
                             }
@@ -99,7 +98,6 @@ function Navbar() {
                     <li className=' border-b border-grey-100'>
                         <NavLink
                             to='/about'
-                            onClick={() => setNav(false)}
                             className={({ isActive }) =>
                                 `px-6 py-6 min-w-[160px] min-h-[56px] flex items-center justify-center${isActive ? ' text-[#964B00]' : ''}`
                             }
@@ -111,7 +109,6 @@ function Navbar() {
                     <li className=' border-b border-grey-100'>
                         <NavLink
                             to='/contact'
-                            onClick={() => setNav(false)}
                             className={({ isActive }) =>
                                 `px-6 py-6 min-w-[160px] min-h-[56px] flex items-center justify-center${isActive ? ' text-[#964B00]' : ''}`
                             }
