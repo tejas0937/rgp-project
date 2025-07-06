@@ -62,8 +62,8 @@ background: linear-gradient(145deg, rgba(255, 239, 229, 0.805) 2%, rgb(255, 164,
 }
 .infra-board video{
     width: 900px;
-    height: 700px;
-    margin-left: 40px;
+    height: 600px;
+    padding-left: 100px;
 }
 .infra{
   margin-left: 10px;
