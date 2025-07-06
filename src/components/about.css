@@ -1,5 +1,7 @@
+@import './util.css';
+
 .about .a-info, .director, .vision-board,.machines-img, .infra-board{
-     animation: appear linear; 
+    animation: appear linear; 
     animation-timeline: view();
     animation-range: entry 0 cover 25%;}
 
@@ -297,14 +299,4 @@ background: linear-gradient(145deg, rgba(255, 239, 229, 0.805) 2%, rgb(255, 164,
   .dir-logo img {
     width: 100px;
   }
-}
-@keyframes appear {
-    from{
-        opacity: 0;
-        scale: 0.5;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-    }
 }
