@@ -87,6 +87,7 @@ function Navbar() {
                     <li className=' border-b border-grey-100'>
                         <NavLink
                             to='/'
+                            onClick={() => setNav(false)}
                             className={({ isActive }) =>
                                 `px-6 py-6 min-w-[160px] min-h-[56px] flex items-center justify-center${isActive ? ' text-[#964B00] font-bold' : ''}`
                             }
@@ -98,6 +99,7 @@ function Navbar() {
                     <li className=' border-b border-grey-100'>
                         <NavLink
                             to='/about'
+                            onClick={() => setNav(false)}
                             className={({ isActive }) =>
                                 `px-6 py-6 min-w-[160px] min-h-[56px] flex items-center justify-center${isActive ? ' text-[#964B00]' : ''}`
                             }
@@ -109,6 +111,7 @@ function Navbar() {
                     <li className=' border-b border-grey-100'>
                         <NavLink
                             to='/contact'
+                            onClick={() => setNav(false)}
                             className={({ isActive }) =>
                                 `px-6 py-6 min-w-[160px] min-h-[56px] flex items-center justify-center${isActive ? ' text-[#964B00]' : ''}`
                             }
