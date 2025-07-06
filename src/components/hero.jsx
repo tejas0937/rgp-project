@@ -1,6 +1,4 @@
 import React from 'react'
-import './hero.css'
-import { Center } from '@react-three/drei';
 
 const Hero = () => {
 const images = [
@@ -13,7 +11,7 @@ const [current, setCurrent] = React.useState(0);
 React.useEffect(() => {
     const interval = setInterval(() => {
         setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 3500);
     return () => clearInterval(interval);
 }, [images.length]);
 
@@ -60,6 +58,21 @@ return (
                 zIndex: 2
             }}
         />
+        <style>
+            {`
+                @media (max-width: 768px) {
+                    .text-board {
+                        left: 20px !important;
+                        bottom: 0 !important;
+                        min-width: 90vw !important;
+                        max-width: 90vw !important;
+                        font-size: clamp(1.2rem, 5vw, 3rem) !important;
+                        max-height: 100px !important;
+                        text-align: center !important;
+                    }
+                }
+            `}
+        </style>
         <div className='text-board'
             style={{
                 position: 'absolute',
@@ -85,7 +98,8 @@ return (
                 padding: '1rem 2rem 1rem 1.8rem',
                 textShadow: '0 4px 24px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.6)',
                 boxSizing: 'border-box'
-            }}
+            }
+        }
         >
             {[
                 "Welcome to RGP GROUP",
@@ -93,10 +107,10 @@ return (
                 "Our Work is Our Identity"
             ][current]}
         </div>
-        
         </div>
     </div>
 )
+
 }
 
 export default Hero

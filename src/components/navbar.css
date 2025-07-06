@@ -1,0 +1,81 @@
+
+.navg li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+    border-radius: 12px;
+    color: #000000;
+    background-color: #ffffffcb;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    z-index: 0;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.336);
+}
+
+.navg li:hover {
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.634);
+}
+
+.navg li::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    transition: all ease 0.3s;
+    z-index: -1;
+}
+
+.navg li:hover::after {
+    bottom: 0;
+}
+
+.navg select, .navl select {
+    width: 140px;
+    padding: 0.4rem 0.6rem;
+    border-radius: 10px;
+    background-color: #ffffffcb ;
+    color: #000000;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 2rem;
+}
+
+.navl select {
+    margin-left: -4px;
+}
+
+.navg option, .navl option {
+    background: white;
+    color: black;
+    font-size: 1.1rem;
+    border: none;
+}
+
+/* Hide default arrow for IE */
+.navg select::-ms-expand {
+    display: none;
+}
+
+.navg select:focus {
+    outline: none;
+    border-color: #999;
+}
+
+/* Select hover effect */
+.navg select:hover {
+    background-color: #f5f5f5;
+}
