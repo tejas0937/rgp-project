@@ -3,6 +3,16 @@ import Woodenbox from './Woodenbox'
 import './about.css'
 
 const About = () => {
+  const [isMuted, setIsMuted] = React.useState(true);
+  const videoRef = React.useRef(null);
+
+  const toggleMute = () => {
+    setIsMuted((prev) => !prev);
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+    }
+  };
+
   return (
     <div className='about'>
 
@@ -16,7 +26,7 @@ const About = () => {
           <h1>Our Vision</h1>
           <h2>Provide Complete Export Packing & Stress Free Dispatch Solution</h2>
 
-          <p>A complete solution for export packing ensures that products are securely and professionally packed according to international standards, using the right materials like corrugated boxes, pallets, and moisture protection. It includes proper labeling, accurate documentation (like invoices, packing lists, and certificates), and optimized loading for safe transit. By coordinating with trusted logistics partners and offering tracking, the process becomes smooth and efficient. As a result, the customer enjoys a stress-free dispatch experience, with goods delivered safely, on time, and without the hassle of customs or damage issues.</p>
+          <p >A complete solution for export packing ensures that products are securely and professionally packed according to international standards, using the right materials like corrugated boxes, pallets, and moisture protection. It includes proper labeling, accurate documentation (like invoices, packing lists, and certificates), and optimized loading for safe transit. By coordinating with trusted logistics partners and offering tracking, the process becomes smooth and efficient. As a result, the customer enjoys a stress-free dispatch experience, with goods delivered safely, on time, and without the hassle of customs or damage issues.</p>
         </div>
 
       </div>
@@ -28,7 +38,42 @@ const About = () => {
             <h2>Factory Constructed area </h2> Buildup 4000+4000 sq-ft ( Total Size of 16000 sq-ft ) for further Development.
             <h2>Power </h2> Well connected Capacity for Electrical Power at plant and Genset as a back up .</p>
         </div>
-        <img src="/plant/rgp-plant-main.jpg" alt="background for plant photo" />
+        <div style={{ position: 'relative' }}>
+          <video
+            ref={videoRef}
+            src="/bg/bgvideo-rgp.mp4"
+            autoPlay
+            muted={isMuted}
+            loop
+            style={{ display: 'block' }}
+          ></video>
+          <button
+            onClick={toggleMute}
+            style={{
+              position: 'absolute',
+              bottom: 120,
+              right: 40,
+              background: 'rgba(0,0,0,0.7)',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '50%',
+              width: 60,
+              height: 60,
+              cursor: 'pointer',
+              fontSize: 18,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+            aria-label={isMuted ? "Unmute video" : "Mute video"}
+          >
+            {isMuted ? (
+              <span role="img" aria-label="Muted">&#128263;</span>
+            ) : (
+              <span role="img" aria-label="Unmuted">&#128266;</span>
+            )}
+          </button>
+        </div>
       </div>
       <div className="machines-img flex flex-col w-full">
         <h1>We have invested in advanced, high-speed imported machines to offer</h1>
