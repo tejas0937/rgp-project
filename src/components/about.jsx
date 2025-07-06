@@ -7,8 +7,8 @@ const About = () => {
     <div className='about'>
 
       <div className="a-info" >
-        <h1 className='text-6xl font-bold text-amber-50 m-10'>About Us</h1>
-        <p className='text-amber-50 text-2xl/12'>Established in 2016 by Mr. Ajay Ramdas Jaid, <b>RGP Pack Tech Solution</b> is a trusted manufacturer and supplier of premium packaging solutions. Located in Chakan MIDC, Pune, we deliver high-quality, cost-effective, and sustainable packaging that meets diverse industrial and export requirements. Our production facility is equipped with fully automated, high-speed imported machines that ensure consistency, precision, and on-time delivery - all under one roof.Our commitment ensures that you get packaging that protects your products and your brand reputation.</p>
+        <h1 className='text-6xl font-bold text-amber-950 m-10'>About Us</h1>
+        <p className='text-amber-950 text-2xl/12'>Established in 2016 by Mr. Ajay Ramdas Jaid, <b>RGP Pack Tech Solution</b> is a trusted manufacturer and supplier of premium packaging solutions. Located in Chakan MIDC, Pune, we deliver high-quality, cost-effective, and sustainable packaging that meets diverse industrial and export requirements. Our production facility is equipped with fully automated, high-speed imported machines that ensure consistency, precision, and on-time delivery - all under one roof.Our commitment ensures that you get packaging that protects your products and your brand reputation.</p>
       </div>
       <div className="vision-board flex">
         <img src="/plant/bg-m1.png" alt="background for plant photo" />
@@ -47,7 +47,7 @@ const About = () => {
           <h1>About Director</h1>
           <div className="info-sub pl-15">
             <h2>Mr. Ajay Ramdas Jaid</h2>
-            <p>is an tech expert who has skills in Strategic planning, packaging innovation, supply chain management, team leadership, client relations, export compliance, financial oversight, sustainable packaging, quality assurance, and market analysis.
+            <p id='info-sub'>is an tech expert who has skills in Strategic planning, packaging innovation, supply chain management, team leadership, client relations, export compliance, financial oversight, sustainable packaging, quality assurance, and market analysis.
 
               He had worked for Bajaj Electrials Ltd (Chakan & Ranjangaon), Posco india,
               Raychem RPG Pvt ltd, Hyt India pvt Ltd and many more companies in the area of
@@ -63,7 +63,7 @@ const About = () => {
         <div className="dir-info">
           <h1>Our Team</h1>
           <div className="info-sub pl-15 w-full">
-            <h2>Team Members </h2>
+            <h2 id='team-members'>Team Members </h2>
             <p className='w-full'><ul className='list-disc'><li>Designers</li>
               <li>Quality controllers</li>
               <li>Packaging Experts</li>

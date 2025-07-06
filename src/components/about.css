@@ -6,7 +6,8 @@
 .a-info{
     width: 75%;
     height: 75vh;
-    background-color: #180900c6;
+    background: #ffbdbd;
+background: linear-gradient(145deg, rgba(255, 239, 229, 0.805) 2%, rgb(255, 164, 74) 45%, rgb(255, 185, 145) 100%);
     border-radius: 20px;
     margin: auto;
     margin-top: 70px;
@@ -14,6 +15,12 @@
     flex-direction: column;
     justify-content: center; 
     align-items: center;  
+    box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
+}
+.a-info h1{
+  padding-bottom: 10px;
+  margin-top: 50px;
+  border-bottom: 1px solid black;
 }
 .a-info p{
     width: 75%;
@@ -42,6 +49,8 @@
     max-width: 100%;
     margin-top: 80px;
     background-color: antiquewhite;
+    box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
+
 }
 .vision-board img{
     width: 700px;
@@ -56,6 +65,7 @@
 .infra-board{
     margin-top: 200px;
     background-color: antiquewhite;
+    box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 }
 .infra-board .infra{
     padding-left: 20px;
@@ -74,6 +84,7 @@
 .director{
     margin-top: 200px;
      background-color: antiquewhite;
+     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 }
 .dir-img{
     width: 40%;
@@ -108,12 +119,14 @@
 .loc{
     margin-top: 200px;
      background-color: rgb(78, 44, 0);
+     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 
 }
 .machines-img{
     margin-top: 200px;
     padding: 50px;
      background-color: rgb(78, 44, 0);
+     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 }
 .machines-img h1{
     color: aliceblue;
@@ -152,12 +165,17 @@
 @media screen and (max-width: 1024px) {
   .a-info {
     width: 90%;
-    height: auto;
-    padding: 20px;
+    height: 80vh;
+    padding: 10px;
+  }
+  .a-info h1{
+    font-size: 32px;
+    padding-top: 20px;
   }
   .a-info p {
     width: 100%;
     font-size: 1.1rem;
+    line-height: normal;
   }
 
   .vision-board,
@@ -167,6 +185,15 @@
     align-items: center;
     padding: 20px;
   }
+#info-sub,.team-info {
+  font-size: 16px;
+}
+#team-members{
+  font-weight: 700;
+  font-size: 24px;
+  border-bottom: 1px solid black;
+}
+.info-sub ul{list-style: none;}
 
   .vision,
   .infra {
