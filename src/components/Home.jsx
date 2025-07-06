@@ -1,5 +1,8 @@
 import React from 'react'
 import Hero from "./hero";
+import Woodenbox from './Woodenbox'
+import './about.css'
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
@@ -7,7 +10,15 @@ const Home = () => {
       <div className="main w-full relative">
         <Hero />
         </div>
-    </div>
+          { /* 
+      
+          <Woodenbox />
+          A Complete Solution for Export Packing and stress free dispatch
+        
+       */}
+        </div>
+    
+   
   )
 }
 

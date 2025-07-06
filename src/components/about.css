@@ -1,0 +1,145 @@
+.a-info{
+    width: 75%;
+    height: 75vh;
+    background-color: #180900c6;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 70px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+}
+.a-info p{
+    width: 75%;
+    text-align: center;
+    margin-bottom: 100px; 
+}
+.vision{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 30px;
+}
+.vision h1{
+    font-size: 100px;
+    font-weight: 500;
+}
+.vision h2{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+.vision-board{
+    max-width: 100%;
+    margin-top: 80px;
+    background-color: antiquewhite;
+}
+.vision-board img{
+    width: 700px;
+    height: 500px;
+    margin-left: 40px;
+}
+.infra-board img{
+    width: 700px;
+    height: 500px;
+    margin-left: 40px;
+}
+.infra-board{
+    margin-top: 200px;
+    background-color: antiquewhite;
+}
+.infra-board .infra{
+    padding-left: 20px;
+}
+.infra-board h1{
+    font-size: 100px;
+    font-weight: 500;
+}
+.infra-board h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.infra p{
+    font-size: 16px;
+}
+.director{
+    margin-top: 200px;
+     background-color: antiquewhite;
+}
+.dir-img{
+    width: 40%;
+    min-height: 100%;
+    padding-left: 150px;
+    position: relative;
+}
+.dir-logo{
+    position: absolute;
+    bottom: 70px;
+    right: -70px;
+}
+.dir-logo img{
+    width: 180px;
+}
+.dir-info{
+    padding-left: 100px;
+    padding-top: 60px;
+}
+.dir-info h1{
+    font-size: 100px;
+    font-weight: 500;
+}
+.dir-info h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.dir-info p{
+    font-size: x-large;
+    width: 500px;
+}
+.loc{
+    margin-top: 200px;
+     background-color: rgb(78, 44, 0);
+
+}
+.machines-img{
+    margin-top: 200px;
+    padding: 50px;
+     background-color: rgb(78, 44, 0);
+}
+.machines-img h1{
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+}
+
+.loc-info{
+    color: aliceblue;
+    padding-top: 100px;
+}
+.loc-info h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.loc-info h2{
+    width: 75%;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+.loc-map{
+    margin: 40px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.loc-map iframe{
+    border: 3   px solid rgb(255, 255, 0);
+    border-radius: 25px;
+    
+}
+.team img{
+    height: 50vh;
+}
