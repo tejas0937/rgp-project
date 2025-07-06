@@ -56,7 +56,7 @@ return (
                 left: 0,
                 width: '100vw',
                 height: '80vh',
-                background: 'rgba(0,0,0,0.7)',
+                background: 'rgba(0,0,0,0.3)',
                 zIndex: 2
             }}
         />
@@ -64,7 +64,7 @@ return (
             style={{
                 position: 'absolute',
                 top: '12%',
-                left: '-1%',
+                left: '-7%',
                 zIndex: 3,
                 color: '#fff',
                 fontSize: 'clamp(2rem, 7vw, 7rem)',
@@ -79,7 +79,7 @@ return (
                 textAlign: 'right',
                 lineHeight: 1.2,
                 letterSpacing: '2px',
-                background: 'rgba(255, 236, 190, 0.150)',
+                background: 'rgba(255, 250, 250, 0.150)',
                 backdropFilter: 'blur(6px)',
                 borderRadius: '16px',
                 padding: '1rem 2rem 1rem 1.8rem',
