@@ -22,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
-    height: 1100px;
+    height: 1300px;
     justify-content: center;
     gap: 40px;
     overflow: hidden;
@@ -36,10 +36,9 @@
     align-items: center;
     width: 30%;
     text-align: center;
-    background: #ffffff;
-background: linear-gradient(359deg, rgba(255, 255, 255, 1) 0%, rgba(255, 184, 112, 1) 42%, rgba(255, 128, 0, 1) 100%);
+    background: linear-gradient(359deg, rgba(255, 255, 255, 1) 0%, rgba(255, 184, 112, 1) 42%, rgba(255, 128, 0, 1) 100%);
     border-radius: 10px;
-    height: 500px;
+    height: 600px;
     padding: 10px;
     margin-top: 15px;
     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);

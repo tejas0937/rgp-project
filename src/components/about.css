@@ -178,7 +178,7 @@ background: linear-gradient(145deg, rgba(255, 193, 155, 0.805) 2%, rgb(255, 234,
 @media screen and (max-width: 1024px) {
   .a-info {
     width: 90%;
-    height: 80vh;
+    height: 70vh;
     padding: 10px;
   }
   .a-info h1{
@@ -215,11 +215,17 @@ background: linear-gradient(145deg, rgba(255, 193, 155, 0.805) 2%, rgb(255, 234,
     text-align: center;
   }
 
+  .infra-board .infra {
+    padding-left: 0px;
+}
+
+
   .vision h1,
   .infra-board h1,
   .dir-info h1 {
     font-size: 48px;
     text-align: center;
+    margin-top: 0;
   }
 
   .vision h2,
@@ -301,7 +307,7 @@ background: linear-gradient(145deg, rgba(255, 193, 155, 0.805) 2%, rgb(255, 234,
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .vision h1,
   .infra-board h1,
   .dir-info h1 {

@@ -78,11 +78,18 @@ const Contact = () => {
                   <img src='/mail-icon.png' alt="Email" />
                   <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
                 </li>
-                <li className="hover:text-amber-800 flex items-center w-6 h-6">
+                <li className="hover:text-amber-800 flex items-center w-6 h-6  whitespace-nowrap">
                   <img src='/call-icon.png' alt="Call" />
                   <Link to="tel:9881340251" className="hover:underline pl-3 ">9881340251</Link>
                 </li>
               </ul>
+              {/* whatsapp */}
+              <div className="whtsp">
+                <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center bg-green-500 rounded-[50px] text-white hover:bg-green-800 transition-colors duration-500" >
+                  <img src="/wtsp.svg" alt="whatsapp logo" />
+                  <h1>Chat with us on WhatsApp</h1>
+                  </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -101,7 +108,7 @@ const Contact = () => {
 
       {/* Form */}
       <form className="bg-white shadow-md rounded-lg p-8 mt-12" onSubmit={sendEmail}>
-        <h2 className="text-md font-semibold uppercase text-orange-500 mb-2">
+        <h2 className="text-lg font-semibold uppercase text-orange-500 mb-2 mt-2">
           feedback Form
         </h2>
 

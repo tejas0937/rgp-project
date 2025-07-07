@@ -1,29 +1,27 @@
 [
-    {
-        "title": " 3, 5 & 7 Ply Corrugated Boxes",
-        "imgsrc": "/Products/cor-3, 5 & 7 Ply Corrugated Boxes.jpg"
-        
-    }, 
-    {
-        "title": " RSC Die Cut & Custom Boxes",
-        "imgsrc": "/Products/cor-rscdiecut.jpg"
-    
-    }
-    , 
-    {
-        "title": "EU-Compliant: Phthalate-Free & Migration-Safe Packaging",
-        "imgsrc": "/Products/cor-EU compliant pathalete free and migration safe packaging.jpg"
-        
-    }
-    , 
-    {
-        "title": "Heavy-Duty Export-Grade Cartons ",
-        "imgsrc": "/Products/cor-heavyduty.jpg"
-        
-    }, 
-    {
-        "title": "Printed and laminated cartons ",
-        "imgsrc": "/Products/cor-Printed and laminated cartons.jpg"
-        
-    }
+  {
+    "title": "3, 5 & 7 Ply Corrugated Boxes",
+    "imgsrc": "/Products/cor-3, 5 & 7 Ply Corrugated Boxes.jpg",
+    "desc": "Strong and versatile corrugated boxes available in 3, 5, and 7 ply options for added durability."
+  },
+  {
+    "title": "RSC Die Cut & Custom Boxes",
+    "imgsrc": "/Products/cor-rscdiecut.jpg",
+    "desc": "Customizable Regular Slotted Containers and die-cut boxes tailored to your packaging needs."
+  },
+  {
+    "title": "EU-Compliant: Phthalate-Free & Migration-Safe Packaging",
+    "imgsrc": "/Products/cor-EU compliant pathalete free and migration safe packaging.jpg",
+    "desc": "Certified packaging that meets EU standards for safety, ideal for food, pharma, and export use."
+  },
+  {
+    "title": "Heavy-Duty Export-Grade Cartons",
+    "imgsrc": "/Products/cor-heavyduty.jpg",
+    "desc": "Engineered for international shipping, these cartons ensure protection and compliance during transit."
+  },
+  {
+    "title": "Printed and Laminated Cartons",
+    "imgsrc": "/Products/cor-Printed and laminated cartons.jpg",
+    "desc": "Visually appealing cartons with high-quality prints and lamination for branding and durability."
+  }
 ]

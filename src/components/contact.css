@@ -11,8 +11,9 @@
 }
 form{
     width: 60%;
+    height: 450px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 80px;
     padding: 30px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
@@ -94,10 +95,29 @@ form .txt_field{
     transition: 0.5s;
 }
 
-@media screen and (max-width: 768px) {
+.whtsp{
+  margin: 5px;
+  left: 0;
+  padding: 20px;
+}
+.whtsp img{
+  padding-left: 15px;
+  width: 30%;
+}
+.whtsp h1{
+  font-weight: 500;
+  font-size: smaller;
+  line-height: normal;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
     .loc-map {
-        margin: 20px;
+        margin: auto;
         padding-bottom: 30px;
+        top: 0;
+        left: 8px;
+        position: relative;
     }
     .loc-map iframe {
         width: 100%;
