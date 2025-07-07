@@ -27,7 +27,7 @@ const Products = () => {
         </div>
       </section>
     </div>
-    <div className='prod flex justify-center'>
+    <div className='prod flex justify-center' id='wooden'>
       <section className='flex flex-col items-center w-full h-full'>
         <h1 id='prod-h1' >Wooden Packaging Solutions</h1>
         <div className="prod-con">
@@ -72,6 +72,11 @@ const Products = () => {
             ))
           }
         </div>
+        <p className='copyrightimg my-6'>Some images displayed on this platform are generated using AI. and are intended for illustrative, conceptual, or design purposes only.
+
+We do not claim ownership over real-world likenesses that may appear coincidentally in AI-generated visuals.
+
+</p>
       </section>
     </div>
     </div></>

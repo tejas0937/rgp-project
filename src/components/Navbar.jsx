@@ -19,7 +19,7 @@ function Navbar() {
     const navigate = useNavigate();
 
     return (
-        <div className='text-black flex justify-between items-center shadow-navbar bg-amber-300 bg-opacity-20 backdrop-blur-md shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]' >
+        <div className='text-black flex justify-between items-center shadow-navbar bg-amber-500 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]' >
             <div className='w-full flex items-center m-1 pl-8'>
                 <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
                 <h1 className='text-2xl font-bold pl-5 hidden sm:block'>RGPGROUP.IN  <p className='text-xs'>"Our Work is our Identity"</p></h1>
