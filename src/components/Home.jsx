@@ -20,7 +20,7 @@ const Home = () => {
             <h2 className='text-amber-900 text-3xl font-bold mb-30'>Power </h2> Well connected Capacity for Electrical Power at plant and Genset as a back up .</p>
       <div className="vd-infra-info text-2xl flex flex-col justify-center items-center">
         <h1 className='font-bold text-amber-900 text-3xl bg-amber-200 bg-center w-4xl text-center p-10 rounded-3xl'>We have invested in advanced, high-speed imported machines to offer</h1>
-        <div className="mach-cards flex justify-center w-7/8 flex-wrap overflow-hidden p-10">
+        <div className="mach-cards flex justify-center w-6/8 flex-wrap overflow-hidden p-10">
           <img src="/bg/bg-m1.JPG" alt="" /><img src="/bg/bg-m2.JPG" alt="" /><img src="/bg/bg-m3.JPG" alt="" /><img src="/bg/bg-m4.JPG" alt="" /><img src="/bg/bg-m5.JPG" alt="" /><img src="/bg/bg-m6.JPG" alt="" /><img src="/bg/bg-m7.JPG" alt="" /><img src="/bg/bg-m8.JPG" alt="" /><img src="/bg/bg-m9.JPG" alt="" /><img src="/bg/bg-m10.JPG" alt="" />
         </div>
       </div>
@@ -65,7 +65,7 @@ const Home = () => {
       </div>
       <div className="vision-board flex ">
             
-        <div className="vision"> <h1 className='text-5xl font-bold pb-4 text-amber-900'>Our Team</h1><p className='team-info text-2xl'>We have always been connected with experienced professionals since our inception,  that’s why we have a pool of professionals which possess outstanding industry knowledge. The professionals appointed by us are well aware of the latest market trends of packaging industry. Moreover, to work efficiently, they work in closesynchronization among themselves as well as with the customers know their exact needs to provide them products accordingly. Further, the professionals of our firm havecomplete knowledge of advanced machines and technologies owing to which we are able to develop remarkable products. Also, skills enhancement classes and seminars are organized by us at regular intervals to keep our workforce abreast with latest technologies and market dynamics.
+        <div className="vision"> <h1 className='text-5xl font-bold pb-4 pt-5 text-amber-900'>Our Team</h1><p className='team-info text-2xl'>We have always been connected with experienced professionals since our inception, that’s why we have a pool of professionals which possess outstanding industry knowledge. The professionals appointed by us are well aware of the latest market trends of packaging industry. The professionals of our firm have complete knowledge of advanced machines and technologies owing to which we are able to develop remarkable products. Also, skills enhancement classes and seminars are organized by us at regular intervals to keep our workforce abreast with latest technologies and market dynamics.
         </p>
         </div>
         <img src="/bg/emp-2.JPG" alt="background for plant photo" />

@@ -92,7 +92,7 @@ return (
             style={{
                 position: 'absolute',
                 top: '12%',
-                left: '-7%',
+                left: '-2%',
                 zIndex: 3,
                 color: '#fff',
                 fontSize: 'clamp(1.5rem, 7vw, 7rem)',
@@ -111,7 +111,7 @@ return (
                 backdropFilter: 'blur(6px)',
                 borderRadius: '16px',
                 padding: '1rem 2rem 1rem 1.8rem',
-                textShadow: '0 4px 24px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,1)',
+                textShadow: '0 4px 24px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.5)',
                 boxSizing: 'border-box'
             }
         }
