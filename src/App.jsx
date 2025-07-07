@@ -6,12 +6,16 @@ import Products from "./components/products";
 import Contact from "./components/contact";
 import SmoothScroll from "./components/smooth-scroll";
 import Home from "./components/Home";
+import { Scroll } from "@react-three/drei";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 const App = () => {
   return (
     <>
     
     <SmoothScroll />
+    <ScrollToTop />
     <div className="main relative">
       <nav className="sticky z-50 top-0">
         <Navbar />

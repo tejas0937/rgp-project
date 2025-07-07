@@ -19,7 +19,8 @@ function Navbar() {
     const navigate = useNavigate();
 
     return (
-        <div className='text-black flex justify-between items-center shadow-navbar bg-amber-500 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]' >
+        <div className='text-black flex justify-between items-center shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]' >
+            <div className='navbarmain flex'>
             <div className='w-full flex items-center m-1 pl-8'>
                 <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
                 <h1 className='text-2xl font-bold pl-5 hidden sm:block'>RGPGROUP.IN  <p className='text-xs'>"Our Work is our Identity"</p></h1>
@@ -73,11 +74,11 @@ function Navbar() {
                     </NavLink>
                 </li>
             </ul>
-
+            
             <div onClick={handleNav} className='block lg:hidden'>
-                {!nav ? <img src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="menu" className='h-10 mr-10' /> : <img src='https://cdn-icons-png.freepik.com/512/566/566013.png' alt='close' className='h-6 mr-10' />}
+                {!nav ? <img src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="menu" className='h-10 mr-10 mt-8' /> : <img src='https://cdn-icons-png.freepik.com/512/566/566013.png' alt='close' className='h-6 mr-10 mt-8' />}
             </div>
-
+            </div>
             <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full border-r border-r-grey-900 bg-gradient-to-r  ease-in-out duration-500' : 'fixed left-[-100%]'} style={{ backgroundColor: "#FFECDF" }}>
                 <div className='w-full m-0 flex items-center'>
                     <img src="/rgplogo-black.png" alt="Logo" className='h-25' />
@@ -87,6 +88,7 @@ function Navbar() {
                     <li className=' border-b border-grey-100'>
                         <NavLink
                             to='/'
+                            onClick={() => setNav(false)}
                             className={({ isActive }) =>
                                 `px-6 py-6 min-w-[160px] min-h-[56px] flex items-center justify-center${isActive ? ' text-[#964B00] font-bold' : ''}`
                             }
@@ -98,6 +100,7 @@ function Navbar() {
                     <li className=' border-b border-grey-100'>
                         <NavLink
                             to='/about'
+                            onClick={() => setNav(false)}
                             className={({ isActive }) =>
                                 `px-6 py-6 min-w-[160px] min-h-[56px] flex items-center justify-center${isActive ? ' text-[#964B00]' : ''}`
                             }
@@ -109,6 +112,7 @@ function Navbar() {
                     <li className=' border-b border-grey-100'>
                         <NavLink
                             to='/contact'
+                            onClick={() => setNav(false)}
                             className={({ isActive }) =>
                                 `px-6 py-6 min-w-[160px] min-h-[56px] flex items-center justify-center${isActive ? ' text-[#964B00]' : ''}`
                             }
@@ -125,10 +129,10 @@ function Navbar() {
                             defaultValue=""
                         >
                             <option value="">Products</option>
-                            <option value="/products#corrugated" style={{ color: window.location.hash === '#corrugated' ? '#964B00' : undefined }}>Corrugated Packaging</option>
-                            <option value="/products#wooden" style={{ color: window.location.hash === '#wooden' ? '#964B00' : undefined }}>Wooden Packaging</option>
-                            <option value="/products#protective" style={{ color: window.location.hash === '#protective' ? '#964B00' : undefined }}>Protective Accessories</option>
-                            <option value="/products#custom" style={{ color: window.location.hash === '#custom' ? '#964B00' : undefined }}>Custom Solutions</option>
+                            <option value="/products#corrugated" style={{ color: window.location.hash === '#corrugated' ? '#964B00' : undefined }} onClick={() => setNav(false)}>Corrugated Packaging</option>
+                            <option value="/products#wooden" style={{ color: window.location.hash === '#wooden' ? '#964B00' : undefined }} onClick={() => setNav(false)}>Wooden Packaging</option>
+                            <option value="/products#protective" style={{ color: window.location.hash === '#protective' ? '#964B00' : undefined }} onClick={() => setNav(false)}>Protective Accessories</option>
+                            <option value="/products#custom" style={{ color: window.location.hash === '#custom' ? '#964B00' : undefined }} onClick={() => setNav(false)}>Custom Solutions</option>
                         </select>
                     </li>
                 </ul>
