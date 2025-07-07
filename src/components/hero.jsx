@@ -55,7 +55,7 @@ return (
                 left: 0,
                 width: '100vw',
                 height: '80vh',
-                background: 'rgba(0,0,0,0.3)',
+                background: 'rgba(0,0,0,0.6)',
                 zIndex: 2
             }}
         />
@@ -95,7 +95,7 @@ return (
                 left: '-7%',
                 zIndex: 3,
                 color: '#fff',
-                fontSize: 'clamp(2rem, 7vw, 7rem)',
+                fontSize: 'clamp(1.5rem, 7vw, 7rem)',
                 flexWrap: 'wrap',
                 fontWeight: 'bold',
                 maxWidth: '50vw',
@@ -107,11 +107,11 @@ return (
                 textAlign: 'right',
                 lineHeight: 1.2,
                 letterSpacing: '2px',
-                background: 'rgba(255, 250, 250, 0.150)',
+                background: 'rgba(255, 250, 250, 0.250)',
                 backdropFilter: 'blur(6px)',
                 borderRadius: '16px',
                 padding: '1rem 2rem 1rem 1.8rem',
-                textShadow: '0 4px 24px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.6)',
+                textShadow: '0 4px 24px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,1)',
                 boxSizing: 'border-box'
             }
         }
@@ -119,7 +119,7 @@ return (
             {[
                 "Welcome to RGP GROUP",
                 "Innovative Packaging Solutions",
-                "Our Work is Our Identity"
+                "Complete Packaging at one place"
             ][current]}
         </div>
         </div>

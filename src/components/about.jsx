@@ -1,5 +1,4 @@
 import React from 'react'
-import Woodenbox from './Woodenbox'
 import './about.css'
 
 const About = () => {
@@ -44,6 +43,7 @@ const About = () => {
             src="/bg/bgvideo-rgp.mp4"
             autoPlay
             muted={isMuted}
+            
             loop
             style={{ display: 'block' }}
           ></video>
@@ -155,40 +155,50 @@ const About = () => {
 
     return (
       <div style={{ position: 'relative', overflow: 'hidden', borderRadius: 12 }}>
-        <img
-          src={images[current]}
-          alt={`carousel-img-${current}`}
-          style={{ width: '100%', height: 400, objectFit: 'cover', transition: '0.5s' }}
-        />
+      <img
+        src={images[current]}
+        alt={`carousel-img-${current}`}
+        style={{ width: '100%', height: 400, objectFit: 'cover', transition: '0.5s' }}
+      />
+      <div style={{
+        position: 'absolute',
+        top: '50%',
+        left: 0,
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'space-between',
+        pointerEvents: 'none'
+      }}>
         <button
-          onClick={prevSlide}
-          style={{
-            position: 'absolute', top: '50%', left: -5, transform: 'translateY(-50%)',
-            background: 'rgba(0,0,0,0.8)', color: '#fff', border: 'none', borderRadius: '50%', width: 60, height: 60, cursor: 'pointer'
-          }}
-          aria-label="Previous"
+        onClick={prevSlide}
+        style={{
+          background: 'rgba(0,0,0,0.8)', color: '#fff', border: 'none', borderRadius: '50%', width: 60, height: 60, cursor: 'pointer',
+          pointerEvents: 'auto', marginLeft: 10
+        }}
+        aria-label="Previous"
         >&#8592;</button>
         <button
-          onClick={nextSlide}
-          style={{
-            position: 'absolute', top: '50%', right: -5, transform: 'translateY(-50%)',
-            background: 'rgba(0,0,0,0.8)', color: '#fff', border: 'none', borderRadius: '50%', width: 60, height: 60, cursor: 'pointer'
-          }}
-          aria-label="Next"
+        onClick={nextSlide}
+        style={{
+          background: 'rgba(0,0,0,0.8)', color: '#fff', border: 'none', borderRadius: '50%', width: 60, height: 60, cursor: 'pointer',
+          pointerEvents: 'auto', marginRight: 10
+        }}
+        aria-label="Next"
         >&#8594;</button>
-        <div style={{ position: 'absolute', bottom: 18, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: 8 }}>
-          {images.map((_, idx) => (
-            <span
-              key={idx}
-              onClick={() => setCurrent(idx)}
-              style={{
-                width: 8, height: 8, borderRadius: '50%',
-                background: idx === current ? '#fff' : 'rgba(255,255,255,0.5)',
-                display: 'inline-block', cursor: 'pointer', border: '1px solid #ccc'
-              }}
-            />
-          ))}
-        </div>
+      </div>
+      <div style={{ position: 'absolute', bottom: 18, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: 8 }}>
+        {images.map((_, idx) => (
+        <span
+          key={idx}
+          onClick={() => setCurrent(idx)}
+          style={{
+          width: 8, height: 8, borderRadius: '50%',
+          background: idx === current ? '#fff' : 'rgba(255,255,255,0.5)',
+          display: 'inline-block', cursor: 'pointer', border: '1px solid #ccc'
+          }}
+        />
+        ))}
+      </div>
       </div>
     );
   }

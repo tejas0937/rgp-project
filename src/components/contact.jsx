@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full bg-[#f5f5f5] py-16 px-6 md:px-24 relative">
+    <div className="w-full bg-[#f5f5f5] py-32 px-6 md:px-24 relative">
       {/* ✅ Success Popup */}
       {showSuccess && (
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-green-100 text-green-800 px-10 py-5 rounded-lg flex items-center gap-2 shadow-lg z-50 animate-fade-in-out text-center">
@@ -80,7 +80,7 @@ const Contact = () => {
                 </li>
                 <li className="hover:text-amber-800 flex items-center w-6 h-6">
                   <img src='/call-icon.png' alt="Call" />
-                  <Link to="tel:9881340251" className="hover:underline pl-3">+91 9881340251</Link>
+                  <Link to="tel:9881340251" className="hover:underline pl-3 ">9881340251</Link>
                 </li>
               </ul>
             </div>
@@ -88,7 +88,7 @@ const Contact = () => {
         </div>
 
         {/* Map */}
-        <div className="loc-map">
+        <div className="loc-map absolute">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.253777910555!2d73.7773357093428!3d18.786840382285522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b444de5039ab%3A0xee3d9503fb63bc7d!2sRGP%20Group!5e0!3m2!1sen!2sin!4v1751800429185!5m2!1sen!2sin"
             width="600"

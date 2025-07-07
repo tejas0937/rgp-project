@@ -12,3 +12,15 @@
 /* animation: appear linear; 
     animation-timeline: view();
     animation-range: entry 0 cover 25%; */
+
+.mach-cards img{
+    width: 40%;
+    margin: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
+}
+.join-info{
+    animation: appear linear; 
+    animation-timeline: view();
+    animation-range: entry 0 cover 25%;
+}

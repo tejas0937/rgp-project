@@ -1,7 +1,9 @@
 .loc-map{
-    margin: 40px;
+    margin: 0px;
     padding-bottom: 50px;
-    padding-top: 20px;
+    padding-top: 2px;
+    top: 150px;
+    right: 150px;
 }
 .loc-map iframe{
     border: 3px solid rgb(255, 170, 0);
@@ -10,6 +12,7 @@
 form{
     width: 60%;
     margin: auto;
+    margin-top: 60px;
     padding: 30px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);

@@ -28,7 +28,7 @@ const Footer = () => {
                         <img src='/mail-icon.png' alt="Location icon " /> <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
                     </li>
                     <li className="transition-colors duration-200 hover:text-amber-800 flex items-center">
-                        <img src='/call-icon.png' alt="Location icon " /><Link to="tel:7083477803" className="hover:underline pl-3">7083477803 / 9226771188</Link>
+                        <img src='/call-icon.png' alt="Location icon " /><Link to="tel:7083477803" className="hover:underline pl-3">9881340251 | 7083477803 </Link>
                     </li>
                 </ul>
             </div>
