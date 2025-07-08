@@ -1,25 +1,22 @@
 [
-    {
-        "title": "Edge Protectors, Laminated Sheets, Tapes & Straps ",
-        "imgsrc": "/Products/prot-edge protectors.jpg"
-        
-    }, 
-    {
-        "title": " Foam Fitments, Bubble Wrap, EPE Sheets",
-        "imgsrc": "/Products/prot-foam fitments buble wrap.jpg"
-    
-    }
-    , 
-    {
-        "title": "Stretch & Shrink Films",
-        "imgsrc": "/Products/prot-strech and shrink films.jpg"
-        
-    }
-    , 
-    {
-        "title": "EPS Foam & Instapack foam",
-        "imgsrc": "/Products/prot-eps foam.jpg"
-        
-    }
-   
+  {
+    "title": "Edge Protectors, Laminated Sheets, Tapes & Straps",
+    "imgsrc": "/Products/prot-edge protectors.jpg",
+    "desc": "A complete range of protective accessories including edge guards, laminated sheets, industrial tapes, and strapping materials to secure and reinforce your packaging."
+  },
+  {
+    "title": "Foam Fitments, Bubble Wrap, EPE Sheets",
+    "imgsrc": "/Products/prot-foam fitments buble wrap.jpg",
+    "desc": "High-performance cushioning materials like custom foam inserts, bubble wrap, and EPE sheets designed to absorb shock and prevent product damage during handling."
+  },
+  {
+    "title": "Stretch & Shrink Films",
+    "imgsrc": "/Products/prot-strech and shrink films.jpg",
+    "desc": "Durable and flexible films that wrap around pallets or products to provide tight, moisture-resistant sealing for improved load stability during transport."
+  },
+  {
+    "title": "EPS Foam & Instapack Foam",
+    "imgsrc": "/Products/prot-eps foam.jpg",
+    "desc": "Moldable EPS and Instapack foam solutions that conform to product shapes, offering superior cushioning and maximum protection for fragile or sensitive items."
+  }
 ]

@@ -1,31 +1,27 @@
 [
-    {
-        "title": " Pinewood, Jungle Wood & Rubber Wood Pallets and Boxes",
-        "imgsrc": "/Products/wooden-pinejunglewood.jpg"
-        
-    }, 
-    {
-        "title": " Customized Plywood Boxes",
-        "imgsrc": "/Products/wooden-plywood boxes.jpg"
-    
-    }
-    , 
-    {
-        "title": "Reversible & Non-Reversible Pallets",
-        "imgsrc": "/Products/wooden-reversible pallets.jpg"
-        
-    }
-    , 
-    {
-        "title": "Customized Wooden Pallets of Different types like Euro, two way, four way",
-        "imgsrc": "/Products/wooden-custompallets.jpg"
-        
-    }
-    , 
-    {
-        "title": "Customized Boxes with Hinges",
-        "imgsrc": "/Products/wooden-hinges.jpg"
-        
-    }
-    
+  {
+    "title": "Pinewood, Jungle Wood & Rubber Wood Pallets and Boxes",
+    "imgsrc": "/Products/wooden-pinejunglewood.jpg",
+    "desc": "Sturdy and reliable packaging solutions crafted from Pinewood, Jungle Wood, and Rubber Wood—ideal for both domestic and export shipments requiring strength and durability."
+  },
+  {
+    "title": "Customized Plywood Boxes",
+    "imgsrc": "/Products/wooden-plywood boxes.jpg",
+    "desc": "Precision-engineered plywood boxes designed to meet specific dimensions and weight requirements, offering lightweight strength and excellent protection for sensitive goods."
+  },
+  {
+    "title": "Reversible & Non-Reversible Pallets",
+    "imgsrc": "/Products/wooden-reversible pallets.jpg",
+    "desc": "Versatile wooden pallets available in both reversible and non-reversible formats, optimized for safe handling, stacking, and cost-effective transportation."
+  },
+  {
+    "title": "Customized Wooden Pallets of Different types like Euro, Two Way, Four Way",
+    "imgsrc": "/Products/wooden-custompallets.jpg",
+    "desc": "High-quality custom wooden pallets including Euro, Two-Way, and Four-Way designs, tailored to suit various forklift operations and load capacities across industries."
+  },
+  {
+    "title": "Customized Boxes with Hinges",
+    "imgsrc": "/Products/wooden-hinges.jpg",
+    "desc": "Durable wooden boxes fitted with heavy-duty hinges for convenient opening and reusability, suitable for high-value equipment, tools, or reusable packaging needs."
+  }
 ]

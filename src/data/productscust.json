@@ -1,27 +1,27 @@
 [
-    {
-        "title": "Assembly-wise Packing Kits",
-        "imgsrc": "/Products/cust-assemblywise.jpg"
-        
-    }, 
-    {
-        "title": "  VCI Packing & Rust Prevention",
-        "imgsrc": "/Products/cust-vci.jpg"
-    
-    }
-    , 
-    {
-        "title": "  Eco-Friendly & Recyclable Packaging",
-        "imgsrc": "/Products/cust- eco-friendly.jpg"
-        
-    },{
-        "title": "Container Stuffing Solutions ",
-        "imgsrc": "/Products/cust-container-stuffing.jpg"
-        
-    },{
-        "title": "Custom Wooden Frames For Metals",
-        "imgsrc": "/Products/cust-frame.jpg"
-        
-    }
-    
+  {
+    "title": "Assembly-wise Packing Kits",
+    "imgsrc": "/Products/cust-assemblywise.jpg",
+    "desc": "Tailored packing kits designed for each assembly line or unit, ensuring efficient, organized, and damage-free shipping of parts."
+  },
+  {
+    "title": "VCI Packing & Rust Prevention",
+    "imgsrc": "/Products/cust-vci.jpg",
+    "desc": "Volatile Corrosion Inhibitor (VCI) packaging solutions that protect metal components from rust and corrosion during storage and transit."
+  },
+  {
+    "title": "Eco-Friendly & Recyclable Packaging",
+    "imgsrc": "/Products/cust- eco-friendly.jpg",
+    "desc": "Sustainable packaging made from biodegradable and recyclable materials, designed to reduce environmental impact without compromising performance."
+  },
+  {
+    "title": "Container Stuffing Solutions",
+    "imgsrc": "/Products/cust-container-stuffing.jpg",
+    "desc": "Professional container loading services and packaging solutions to maximize space, ensure safety, and minimize damage during overseas shipping."
+  },
+  {
+    "title": "Custom Wooden Frames For Metals",
+    "imgsrc": "/Products/cust-frame.jpg",
+    "desc": "Strong and secure wooden frames customized to hold and transport heavy or irregular metal parts with maximum stability and protection."
+  }
 ]
