@@ -74,19 +74,19 @@ function Navbar() {
                         <NavLink
                             to='/'
                             className={({ isActive }) =>
-                                `px-5 py-2 min-w-[110px] min-h-[48px] flex items-center justify-center${isActive ? ' text-[#964B00] font-bold' : ''}`
+                                `px-5 py-2 min-w-[110px] min-h-[48px] flex items-center justify-center${isActive ? ' text-[#000851] font-bold' : ''}`
                             }>
-                                <span className="flex items-center gap-x-2">
-                                    <IoMdHome />
-                                    Home
-                                </span>
+                            <span className="flex items-center gap-x-2">
+                                <IoMdHome />
+                                Home
+                            </span>
                         </NavLink>
                     </li>
 
-                     <li ref={dropdownRef} className="relative dropdown-item">
+                    <li ref={dropdownRef} className="relative dropdown-item">
                         <div
                             onClick={toggleProductDropdown}
-                            className={`px-5 py-2 min-w-[160px] min-h-[48px] flex items-center justify-center cursor-pointer ${productLinks.some(link => isActiveHash(link.hash)) ? 'text-[#964B00] font-bold' : ''
+                            className={`px-5 py-2 min-w-[170px] min-h-[48px] flex items-center justify-center cursor-pointer ${productLinks.some(link => isActiveHash(link.hash)) ? 'text-[#000851] font-bold' : ''
                                 }`}
                         >
                             <span className="flex items-center gap-x-2">
@@ -96,7 +96,7 @@ function Navbar() {
                         </div>
 
                         {productDropdownOpen && (
-                            <div className="absolute top-full left-0 bg-[#ffffff90] rounded-2xl shadow-lg mt-1 z-50 min-w-[230px]">
+                            <div className="absolute top-full left-0 bg-[#ffffffd5] rounded-2xl shadow-lg z-50 min-w-[230px]">
                                 <ul className="flex flex-col ">
                                     {productLinks.map((link, index) => (
                                         <li
@@ -105,7 +105,7 @@ function Navbar() {
                                                 handleProductChange(`/products${link.hash}`);
                                                 setProductDropdownOpen(false); // close on select
                                             }}
-                                            className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${isActiveHash(link.hash) ? 'text-[#964B00] font-semibold' : ''
+                                            className={`px-4 py-2 cursor-pointer hover:bg-gray-100 ${isActiveHash(link.hash) ? 'text-[#000851] font-semibold' : ''
                                                 }`}
                                         >
                                             {link.name}
@@ -121,13 +121,13 @@ function Navbar() {
                         <NavLink
                             to='/about'
                             className={({ isActive }) =>
-                                `px-5 py-2 min-w-[150px] min-h-[48px] flex items-center justify-center${isActive ? ' text-[#964B00] font-bold' : ''}`
+                                `px-5 py-2 min-w-[150px] min-h-[48px] flex items-center justify-center${isActive ? ' text-[#000851] font-bold' : ''}`
                             }>
-                                <span className="flex items-center gap-x-2">
-                                    <IoIosPeople />
-                                    About Us
-                                </span>
-                                
+                            <span className="flex items-center gap-x-2">
+                                <IoIosPeople />
+                                About Us
+                            </span>
+
                         </NavLink>
                     </li>
 
@@ -135,8 +135,8 @@ function Navbar() {
                         <NavLink
                             to='/contact'
                             className={({ isActive }) =>
-                                `px-5 py-2 min-w-[170px] min-h-[48px] flex items-center justify-center${isActive ? ' text-[#964B00] font-bold' : ''}`
-                            }> 
+                                `px-5 py-2 min-w-[170px] min-h-[48px] flex items-center justify-center${isActive ? ' text-[#000851] font-bold' : ''}`
+                            }>
                             <span className="flex items-center gap-x-2">
                                 <LuMessageCircleMore />
                                 Contact Us
@@ -157,7 +157,7 @@ function Navbar() {
             </div>
 
             {/* Mobile Menu */}
-            <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full bg-[#FFECDF] ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full bg-[#cdeeff] ease-in-out duration-500' : 'fixed left-[-100%]'}>
                 <div className='w-full m-0 flex items-center p-4'>
                     <img src="/rgplogo-black.png" alt="RGP Group Logo" className='h-25' />
                     <h1 className='text-2xl font-semibold ml-2'>
@@ -166,56 +166,63 @@ function Navbar() {
                     </h1>
                 </div>
 
-                <ul className='uppercase p-4 flex flex-col font-semibold navl'>
-                    <li className='border-b'>
+                <ul className="p-4 flex flex-col font-medium gap-2 text-[16px] navl">
+
+                    {/* Primary links */}
+                    <li className='border-b pb-2'>
                         <NavLink
                             to='/'
                             onClick={() => setNav(false)}
                             className={({ isActive }) =>
-                                `block px-6 py-4${isActive ? ' text-[#964B00] font-bold' : ''}`
+                                `flex items-center gap-3 px-4 py-2 rounded ${isActive ? 'text-[#000851] font-bold' : ''}`
                             }>
+                            <IoMdHome />
                             Home
                         </NavLink>
                     </li>
 
-                    <li className='border-b'>
+                    <li className='border-b pb-2'>
                         <NavLink
                             to='/about'
                             onClick={() => setNav(false)}
                             className={({ isActive }) =>
-                                `block px-6 py-4${isActive ? ' text-[#964B00] font-bold' : ''}`
+                                `flex items-center gap-3 px-4 py-2 rounded ${isActive ? 'text-[#000851] font-bold' : ''}`
                             }>
+                            <IoIosPeople />
                             About
                         </NavLink>
                     </li>
 
-                    <li className='border-b'>
+                    <li className='border-b pb-2'>
                         <NavLink
                             to='/contact'
                             onClick={() => setNav(false)}
                             className={({ isActive }) =>
-                                `block px-6 py-4${isActive ? ' text-[#964B00] font-bold' : ''}`
+                                `flex items-center gap-3 px-4 py-2 rounded ${isActive ? 'text-[#000851] font-bold' : ''}`
                             }>
+                            <LuMessageCircleMore />
                             Contact
                         </NavLink>
                     </li>
 
-                    <li className='border-b'>
-                        <div className='px-6 pt-4 font-semibold text-base'>Products</div>
-                        <ul>
-                            {productLinks.map((link, index) => (
-                                <li
-                                    key={index}
-                                    onClick={() => handleProductChange(`/products${link.hash}`)}
-                                    className={`block px-6 py-2 cursor-pointer hover:bg-gray-100 ${isActiveHash(link.hash) ? 'text-[#964B00] font-semibold' : ''
-                                        }`}
-                                >
-                                    {link.name}
-                                </li>
-                            ))}
-                        </ul>
+                    {/* Section title for products */}
+                    <li className="mt-3 mb-1 px-4 text-sm font-semibold text-gray-500 tracking-wide uppercase">
+                        Products
                     </li>
+
+                    {/* Product links */}
+                    {productLinks.map((link, index) => (
+                        <li
+                            key={index}
+                            onClick={() => handleProductChange(`/products${link.hash}`)}
+                            className={`px-6 py-2 cursor-pointer hover:bg-[#fdf4ea] rounded transition-all ${isActiveHash(link.hash) ? 'text-[#000851] font-bold' : ''
+                                }`}
+                        >
+                            - {link.name}
+                        </li>
+                    ))}
                 </ul>
+
             </div>
         </div>
     );
