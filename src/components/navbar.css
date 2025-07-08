@@ -1,47 +1,51 @@
 .navbarmain{
     background-image: linear-gradient(to right, rgba(252, 211, 77, 0.8), rgba(254, 243, 199, 0.8), rgba(245, 158, 11, 0.8));
     backdrop-filter: blur(8px);
-    width: 250%;
-    overflow: hidden;
+    width: 100%;
+    /* overflow: hidden; */
 }
 
 .navg li {
-    font-size: 1.2rem;
-    font-weight: 500;
-    
-    border-radius: 12px;
-    color: #000000;
-    background-color: #ffffff;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    z-index: 0;
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.336);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 4px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
+.navg li a.active, .navg li a[aria-current="page"] {
+  border: 2px solid #964B00;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+
+
 .navg li:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.navg li.dropdown-item {
+  overflow: visible !important;
+}
+
+.navg li a, .navg li div {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/* .navg li:hover {
     color: #000000;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.634);
 }
 
-.navg li::after {
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 195, 173, 0.588);
-    border-radius: 12px;
-    transition: all ease 0.3s;
-    z-index: -1;
-}
-
 .navg li:hover::after {
     bottom: 0;
-}
+} */
 
 .navg select, .navl select {
     width: 140px;

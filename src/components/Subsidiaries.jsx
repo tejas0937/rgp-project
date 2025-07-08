@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '/util.css'
+import './util.css'
 
 const Subsidiaries = () => {
   return (
