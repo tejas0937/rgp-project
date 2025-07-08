@@ -12,7 +12,7 @@ const Home = () => {
         <Hero />
       </div>
 
-      <div className="video-infra bg-amber-50 w-full h-2/4 mt-40 flex items-center justify-center flex-col">
+      <div className="video-infra bg-amber-50 w-full h-2/4 mt-0 flex items-center justify-center flex-col">
         <h1 className='text-6xl font-bold m-20text-amber-900 m-16 bg-amber-200 bg-center w-4xl text-center p-10 rounded-3xl'>Company Infrastructure</h1>
         <video src="/bg/bgvideo-rgp.mp4" controls muted autoPlay loop className='w-7/8 mb-20 rounded-2xl shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.75)]'></video>
         <p className='flex justify-center m-10 gap-8 w-5/6 text-amber-800'>
