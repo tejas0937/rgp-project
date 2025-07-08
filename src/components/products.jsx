@@ -10,10 +10,11 @@ const Products = () => {
   return (
     <>
       <div className="prod-head">
-        <section id='allproduct'>
+        <h1  id='allproduct' className='text-transparent'> . </h1>
+        <div className='items-center justify-center w-full mt-60 h-60 mainhead'>
           <h1 className='text-8xl text-amber-50 font-bold justify-center items-center'>Our Product Portfolio</h1>
           <p className='text-2xl text-amber-50 font-semibold pt-3'>Explore our diverse range of packaging solutions designed to meet your needs.</p>
-        </section>
+        </div>
         <div className='prod flex justify-center' id='corrugated'>
           <section className='flex flex-col items-center w-full mt-15'>
             <h1 id='prod-h1' >Corrugated Packaging Solutions</h1>

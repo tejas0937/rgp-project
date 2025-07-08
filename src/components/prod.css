@@ -32,7 +32,7 @@
    
     animation: appear linear; 
     animation-timeline: view();
-    animation-range: entry 0 cover 25%;
+    animation-range: entry 0 cover 15%;
 }
 .prod-ind{
     display: flex;
@@ -86,12 +86,18 @@
     }
 }
 @media (max-width: 900px) {
+    .mainhead {
+        font-size: 50px;
+        margin-bottom: 30px;
+        margin-top: -120px;
+    }
+
     .prod-con{
         animation: none;
     }
     .prod-ind {
         width: 45%;
-        max-height: 350px;
+        max-height: 450px;
     }
    
     .prod-con img {
