@@ -91,7 +91,7 @@
     }
     .prod-ind {
         width: 45%;
-        height: 450px;
+        max-height: 350px;
     }
    
     .prod-con img {
