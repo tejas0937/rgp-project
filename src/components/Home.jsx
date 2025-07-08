@@ -45,7 +45,7 @@ const Home = () => {
           </div>
           <Link to="/about">
             <button
-              className='  border-2 border-white  bg-white w-60 cursor-pointer mt-6 ml-15 p-5 text-2xl font-bold rounded-2xl transition duration-200 ease-in-out hover:bg-white text-blue-950  hover:text-white hover:shadow-lg'
+              className='  border-2 border-white  bg-white w-60 cursor-pointer mt-6 ml-15 p-5 text-2xl font-bold rounded-2xl transition duration-200 ease-in-out hover:bg-blue-950 text-blue-950  hover:text-white hover:shadow-lg hover:border-none hover:p-5.5'
             >
               View More Info
             </button>
