@@ -4,6 +4,7 @@ import './about.css'
 import Contact from './contact';
 import { Link } from 'react-router-dom';
 import './util.css';
+import Marquee from 'react-fast-marquee';
 
 const Home = () => {
   return (
@@ -49,12 +50,12 @@ const Home = () => {
         </div>
 
       </div>
-      <div className="join-info flex w-full h-150 bg-amber-50 my-40">
+      <div className="join-info flex w-full h-150 bg-amber-50 my-40 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]">
         <div className="join-img">
           <img src="/plant/team-rgp.jpg
           " alt="" className='w-9/8 h-full' />
         </div>
-        <div className="join-info m-15">
+        <div className="join-info m-15 ">
           <h1 className='text-4xl font-bold'>Why Choose RGP Pack Tech Solution?</h1>
           <div className="info-sub pl-15 w-full mt-10">
             <p className='w-full'><ul className='list-disc text-3xl'><li>8+ Years of Expertise in Industrial Packaging</li>
@@ -71,26 +72,26 @@ const Home = () => {
       </div>
       <div className="home-pro flex flex-col w-full  bg-amber-50 items-center py-20">
         <h1 className='text-6xl font-bold text-amber-900 text-center'>Our Products</h1>
-        <div className="hp-info flex flex-wrap w-3/4 justify-center gap-10 mt-10">
+        <div className="hp-info flex flex-wrap w-3/4 justify-center gap-14 mt-10">
         <Link to="/products#corrugated" className="hp-ind"><div className='flex flex-col items-center' >
           <img src="/Products/cor-heavyduty.jpg" alt="" className='w-7/8' />
-          <h1> Corrogated Packaging</h1> <p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
+          <h1> Corrogated Packaging</h1> <p className='bg-amber-50 w-50 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
         </div></Link>
         <Link to="/products#wooden"className="hp-ind"><div className='flex flex-col items-center' >
           <img src="/Products/wooden-pinejunglewood.jpg" alt="" className='w-7/8' />
-          <h1> Wooden <br></br>Packaging</h1><p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
+          <h1> Wooden <br></br>Packaging</h1><p className='bg-amber-50 w-50 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
         </div></Link>
         <Link to="/products#protective" className="hp-ind "><div className='flex flex-col items-center'>
           <img src="/Products/prot-edge protectors.jpg" alt="" className='w-7/8' />
-          <h1> Protective Accessories</h1><p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
+          <h1> Protective Accessories</h1><p className='bg-amber-50 w-50 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
         </div></Link>
         <Link to="/products#custom"className="hp-ind "><div  className='flex flex-col items-center'>
           <img src="/Products/cust-assemblywise.jpg" alt="" className='w-7/8' />
-          <h1> Custom Packaging Solutions</h1><p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
+          <h1> Custom Packaging Solutions</h1><p className='bg-amber-50 w-50 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
         </div></Link>
         <Link to="/products#our-work"className="hp-ind "><div className='flex flex-col items-center' >
           <img src="/our-work/recentwork.jpg" alt="" className='w-7/8' />
-          <h1> View Our Recent Work</h1><p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Recent Work</p>
+          <h1> View Our Recent Work</h1><p className='bg-amber-50 w-50 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Recent Work</p>
         </div></Link></div>
       </div>
       <div className="vision-board flex ">
@@ -101,14 +102,65 @@ const Home = () => {
         <img src="/bg/emp-2.JPG" alt="background for plant photo" />
 
       </div>
-      <div className="client-info flex w-full h-150 bg-amber-50 my-40 justify-center py-20">
-        <h1 className='text-6xl font-bold text-amber-900'>Our Clients</h1>
+      <div className="client-info flex w-full h-150 bg-amber-100 my-40  items-center flex-col shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]">
+        <h1 className='text-6xl font-bold text-amber-900 text-center w-7/8 my-20 border-b-orange-950 border-b-2 pb-10'>Our Clients</h1>
+        <div className="marquee w-7/8">
+        <Marquee autoFill pauseOnClick speed={40}> 
+              <img src="/clients/client1.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client2.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client3.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client4.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client5.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client6.svg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client7.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client8.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client9.svg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client10.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client11.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client12.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client13.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client14.webp" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client15.webp" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client16.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client17.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client18.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client19.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client20.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client21.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client22.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client23.svg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client24.png" width="65px" alt="" className='bg-amber-white ml-5' />
+        </Marquee><br></br>
+        <Marquee autoFill pauseOnClick direction='right' speed={40}>
+              <img src="/clients/client1.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client2.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client3.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client4.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client5.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client6.svg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client7.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client8.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client9.svg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client10.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client11.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client12.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client13.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client14.webp" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client15.webp" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client16.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client17.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client18.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client19.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client20.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client21.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client22.png" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client23.svg" width="65px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client24.png" width="65px" alt="" className='bg-amber-white ml-5' />
+        </Marquee></div>
       </div>
       <br></br>
       <Contact />
     </div>
-
-
   )
 }
 

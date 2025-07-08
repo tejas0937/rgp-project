@@ -17,6 +17,10 @@
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
 }
+.work-ind{
+    box-shadow: 0 4px 12px 1px rgba(0,0,0,1);
+  
+}
 .prod-con{
     width: 90%;
     display: flex;
