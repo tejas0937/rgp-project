@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import './util.css';
 import './responsive-home.css';
 import Marquee from 'react-fast-marquee';
+import Subsidiaries from './subsidiaries';
 
 const Home = () => {
   return (
@@ -161,7 +162,9 @@ const Home = () => {
         </Marquee></div>
       </div>
       <br></br>
+     
       <Contact />
+       <Subsidiaries />
     </div>
   )
 }

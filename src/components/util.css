@@ -64,6 +64,12 @@
 }
 .hp-ind img{
     border-radius: 20px;
+    
+}
+.sub-img img:hover{
+        transform: scale(1.1);
+        transition-duration: 0.6s;
+        box-shadow: 0 0 15px #ffee10;
 }
 @media (max-width: 600px) {
     .hp-ind {
