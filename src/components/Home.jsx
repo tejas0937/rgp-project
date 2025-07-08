@@ -108,57 +108,57 @@ const Home = () => {
       <div className="client-info flex w-full h-150 bg-gradient-to-r  text-blue-950  to-white   my-40  items-center flex-col shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]">
         <h1 className='text-6xl font-bold  text-blue-950  text-center w-7/8 my-20  white  0 border-b-2 pb-10'>Our Clients</h1>
         <div className="marquee w-7/8">
-        <Marquee autoFill pauseOnClick speed={30}> 
-              <img src="/clients/client1.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client2.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client3.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client4.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client5.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client6.svg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client7.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client8.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client9.svg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client10.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client11.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client12.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client13.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client14.webp" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client15.webp" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client16.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client17.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client18.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client19.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client20.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client21.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client22.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client23.svg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client24.png" width="65px" alt="" className='bg-amber-white ml-5' />
+        <Marquee autoFill pauseOnClick speed={30} className='bg-[#00000009] p-3'> 
+              <img src="/clients/client1.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client2.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client3.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client4.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client5.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client6.svg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client7.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client8.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client9.svg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client10.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client11.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client12.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client13.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client14.webp" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client15.webp" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client16.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client17.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client18.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client19.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client20.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client21.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client22.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client23.svg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client24.png" width="80px" alt="" className='bg-amber-white ml-5' />
         </Marquee><br></br>
-        <Marquee autoFill pauseOnClick direction='right' speed={40}>
-              <img src="/clients/client1.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client2.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client3.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client4.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client5.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client6.svg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client7.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client8.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client9.svg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client10.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client11.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client12.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client13.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client14.webp" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client15.webp" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client16.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client17.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client18.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client19.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client20.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client21.jpg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client22.png" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client23.svg" width="65px" alt="" className='bg-amber-white ml-5' />
-              <img src="/clients/client24.png" width="65px" alt="" className='bg-amber-white ml-5' />
+        <Marquee autoFill pauseOnClick direction='right' speed={40} className='bg-[#00000008] p-3'>
+              <img src="/clients/client1.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client2.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client3.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client4.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client5.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client6.svg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client7.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client8.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client9.svg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client10.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client11.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client12.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client13.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client14.webp" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client15.webp" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client16.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client17.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client18.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client19.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client20.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client21.jpg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client22.png" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client23.svg" width="80px" alt="" className='bg-amber-white ml-5' />
+              <img src="/clients/client24.png" width="80px" alt="" className='bg-amber-white ml-5' />
         </Marquee></div>
       </div>
       <br></br>
