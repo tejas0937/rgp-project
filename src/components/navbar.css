@@ -1,5 +1,5 @@
 .navbarmain{
-    background-image: linear-gradient(to right, rgba(252, 211, 77, 0.8), rgba(254, 243, 199, 0.8), rgba(245, 158, 11, 0.8));
+    background-image: linear-gradient(to right, rgb(205, 238, 255), rgb(255, 255, 255), rgb(197, 230, 255));
     backdrop-filter: blur(8px);
     width: 100%;
     /* overflow: hidden; */

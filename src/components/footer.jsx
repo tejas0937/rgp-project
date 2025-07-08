@@ -10,12 +10,12 @@ const Footer = () => {
             <div className="box-1 w-1/3 relative ">
                 <div className="logo flex-col items-center">
                     <img src="./rgplogo-black.png" alt="RGP company logo featuring stylized letters RGP in blue and green, set against Link white background, conveying Link professional and modern tone" />
-                    <h1 className='info text-5xl font-bold'>RGPGROUP.IN</h1>
+                    <h1 className='info text-5xl font-bold max-md:text-3xl'>RGPGROUP.IN</h1>
                 </div>
                 <h1 className='quote text-xl text-left font-medium '>"Our Work is our Identity." </h1>
                 <div className="copyright">
                     <h2>AS/NZS ISO 9001:2015</h2>
-                    <h1>&copy; {currentYear} RGPGROUP.IN | All rights reserved.</h1>
+                    <h1 >&copy; {currentYear} RGPGROUP.IN | All rights reserved.</h1>
                 </div>
             </div>
             <div className="box-2 w-1/3">

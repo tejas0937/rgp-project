@@ -1,14 +1,18 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
     .video-infra h1{
         font-size: 20px;
-        width: 100%;
+        width: 90%;
+        margin: 5px;
+        padding: 8px;
+        
     }
  .infraloc-info{
     flex-direction: column;
     
  }   
  .vd-infra-info h1{
-    font-size: 10px;
+    font-size: 15px;
+    margin-top: 15px;
  }
  .mach-cards{
     width: 100%;
@@ -61,8 +65,16 @@
  #our-products{
     font-size: 32px;
  }
+ .client-info{
+   margin-top: 40px;
+   margin-bottom: 30px;
+   height: 320px;
+ }
  .client-info h1{
     font-size: 32px;
+    margin: 12px;
  }
-
+.vision-board{
+   margin-top: 15px;
+}
 }
