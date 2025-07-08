@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import './util.css';
 import './responsive-home.css';
 import Marquee from 'react-fast-marquee';
-import Subsidiaries from './subsidiaries';
+import Subsidiaries from './Subsidiaries';
 
 const Home = () => {
   return (
