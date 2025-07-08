@@ -1,6 +1,7 @@
 @media screen and (max-width: 1024px) {
     .video-infra h1{
         font-size: 20px;
+        width: 100%;
     }
  .infraloc-info{
     flex-direction: column;
@@ -10,18 +11,21 @@
     font-size: 10px;
  }
  .mach-cards{
-    width: 70%;
+    width: 100%;
     display: flex;
  }
  .mach-cards img{
-    border-radius: 5px;
-    border: 1px solid white;
+    border-radius: 0;
+    
+    width: 50%;
+    margin: 0;
  }
  .dir-info {
     width: 100%;
     font-size: 12px;
     flex-direction: column;
  }
+ 
  #info-submain {
     font-size: 12px;
     width: 320px;
@@ -36,8 +40,11 @@
  }
  .join-info{
     flex-direction: column;
-    margin: 5px;
+    margin: 10px 0px;
     height: 500px;
+    max-width: 100%;
+    padding-left: 0;
+    margin-left: 0;
  }
  .join-info h1{
     font-size: 18px;
@@ -45,7 +52,11 @@
  .join-info li{
     list-style: disc;
     font-size: 12px;
+    
     text-align: left;
+ }
+ .join-info ul{
+   margin-top: -30px;
  }
  #our-products{
     font-size: 32px;

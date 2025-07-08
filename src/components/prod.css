@@ -86,6 +86,9 @@
     }
 }
 @media (max-width: 900px) {
+    .prod-con{
+        animation: none;
+    }
     .prod-ind {
         width: 45%;
         height: 450px;
