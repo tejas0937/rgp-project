@@ -21,13 +21,13 @@ const Footer = () => {
             <div className="box-2 w-1/3">
                 <h2 className="font-bold text-3xl pb-8">Get in touch</h2>
                 <ul className="space-y-4">
-                    <li className="transition-colors duration-200 hover:text-amber-800 flex ">
+                    <li className="transition-colors duration-200 hover:text-blue-800 flex ">
                         <img src='/location-icon.png' alt="Location icon" className='img-loc' /><p className='pl-3'>RGP Group , Behind Surin Auto Company, Village Bhamboli, Chakan Tal - Khed, Pune - 410505,Maharashtra, India</p>
                     </li>
-                    <li className="transition-colors duration-200 hover:text-amber-800 flex items-center">
+                    <li className="transition-colors duration-200 hover:text-blue-800 flex items-center">
                         <img src='/mail-icon.png' alt="Location icon " /> <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
                     </li>
-                    <li className="transition-colors duration-200 hover:text-amber-800 flex items-center">
+                    <li className="transition-colors duration-200 hover:text-blue-800 flex items-center">
                         <img src='/call-icon.png' alt="Location icon " /><Link to="tel:7083477803" className="hover:underline pl-3">9881340251 | 7083477803 </Link>
                     </li>
                 </ul>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
                 </ul>
                 <div className="wtsp">
-                    <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-60 bg-green-500 rounded-[50px] text-white hover:bg-green-800 transition-colors duration-500" >
+                    <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-60 bg-green-500 rounded-[50px] text-white hover:bg-green-700 transition-colors duration-500" >
                         <img src="/wtsp.svg" alt="whatsapp logo" />
                         <h1>Chat with us on WhatsApp</h1>
                     </Link>
