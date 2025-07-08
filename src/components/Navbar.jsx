@@ -40,7 +40,7 @@ function Navbar() {
                     <li>
                         <select
                             className="px-6 py-3 min-w-[200px] min-h-[54px] flex items-center justify-center nav-select"
-                            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', color: window.location.hash === '#allproduct' || window.location.hash === '#corrugated' || window.location.hash === '#wooden' || window.location.hash === '#protective' || window.location.hash === '#custom' ? '#964B00' : undefined, fontWeight: window.location.hash === '#allproduct' || window.location.hash === '#corrugated' || window.location.hash === '#wooden' || window.location.hash === '#protective' || window.location.hash === '#custom' ? 'bold' : undefined }}
+                            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', color: window.location.hash === '#allproduct' || window.location.hash === '#corrugated' || window.location.hash === '#wooden' || window.location.hash === '#protective' || window.location.hash === '#custom' ? '#964B00' : undefined, fontWeight: window.location.hash === '#allproduct' || window.location.hash === '#corrugated' || window.location.hash === '#wooden' || window.location.hash === '#protective' || window.location.hash === '#custom' ? 'bolder' : undefined , paddingRight: window.location.hash === '#allproduct' || window.location.hash === '#corrugated' || window.location.hash === '#wooden' || window.location.hash === '#protective' || window.location.hash === '#custom' ? '35px' : undefined }}
                             onChange={handleProductChange}
                             defaultValue=""
                         >
@@ -49,6 +49,7 @@ function Navbar() {
                             <option value="/products#wooden" style={{ color: window.location.hash === '#wooden' ? '#964B00' : undefined, fontWeight: window.location.hash === '#wooden' ? 'bold' : undefined }}>Wooden Packaging</option>
                             <option value="/products#protective" style={{ color: window.location.hash === '#protective' ? '#964B00' : undefined, fontWeight: window.location.hash === '#protective' ? 'bold' : undefined }}>Protective Accessories</option>
                             <option value="/products#custom" style={{ color: window.location.hash === '#custom' ? '#964B00' : undefined, fontWeight: window.location.hash === '#custom' ? 'bold' : undefined }}>Custom Solutions</option>
+                            <option value="/products#our-work" style={{ color: window.location.hash === '#our-work' ? '#964B00' : undefined, fontWeight: window.location.hash === '#our-work' ? 'bold' : undefined }}>Our Recent Work</option>
                         </select>
                     </li>
                     <li>

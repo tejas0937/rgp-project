@@ -14,11 +14,11 @@ const Home = () => {
 
       <div className="video-infra bg-amber-50 w-full h-2/4 mt-40 flex items-center justify-center flex-col">
         <h1 className='text-6xl font-bold m-20text-amber-900 m-16 bg-amber-200 bg-center w-4xl text-center p-10 rounded-3xl'>Company Infrastructure</h1>
-        <video src="/bg/bgvideo-rgp.mp4" controls muted autoPlay loop className='w-3/4 mb-20 rounded-2xl shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.75)]'></video>
+        <video src="/bg/bgvideo-rgp.mp4" controls muted autoPlay loop className='w-7/8 mb-20 rounded-2xl shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.75)]'></video>
         <p className='flex justify-center m-10 gap-8 w-5/6 text-amber-800'>
         <h2 className='text-amber-900 text-3xl font-bold '>Location </h2> Located at the upcoming Industrial Zone Of Chakan Phase II , Near Hyundai and Bridgestone and General Electrical Company
-          <h2 className='text-amber-900 text-3xl font-bold h-26 border-l-2 pl-3'>Factory Constructed area </h2> Buildup 4000+4000 sq-ft Total Size of 16000 sq-ft for further Development.
-          <h2 className='text-amber-900 text-3xl font-bold mb-30 h-26 border-l-2 pl-3'>Power </h2> Well connected Capacity for Electrical Power at plant and Genset as a back up .</p>
+          <h2 className='text-amber-900 text-3xl font-bold h-26 border-l-2 pl-4'>Factory Constructed area </h2> Buildup 4000+4000 sq-ft Total Size of 16000 sq-ft for further Development.
+          <h2 className='text-amber-900 text-3xl font-bold mb-30 h-26 border-l-2 pl-4'>Power </h2> Well connected Capacity for Electrical Power at plant and Genset as a back up .</p>
         <div className="vd-infra-info text-2xl flex flex-col justify-center items-center">
           <h1 className='font-bold text-amber-900 text-3xl bg-amber-200 bg-center w-4xl text-center p-10 rounded-3xl'>We have invested in advanced, high-speed imported machines to offer</h1>
           <div className="mach-cards flex justify-center w-full flex-wrap overflow-hidden p-10">
@@ -61,8 +61,29 @@ const Home = () => {
             </ul></p>
           </div></div>
       </div>
-      <div className="client-info flex w-full h-150 bg-amber-50 my-40 justify-center py-20">
-        <h1 className='text-6xl font-bold text-amber-900'>Our Primary Products</h1>
+      <div className="home-pro flex flex-col w-full  bg-amber-50 items-center py-20">
+        <h1 className='text-6xl font-bold text-amber-900 text-center'>Our Primary Products</h1>
+        <div className="hp-info flex flex-wrap w-3/4 justify-center gap-10 mt-10">
+        <Link to="/products#corrugated" className="hp-ind"><div className='flex flex-col items-center' >
+          <img src="/Products/cor-heavyduty.jpg" alt="" className='w-7/8' />
+          <h1> Corrogated Packaging</h1>
+        </div></Link>
+        <Link to="/products#wooden"className="hp-ind"><div className='flex flex-col items-center' >
+          <img src="/Products/wooden-pinejunglewood.jpg" alt="" className='w-7/8' />
+          <h1> Wooden <br></br>Packaging</h1>
+        </div></Link>
+        <Link to="/products#protective" className="hp-ind "><div className='flex flex-col items-center'>
+          <img src="/Products/prot-edge protectors.jpg" alt="" className='w-7/8' />
+          <h1> Protective Accessories</h1>
+        </div></Link>
+        <Link to="/products#custom"className="hp-ind "><div  className='flex flex-col items-center'>
+          <img src="/Products/cust-assembly wise packing.jpg" alt="" className='w-7/8' />
+          <h1> Custom Packaging Solutions</h1>
+        </div></Link>
+        <Link to="/products#our-work"className="hp-ind "><div className='flex flex-col items-center' >
+          <img src="/our-work/recentwork.jpg" alt="" className='w-7/8' />
+          <h1> View Our Recent Work</h1>
+        </div></Link></div>
       </div>
       <div className="vision-board flex ">
 

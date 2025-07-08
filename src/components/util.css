@@ -25,3 +25,37 @@
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
 }
+.hp-ind{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+    background: linear-gradient(359deg, rgba(255, 255, 255, 1) 0%, rgba(255, 184, 112, 1) 42%, rgba(255, 128, 0, 1) 100%);
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 500px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    padding: 20px;
+    margin-top: 25px;
+    color: #352a00;
+    box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
+}
+.hp-ind:hover{
+    transform: scale(1.1);
+    background: linear-gradient(359deg,rgba(255, 128, 0, 1),  0%, rgba(255, 184, 112, 1) 42%, rgba(255, 255, 255, 1) 100%);
+    
+    color: brown;
+}
+.hp-ind h1{
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.hp-ind img{
+    border-radius: 20px;
+}
