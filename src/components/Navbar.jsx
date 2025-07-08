@@ -157,7 +157,7 @@ function Navbar() {
             </div>
 
             {/* Mobile Menu */}
-            <div className={nav ? 'fixed left-0 top-0 w-[75%] h-full bg-[#cdeeff] ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <div className={nav ? 'fixed left-0 top-0 w-[78%] h-full bg-[#cdeeff] ease-in-out duration-500' : 'fixed left-[-100%]'}>
                 <div className='w-full m-0 flex items-center p-4'>
                     <img src="/rgplogo-black.png" alt="RGP Group Logo" className='h-25' />
                     <h1 className='text-2xl font-semibold ml-2'>
