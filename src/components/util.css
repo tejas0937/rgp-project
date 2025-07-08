@@ -1,3 +1,4 @@
+
 @keyframes appear {
     from{
         opacity: 0;
@@ -63,4 +64,20 @@
 }
 .hp-ind img{
     border-radius: 20px;
+}
+@media (max-width: 600px) {
+    .hp-ind {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    .hp-ind img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+    .hp-ind h1 {
+        font-size: 22px;
+        margin-top: 12px;
+    }
 }

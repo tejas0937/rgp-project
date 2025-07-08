@@ -179,12 +179,12 @@
 @media screen and (max-width: 1024px) {
   .a-info {
     width: 90%;
-    height: 70vh;
+    height: 80vh;
     padding: 10px;
   }
   .a-info h1{
     font-size: 32px;
-    padding-top: 20px;
+    padding-top: 70px;
   }
   .a-info p {
     width: 100%;

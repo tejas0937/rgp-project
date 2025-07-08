@@ -96,6 +96,12 @@ const Hero = () => {
             }
 
             @media (max-width: 768px) {
+            .main-carousel{
+            height: 200px}
+            .hero-carousel{
+            height:200px}
+            .hero-carousel img{
+            display:none}
               .text-board {
                 top: 50% !important;
                 left: 50% !important;

@@ -4,6 +4,7 @@ import './about.css'
 import Contact from './contact';
 import { Link } from 'react-router-dom';
 import './util.css';
+import './responsive-home.css';
 import Marquee from 'react-fast-marquee';
 
 const Home = () => {
@@ -16,17 +17,18 @@ const Home = () => {
       <div className="video-infra bg-amber-50 w-full h-2/4 mt-0 flex items-center justify-center flex-col">
         <h1 className='text-6xl font-bold m-20text-amber-900 m-16 bg-amber-200 bg-center w-4xl text-center p-10 rounded-3xl'>Company Infrastructure</h1>
         <video src="/bg/bgvideo-rgp.mp4" controls muted autoPlay loop className='w-7/8 mb-20 rounded-2xl shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.75)]'></video>
-        <p className='flex justify-center m-10 gap-8 w-5/6 text-amber-800'>
-        <h2 className='text-amber-900 text-3xl font-bold '>Location </h2> Located at the upcoming Industrial Zone Of Chakan Phase II , Near Hyundai and Bridgestone and General Electrical Company
+        <p className='infraloc-info flex justify-center m-10 gap-8 w-5/6 text-amber-800'>
+        <h2 className='text-amber-900 text-3xl font-bold max-md:border-l-2 max-md:pl-4 max-md:h-26'>Location </h2> Located at the upcoming Industrial Zone Of Chakan Phase II , Near Hyundai and Bridgestone and General Electrical Company
           <h2 className='text-amber-900 text-3xl font-bold h-26 border-l-2 pl-4'>Factory Constructed area </h2> Buildup 4000+4000 sq-ft Total Size of 16000 sq-ft for further Development.
-          <h2 className='text-amber-900 text-3xl font-bold mb-30 h-26 border-l-2 pl-4'>Power </h2> Well connected Capacity for Electrical Power at plant and Genset as a back up .</p>
+          <h2 className='text-amber-900 text-3xl font-bold mb-30 max-md:mb-0 h-26 border-l-2 pl-4'>Power </h2> Well connected Capacity for Electrical Power at plant and Genset as a back up .</p>
         <div className="vd-infra-info text-2xl flex flex-col justify-center items-center">
-          <h1 className='font-bold text-amber-900 text-3xl bg-amber-200 bg-center w-4xl text-center p-10 rounded-3xl'>We have invested in advanced, high-speed imported machines to offer</h1>
+          <h1 className='font-bold text-amber-900 text-3xl bg-amber-200 bg-center w-4xl text-center p-10 rounded-3xl '>We have invested in advanced, high-speed imported machines to offer</h1>
           <div className="mach-cards flex justify-center w-full flex-wrap overflow-hidden p-10">
             <img src="/bg/bg-m1.JPG" alt="" /><img src="/bg/bg-m2.JPG" alt="" /><img src="/bg/bg-m3.JPG" alt="" /><img src="/bg/bg-m4.JPG" alt="" /><img src="/bg/bg-m5.JPG" alt="" /><img src="/bg/bg-m6.JPG" alt="" /><img src="/bg/bg-m7.JPG" alt="" /><img src="/bg/bg-m8.JPG" alt="" /><img src="/bg/bg-m9.JPG" alt="" /><img src="/bg/bg-m10.JPG" alt="" />
           </div>
         </div>
-        <h1 className='w-full bg-amber-950 text-5xl/15 text-amber-50  h-70 text-center pt-20'>Our commitment ensures that you get packaging that protects your products and your brand reputation.</h1>
+        <h1 className='w-full bg-amber-950 text-5xl/15 text-amber-50  h-70 text-center pt-15
+         '>Our commitment ensures that you get packaging that protects your products and your brand reputation.</h1>
       </div>
       <div className="director flex ">
         <div className="dir-img">
@@ -71,7 +73,7 @@ const Home = () => {
           </div></div>
       </div>
       <div className="home-pro flex flex-col w-full  bg-amber-50 items-center py-20">
-        <h1 className='text-6xl font-bold text-amber-900 text-center'>Our Products</h1>
+        <h1 id="our-products"className='text-6xl font-bold text-amber-900 text-center '>Our Products</h1>
         <div className="hp-info flex flex-wrap w-3/4 justify-center gap-14 mt-10">
         <Link to="/products#corrugated" className="hp-ind"><div className='flex flex-col items-center' >
           <img src="/Products/cor-heavyduty.jpg" alt="" className='w-7/8' />
