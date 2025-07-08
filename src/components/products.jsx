@@ -45,6 +45,7 @@ const Products = () => {
                   >
                     <img src={product.imgsrc} alt={product.title ? `Image of ${product.title}` : 'Product image'} />
                     <h1>{product.title}</h1>
+                    <p>{product.desc}</p>
                   </div>
                 ))
               }
@@ -64,6 +65,7 @@ const Products = () => {
                   >
                     <img src={product.imgsrc} alt={product.title ? `Image of ${product.title}` : 'Product image'} />
                     <h1>{product.title}</h1>
+                    <p>{product.desc}</p>
                   </div>
                 ))
               }
@@ -82,6 +84,7 @@ const Products = () => {
                   >
                     <img src={product.imgsrc} alt={product.title ? `Image of ${product.title}` : 'Product image'} />
                     <h1>{product.title}</h1>
+                    <p>{product.desc}</p>
                   </div>
                 ))
               }
