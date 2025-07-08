@@ -16,8 +16,8 @@ const About = () => {
     <div className='about'>
 
       <div className="a-info" >
-        <h1 className='text-6xl font-bold text-amber-950 m-10'>About Us</h1>
-        <p className='text-amber-950 text-2xl/12'>Established in 2016 by Mr. Ajay Ramdas Jaid, <b>RGP Pack Tech Solution</b> is a trusted manufacturer and supplier of premium packaging solutions. Located in Chakan MIDC, Pune, we deliver high-quality, cost-effective, and sustainable packaging that meets diverse industrial and export requirements. Our production facility is equipped with fully automated, high-speed imported machines that ensure consistency, precision, and on-time delivery - all under one roof.Our commitment ensures that you get packaging that protects your products and your brand reputation.</p>
+        <h1 className='text-6xl font-bold text-[#000851] m-10'>About Us</h1>
+        <p className='text-[#000851] text-2xl/12'>Established in 2016 by Mr. Ajay Ramdas Jaid, <b>RGP Pack Tech Solution</b> is a trusted manufacturer and supplier of premium packaging solutions. Located in Chakan MIDC, Pune, we deliver high-quality, cost-effective, and sustainable packaging that meets diverse industrial and export requirements. Our production facility is equipped with fully automated, high-speed imported machines that ensure consistency, precision, and on-time delivery - all under one roof.Our commitment ensures that you get packaging that protects your products and your brand reputation.</p>
       </div>
       <div className="vision-board flex">
         <img src="/plant/bg-m1.png" alt="background for plant photo" />
