@@ -20,6 +20,11 @@
     border: 2px solid #fee685;
     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.45);
 }
+.mach-cards img{
+    transition: all ease 0.5s;
+}
+.mach-cards img:hover{
+    transform: scale(1.08);}
 .join-info{
     animation: appear linear; 
     animation-timeline: view();
@@ -39,14 +44,14 @@
     border-top-right-radius: 0px;
     height: 500px;
     cursor: pointer;
-    transition-duration: 0.4s;
+    transition: all ease 0.5s;
     padding: 20px;
     margin-top: 25px;
     color: #352a00;
     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 }
 .hp-ind:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
     background: linear-gradient(359deg,rgba(255, 128, 0, 1),  0%, rgba(255, 184, 112, 1) 42%, rgba(255, 255, 255, 1) 100%);
     
     color: brown;

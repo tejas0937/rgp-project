@@ -1,131 +1,116 @@
-import React from 'react'
+import React from 'react';
 
 const Hero = () => {
-const images = [
-    '/plant/RGP -HD(2).jpg',
-    '/plant/RGP -HD(4).jpg',
-    '/plant/bg-m1.png',
-];
-const [current, setCurrent] = React.useState(0);
+  const images = [
+    '/bg/bg1cr.png',
+    '/bg/bg2cr.png',
+    '/bg/bg3cr.png',
+    
+  ];
 
-React.useEffect(() => {
+  const [current, setCurrent] = React.useState(0);
+
+  React.useEffect(() => {
     const interval = setInterval(() => {
-        setCurrent((prev) => (prev + 1) % images.length);
-    }, 3500);
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000);
     return () => clearInterval(interval);
-}, [images.length]);
+  }, [images.length]);
 
-return (
+  return (
     <div className="main-carousel overflow-hidden">
-    <div
-        className="hero-carousel"
-        style={{
-            width: '100%',
-            height: '80vh',
-            position: 'relative',
-            overflow: 'hidden'
-        }}
-    >
+      <div
+        className="hero-carousel relative w-full h-[80vh] overflow-hidden"
+      >
         {images.map((img, idx) => (
-            <img
-                key={idx}
-                src={img}
-                alt={`slide-${idx}`}
-                style={{
-                    width: '100vw',
-                    height: '80vh',
-                    maxWidth: '100%',
-                    maxHeight: '80vh',
-                    objectFit: 'cover',
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    opacity: idx === current ? 1 : 0,
-                    transition: 'opacity 1s ease-in-out, transform 6s cubic-bezier(0.2,0,0.2,2)',
-                    zIndex: idx === current ? 1 : 0,
-                    transform: idx === current ? 'scale(1.1)' : 'scale(1)',
-                    overflow: 'hidden', 
-                }}
-            />
-        ))}
-        <div className='black-tint'
+          <img
+            key={idx}
+            src={img}
+            alt={`slide-${idx}`}
             style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100vw',
-                height: '80vh',
-                background: 'rgba(0,0,0,0.6)',
-                zIndex: 2
+              width: '100vw',
+              height: '80vh',
+              objectFit: 'cover',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              opacity: idx === current ? 1 : 0,
+              transform: idx === current ? 'scale(1.05)' : 'scale(1)',
+              transition: 'opacity 1.2s ease-in-out, transform 5s ease',
+              zIndex: idx === current ? 1 : 0,
             }}
+          />
+        ))}
+
+        
+        <div
+          className="absolute top-0 left-0 w-full h-full z-10"
+          style={{
+            background: 'linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2))',
+          }}
         />
-        <style>
-            {`
-                @media (max-width: 768px) {
-                    .text-board {
-                        left: 20px !important;
-                        bottom: 0 !important;
-                        min-width: 90vw !important;
-                        max-width: 90vw !important;
-                        font-size: clamp(1.2rem, 5vw, 3rem) !important;
-                        max-height: 100px !important;
-                        text-align: center !important;
-                    }
-                }
-                .slideup {
-                    animation: slideUpFade 2s cubic-bezier(0.23, 1, 0.32, 1);
-                }
-                @keyframes slideUpFade {
-                    0% {
-                        opacity: 0.8;
-                        transform: translateX(-120px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-            `}
-        </style>
-        <div className='text-board slideup'
-            key={current}
-            style={{
-                position: 'absolute',
-                top: '12%',
-                left: '-2%',
-                zIndex: 3,
-                color: '#fff',
-                fontSize: 'clamp(1.5rem, 7vw, 7rem)',
-                flexWrap: 'wrap',
-                fontWeight: 'bold',
-                maxWidth: '50vw',
-                width: 'fit-content',
-                minWidth: '50vw',
-                height: '60vh',
-                display: 'flex',
-                alignItems: 'center',
-                textAlign: 'right',
-                lineHeight: 1.2,
-                letterSpacing: '2px',
-                background: 'rgba(255, 250, 250, 0.250)',
-                backdropFilter: 'blur(6px)',
-                borderRadius: '16px',
-                padding: '1rem 2rem 1rem 1.8rem',
-                textShadow: '0 4px 24px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.5)',
-                boxSizing: 'border-box'
-            }
-        }
+
+        
+        <div
+          key={current}
+          className="text-board slideup z-20"
+          style={{
+            position: 'absolute',
+            top: '25%',
+            left: '8%',
+            color: '#fff',
+            fontSize: 'clamp(1.5rem, 6vw, 4rem)',
+            fontWeight: '700',
+            maxWidth: '600px',
+            background: 'rgba(255, 255, 255, 0.12)',
+            padding: '2rem 2.5rem',
+            borderRadius: '18px',
+            backdropFilter: 'blur(10px)',
+            lineHeight: 1.4,
+            textShadow: '0 2px 10px rgba(0,0,0,0.8)',
+            boxShadow: '0 8px 20px rgba(0,0,0,0.3)',
+          }}
         >
-            {[
-                "Welcome to RGP GROUP",
-                "Innovative Packaging Solutions",
-                "Complete Packaging at one place"
-            ][current]}
+          {[
+            "Welcome to RGP GROUP",
+            "Innovative Packaging Solutions",
+            "Complete Packaging at One Place"
+          ][current]}
         </div>
-        </div>
+
+       
+        <style>
+          {`
+            .slideup {
+              animation: slideUpFade 1.8s ease forwards;
+            }
+            @keyframes slideUpFade {
+              from {
+                opacity: 0;
+                transform: translateY(50px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            @media (max-width: 768px) {
+              .text-board {
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
+                text-align: center !important;
+                width: 90vw !important;
+                padding: 1.5rem !important;
+                font-size: clamp(1.2rem, 5vw, 2.5rem) !important;
+              }
+            }
+          `}
+        </style>
+      </div>
     </div>
-)
+  );
+};
 
-}
-
-export default Hero
+export default Hero;

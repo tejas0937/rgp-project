@@ -38,7 +38,15 @@ const Home = () => {
           <div className="info-subh pl-15">
 
             <p id='info-submain'>Established in 2016 by Mr. Ajay Ramdas Jaid, <b>RGP Pack Tech Solution</b> is a trusted manufacturer and supplier of premium packaging solutions. Located in Chakan MIDC, Pune, we deliver high-quality, cost-effective, and sustainable packaging that meets diverse industrial and export requirements. Our production facility is equipped with fully automated, high-speed imported machines that ensure consistency, precision, and on-time delivery - all under one roof.Our commitment ensures that you get packaging that protects your products and your brand reputation. </p>
-          </div><Link to="/about"><button className='text-amber-600 bg-white w-60 cursor-pointer mt-6 ml-15 p-5 text-2xl font-bold rounded-2xl'>View More Info</button></Link></div>
+          </div>
+          <Link to="/about">
+            <button
+              className='text-amber-600 bg-white w-60 cursor-pointer mt-6 ml-15 p-5 text-2xl font-bold rounded-2xl transition duration-200 ease-in-out hover:bg-amber-600 hover:text-white hover:shadow-lg'
+            >
+              View More Info
+            </button>
+          </Link>
+        </div>
 
       </div>
       <div className="join-info flex w-full h-150 bg-amber-50 my-40">
@@ -62,27 +70,27 @@ const Home = () => {
           </div></div>
       </div>
       <div className="home-pro flex flex-col w-full  bg-amber-50 items-center py-20">
-        <h1 className='text-6xl font-bold text-amber-900 text-center'>Our Primary Products</h1>
+        <h1 className='text-6xl font-bold text-amber-900 text-center'>Our Products</h1>
         <div className="hp-info flex flex-wrap w-3/4 justify-center gap-10 mt-10">
         <Link to="/products#corrugated" className="hp-ind"><div className='flex flex-col items-center' >
           <img src="/Products/cor-heavyduty.jpg" alt="" className='w-7/8' />
-          <h1> Corrogated Packaging</h1>
+          <h1> Corrogated Packaging</h1> <p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
         </div></Link>
         <Link to="/products#wooden"className="hp-ind"><div className='flex flex-col items-center' >
           <img src="/Products/wooden-pinejunglewood.jpg" alt="" className='w-7/8' />
-          <h1> Wooden <br></br>Packaging</h1>
+          <h1> Wooden <br></br>Packaging</h1><p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
         </div></Link>
         <Link to="/products#protective" className="hp-ind "><div className='flex flex-col items-center'>
           <img src="/Products/prot-edge protectors.jpg" alt="" className='w-7/8' />
-          <h1> Protective Accessories</h1>
+          <h1> Protective Accessories</h1><p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
         </div></Link>
         <Link to="/products#custom"className="hp-ind "><div  className='flex flex-col items-center'>
-          <img src="/Products/cust-assembly wise packing.jpg" alt="" className='w-7/8' />
-          <h1> Custom Packaging Solutions</h1>
+          <img src="/Products/cust-assemblywise.jpg" alt="" className='w-7/8' />
+          <h1> Custom Packaging Solutions</h1><p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Products</p>
         </div></Link>
         <Link to="/products#our-work"className="hp-ind "><div className='flex flex-col items-center' >
           <img src="/our-work/recentwork.jpg" alt="" className='w-7/8' />
-          <h1> View Our Recent Work</h1>
+          <h1> View Our Recent Work</h1><p className='bg-amber-50 w-60 p-1 m-2 rounded text-amber-900 border-1 border-amber-900'>View Recent Work</p>
         </div></Link></div>
       </div>
       <div className="vision-board flex ">
