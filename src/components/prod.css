@@ -40,7 +40,7 @@
     align-items: center;
     width: 30%;
     text-align: center;
-    background: linear-gradient(359deg, rgba(255, 255, 255, 1) 0%, rgba(255, 184, 112, 1) 42%, rgba(255, 128, 0, 1) 100%);
+    background: linear-gradient(359deg, rgba(255, 255, 255, 1) 0%, rgb(112, 226, 255) 42%, rgb(0, 48, 68) 100%);
     border-radius: 20px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -52,13 +52,13 @@
     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
     transition-duration: 0.4s;
     margin-top: 25px;
-    color: #352a00;
+    color: #000335;
 }
 .prod-ind:hover{
     transform: scale(1.01);
-    background: linear-gradient(359deg,rgba(255, 128, 0, 1),  0%, rgba(255, 184, 112, 1) 42%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(359deg,rgb(12, 69, 107),  0%, rgb(255, 255, 255) 42%, rgb(123, 229, 255) 100%);
     
-    color: brown;
+    color: rgb(0, 7, 52);
 }
 .prod-con h1{
     font-size: 28px;

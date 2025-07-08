@@ -11,8 +11,8 @@
 .a-info{
     width: 75%;
     height: 75vh;
-    background: #ffbdbd;
-    background: linear-gradient(145deg, rgba(255, 193, 155, 0.805) 2%, rgb(255, 234, 213) 45%, rgb(255, 185, 145) 100%);
+    background: #bdeeff;
+    background: linear-gradient(145deg, rgb(155, 225, 255) 2%, rgb(255, 255, 255) 45%, rgb(55, 144, 196) 100%);
     border-radius: 30px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -27,7 +27,7 @@
 .a-info h1{
   padding-bottom: 10px;
   margin-top: 50px;
-  padding-top: 30px;
+  padding-top: 36px;
   border-bottom: 1px solid black;
 }
 .a-info p{
@@ -57,7 +57,7 @@
 .vision-board{
     max-width: 100%;
     margin-top: 100px;
-    background-color: antiquewhite;
+    background-color: rgb(215, 238, 250);
     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 
 }
@@ -78,7 +78,7 @@
 }
 .infra-board{
     margin-top: 200px;
-    background-color: antiquewhite;
+    background-color: rgb(215, 238, 250);
     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 }
 .infra-board .infra{
@@ -97,7 +97,7 @@
 }
 .director{
     margin-top: 200px;
-     background-color: antiquewhite;
+     background-color: rgb(215, 238, 250);
      box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 }
 .dir-img{
@@ -132,14 +132,14 @@
 }
 .loc{
     margin-top: 200px;
-     background-color: rgb(78, 44, 0);
+     background-color: rgb(0, 47, 78);
      box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 
 }
 .machines-img{
     margin-top: 200px;
     padding: 50px;
-     background-color: rgb(78, 44, 0);
+     background-color: rgb(0, 38, 78);
      box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
 }
 .machines-img h1{
@@ -168,7 +168,7 @@
     padding-top: 20px;
 }
 .loc-map iframe{
-    border: 3   px solid rgb(255, 255, 0);
+    border: 3   px solid rgb(0, 61, 83);
     border-radius: 25px;
     
 }
