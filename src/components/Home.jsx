@@ -20,12 +20,12 @@ const Home = () => {
         <video src="/bg/bgvideo-rgp.mp4" controls muted autoPlay loop className='w-7/8 mb-20 max-md:mb-5 max-md:rounded-xs max-mt-5 rounded-2xl shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.75)]'></video>
         <p className='infraloc-info flex justify-center m-10 gap-8 w-5/6 text-black max-md:m-1'>
         <h2 className='text-black text-3xl font-bold max-md:border-l-2 max-md:pl-4 max-md:h-11 '>Location </h2> Located at the upcoming Industrial Zone Of Chakan Phase II , Near Hyundai and Bridgestone and General Electrical Company
-          <h2 className='text-black text-3xl font-bold h-26 border-l-2 pl-4 max-md:h-22'>Factory Constructed area </h2> Buildup 4000+4000 sq-ft Total Size of 16000 sq-ft for further Development.
+          <h2 className='text-black text-3xl font-bold h-26 border-l-2 pl-4 max-md:h-22'>Factory Constructed area </h2> Buildup 15000+ 25000 sq-ft Total Size of 40000 sq-ft for further Development.
           <h2 className='text-black text-3xl font-bold mb-30 max-md:mb-0 h-26 max-md:h-12 border-l-2 pl-4'>Power </h2> Well connected Capacity for Electrical Power at plant and Genset as a back up .</p>
         <div className="vd-infra-info text-2xl flex flex-col justify-center items-center">
           <h1 className='font-bold text-white text-3xl bg-[linear-gradient(360deg,_rgba(112,210,255,1)_0%,_rgba(17,81,130,1)_100%)] bg-center w-4xl text-center p-10 rounded-3xl '>We have invested in advanced, high-speed imported machines to offer</h1>
-          <div className="mach-cards flex justify-center w-full flex-wrap overflow-hidden p-10">
-            <img src="/bg/bg-m1.JPG" alt="" /><img src="/bg/bg-m2.JPG" alt="" /><img src="/bg/bg-m3.JPG" alt="" /><img src="/bg/bg-m4.JPG" alt="" /><img src="/bg/bg-m5.JPG" alt="" /><img src="/bg/bg-m6.JPG" alt="" /><img src="/bg/bg-m7.JPG" alt="" /><img src="/bg/bg-m8.JPG" alt="" /><img src="/bg/bg-m9.JPG" alt="" /><img src="/bg/bg-m10.JPG" alt="" />
+          <div className="mach-cards flex justify-center w-full flex-wrap overflow-hidden py-10">
+            <img src="/bg/bg-m4.JPG" alt="" /><img src="/bg/bg-m5.JPG" alt="" /><img src="/bg/bg-m6.JPG" alt="" /><img src="/bg/bg-m7.JPG" alt="" /><img src="/bg/bg-m8.JPG" alt="" /><img src="/bg/bg-m9.JPG" alt="" /><img src="/bg/bg-m10.JPG" alt="" />
           </div>
         </div>
         <h1 className='w-full bg-black text-5xl/15 text-amber-50  h-80 max-md:h-96 text-center pt-20
