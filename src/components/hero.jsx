@@ -5,6 +5,8 @@ const Hero = () => {
     '/bg/bg1cr.png',
     '/bg/bg2cr.png',
     '/bg/bg3cr.png',
+    '/bg/bg4cr.png',
+    '/bg/bg5cr.png'
     
   ];
 
@@ -74,7 +76,9 @@ const Hero = () => {
           {[
             "Welcome to RGP GROUP",
             "Innovative Packaging Solutions",
-            "Complete Packaging at One Place"
+            "Complete Packaging at One Place",
+            "With Advanced Equiped Machines",
+            "Strong Reliable and Sustainable Packaging"
           ][current]}
         </div>
 
