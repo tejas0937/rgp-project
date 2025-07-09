@@ -72,6 +72,11 @@
     
 }
 .prod-ind h2{
+    background-color: #ffffff79;
+    border-radius: 5px;
+    padding: 2px 15px;
+}
+.prod-ind:hover h2{
         display: none;
     }
 .prod-con img{
