@@ -27,6 +27,7 @@ const Products = () => {
                   >
                     <img src={product.imgsrc} alt={product.title ? `Image of ${product.title}` : 'Product image'} />
                     <h1>{product.title}</h1>
+                    <h2>View</h2>
                     <p>{product.desc}</p>
                   </div>
                 ))
@@ -46,6 +47,7 @@ const Products = () => {
                   >
                     <img src={product.imgsrc} alt={product.title ? `Image of ${product.title}` : 'Product image'} />
                     <h1>{product.title}</h1>
+                    <h2>View</h2>
                     <p>{product.desc}</p>
                   </div>
                 ))
@@ -66,6 +68,7 @@ const Products = () => {
                   >
                     <img src={product.imgsrc} alt={product.title ? `Image of ${product.title}` : 'Product image'} />
                     <h1>{product.title}</h1>
+                    <h2>View</h2>
                     <p>{product.desc}</p>
                   </div>
                 ))
@@ -85,6 +88,7 @@ const Products = () => {
                   >
                     <img src={product.imgsrc} alt={product.title ? `Image of ${product.title}` : 'Product image'} />
                     <h1>{product.title}</h1>
+                    <h2>View</h2>
                     <p>{product.desc}</p>
                   </div>
                 ))
@@ -106,7 +110,7 @@ const Products = () => {
                 ourwork.map((product, id) => (
                   <div
                     key={id}
-                    className='work-ind w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-white p-5 text-center border-amber-500 border-1 justify-center flex flex-col items-center m-2 md:m-5 rounded-bl-3xl rounded-tr-3xl h-90 transition-transform duration-300 hover:scale-105 hover:shadow-2xl'
+                    className='work-ind w-full sm:w-1/3 md:w-1/3 lg:w-1/4 bg-green-100 p-5 text-center border-amber-500 border-1 justify-center flex flex-col items-center m-2 md:m-5 rounded-bl-3xl rounded-tr-3xl h-90 transition-transform duration-300 hover:scale-105 hover:shadow-2xl'
                   >
                     <img className='w-7/8 mb-5 rounded-2xl' src={product.imgsrc} alt={product.title ? `Image of ${product.title}` : 'Product image'} />
                     <h1> <b>Product :</b> {product.title}</h1>

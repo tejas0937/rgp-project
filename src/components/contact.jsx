@@ -108,7 +108,7 @@ const Contact = () => {
     
       <form className="bg-white shadow-md rounded-lg p-8 mt-12" onSubmit={sendEmail}>
         <h2 className="text-lg font-semibold uppercase text-blue-500 mb-2 mt-2">
-          feedback Form
+          Enquiry Form
         </h2>
 
         <div className="txt_field">

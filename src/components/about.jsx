@@ -77,9 +77,40 @@ const About = () => {
       </div>
       <div className="machines-img flex flex-col w-full">
         <h1>We have invested in advanced, high-speed imported machines to offer</h1>
-        <div className="carousel-container" style={{ width: '100%', maxWidth: 800, margin: '40px auto' }}>
-          <Carousel />
-        </div>
+        <div className="carousel-wrapper" style={{ width: '100%', maxWidth: 800, margin: '40px auto', position: 'relative' }}>
+  <Carousel />
+  <div className="outside-controls flex justify-center gap-6 mt-4" style={{ width: '100%', position: 'relative' }}>
+    <button
+      onClick={() => document.getElementById('carousel-prev')?.click()}
+      style={{
+        background: 'rgba(0,0,0,0.8)',
+        color: '#fff',
+        border: 'none',
+        width: "120px",
+        borderRadius: '6px',
+        padding: '10px 20px',
+        cursor: 'pointer'
+      }}
+    >
+      &#8592; Previous
+    </button>
+    <button
+      onClick={() => document.getElementById('carousel-next')?.click()}
+      style={{
+        background: 'rgba(0,0,0,0.8)',
+        color: '#fff',
+        border: 'none',
+        width: "120px",
+        borderRadius: '6px',
+        padding: '10px 20px',
+        cursor: 'pointer'
+      }}
+    >
+      Next &#8594;
+    </button>
+  </div>
+</div>
+
       </div>
 
       <div className="director flex ">
@@ -169,22 +200,8 @@ const About = () => {
         justifyContent: 'space-between',
         pointerEvents: 'none'
       }}>
-        <button
-        onClick={prevSlide}
-        style={{
-          background: 'rgba(0,0,0,0.8)', color: '#fff', border: 'none', borderRadius: '50%', width: 60, height: 60, cursor: 'pointer',
-          pointerEvents: 'auto', marginLeft: 10
-        }}
-        aria-label="Previous"
-        >&#8592;</button>
-        <button
-        onClick={nextSlide}
-        style={{
-          background: 'rgba(0,0,0,0.8)', color: '#fff', border: 'none', borderRadius: '50%', width: 60, height: 60, cursor: 'pointer',
-          pointerEvents: 'auto', marginRight: 10
-        }}
-        aria-label="Next"
-        >&#8594;</button>
+        <button id="carousel-prev" onClick={prevSlide}> &#8592;</button>
+        <button id="carousel-next"  onClick={nextSlide}> &#8594; </button>
       </div>
       <div style={{ position: 'absolute', bottom: 18, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: 8 }}>
         {images.map((_, idx) => (
