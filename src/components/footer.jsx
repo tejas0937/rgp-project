@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='footer flex '>
             <div className="box-1 w-1/3 relative ">
                 <div className="logo flex-col items-center">
-                    <img src="./rgplogo-black.png" alt="RGP company logo featuring stylized letters RGP in blue and green, set against Link white background, conveying Link professional and modern tone" />
+                    <img src="./rgplogo-black.png" alt="RGP company logo featuring stylized letters RGP in blue and green, set against a white background, conveying a professional and modern tone" />
                     <h1 className='info text-5xl font-bold max-md:text-3xl'>RGPGROUP.IN</h1>
                 </div>
                 <h1 className='quote text-xl text-left font-medium '>"Our Work is our Identity." </h1>
@@ -22,13 +22,13 @@ const Footer = () => {
                 <h2 className="font-bold text-3xl pb-8">Get in touch</h2>
                 <ul className="space-y-4">
                     <li className="transition-colors duration-200 hover:text-blue-800 flex ">
-                        <img src='/location-icon.png' alt="Location icon" className='img-loc' /><p className='pl-3'>RGP Group , Behind Surin Auto Company, Village Bhamboli, Chakan Tal - Khed, Pune - 410505,Maharashtra, India</p>
+                        <img src='/location-icon.png' alt="Location pin icon" className='img-loc' /><p className='pl-3'>RGP Group , Behind Surin Auto Company, Village Bhamboli, Chakan Tal - Khed, Pune - 410505,Maharashtra, India</p>
                     </li>
                     <li className="transition-colors duration-200 hover:text-blue-800 flex items-center">
-                        <img src='/mail-icon.png' alt="Location icon " /> <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
+                        <img src='/mail-icon.png' alt="Email icon" /> <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
                     </li>
                     <li className="transition-colors duration-200 hover:text-blue-800 flex items-center">
-                        <img src='/call-icon.png' alt="Location icon " /><Link to="tel:7083477803" className="hover:underline pl-3">9881340251 | 7083477803 </Link>
+                        <img src='/call-icon.png' alt="Phone call icon" /><Link to="tel:7083477803" className="hover:underline pl-3">9881340251 | 7083477803 </Link>
                     </li>
                 </ul>
             </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                 </ul>
                 <div className="wtsp">
                     <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-60 bg-green-500 rounded-[50px] text-white hover:bg-green-700 transition-colors duration-500" >
-                        <img src="/wtsp.svg" alt="whatsapp logo" />
+                        <img src="/wtsp.svg" alt="WhatsApp logo" />
                         <h1>Chat with us on WhatsApp</h1>
                     </Link>
                 </div>
@@ -52,3 +52,4 @@ const Footer = () => {
 }
 
 export default Footer
+

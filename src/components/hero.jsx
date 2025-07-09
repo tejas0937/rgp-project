@@ -28,7 +28,7 @@ const Hero = () => {
           <img
             key={idx}
             src={img}
-            alt={`slide-${idx}`}
+            alt={["RGP Group homepage hero image - Welcome to RGP GROUP", "RGP Group homepage hero image - Innovative Packaging Solutions", "RGP Group homepage hero image - Complete Packaging at One Place"][idx]}
             style={{
               width: '100vw',
               height: '80vh',
@@ -124,3 +124,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

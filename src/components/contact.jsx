@@ -32,7 +32,7 @@ const Contact = () => {
       
       {showSuccess && (
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-green-100 text-green-800 px-10 py-5 rounded-lg flex items-center gap-2 shadow-lg z-50 animate-fade-in-out text-center">
-          <img src="/check.png" alt="Success" className="w-5 h-5" />
+          <img src="/check.png" alt="Success checkmark icon" className="w-5 h-5" />
           Message sent successfully!
         </div>
       )}
@@ -52,7 +52,7 @@ const Contact = () => {
          
           <div className="flex gap-4">
             <div className="bg-[#fffaf0] p-3 rounded h-fit">
-              <img src="/location-icon.png" alt="Location" className="w-6 h-6" />
+              <img src="/location-icon.png" alt="Location pin icon" className="w-6 h-6" />
             </div>
             <div>
               <h3 className="text-lg font-bold uppercase text-gray-800 mb-2">Address</h3>
@@ -68,24 +68,24 @@ const Contact = () => {
          
           <div className="flex gap-4">
             <div className="bg-[#ffffff] p-3 rounded h-fit">
-              <img src="/wtsp.svg" alt="Phone" className="w-6 h-6" />
+              <img src="/wtsp.svg" alt="WhatsApp icon" className="w-6 h-6" />
             </div>
             <div>
               <h3 className="text-lg font-bold uppercase text-gray-800 mb-2">Contact Details</h3>
               <ul>
                 <li className="hover:text-blue-800 flex items-center w-6 h-6 mb-2">
-                  <img src='/mail-icon.png' alt="Email" />
+                  <img src='/mail-icon.png' alt="Email icon" />
                   <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
                 </li>
                 <li className="hover:text-blue-800 flex items-center w-6 h-6  whitespace-nowrap">
-                  <img src='/call-icon.png' alt="Call" />
+                  <img src='/call-icon.png' alt="Phone call icon" />
                   <Link to="tel:9881340251" className="hover:underline pl-3 ">9881340251</Link>
                 </li>
               </ul>
           
               <div className="whtsp">
                 <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center bg-green-500 rounded-[50px] text-white hover:bg-green-800 transition-colors duration-500" >
-                  <img src="/wtsp.svg" alt="whatsapp logo" />
+                  <img src="/wtsp.svg" alt="WhatsApp logo" />
                   <h1>Chat with us on WhatsApp</h1>
                   </Link>
               </div>
@@ -135,3 +135,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
