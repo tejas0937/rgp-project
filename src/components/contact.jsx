@@ -10,10 +10,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_do2b35r',
-      'template_jnl6rgd',
+      'service_yzd803e',
+      'template_71jtals',
       e.target,
-      'UEy6zQagGRH-yU4SD'
+      '2gYroeIOoZxiFadt8'
     ).then((res) => {
       console.log('Email sent successfully!', res.text);
       setShowSuccess(true);     
