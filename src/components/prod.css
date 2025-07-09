@@ -60,6 +60,12 @@
     
     color: rgb(0, 7, 52);
 }
+.prod-ind p{
+    display: none;
+}
+.prod-ind:hover p{
+    display: block;
+}
 .prod-con h1{
     font-size: 28px;
     font-weight: 500;
