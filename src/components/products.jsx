@@ -110,7 +110,7 @@ const Products = () => {
                 ourwork.map((product, id) => (
                   <div
                     key={id}
-                    className='work-ind w-full bg-[#ededed] bg-[linear-gradient(180deg,_rgba(237,237,237,1)_10%,_rgba(138,138,138,1)_100%)] sm:w-1/3 md:w-1/3 lg:w-1/4  p-5 text-center border-blue-300 border-2 justify-center flex flex-col items-center m-2 md:m-5 rounded-bl-3xl rounded-tr-3xl h-90 transition-transform duration-300 hover:scale-105 hover:shadow-2xl'
+                    className='work-ind w-full  bg-[#ededed] bg-[linear-gradient(180deg,_rgba(237,237,237,1)_10%,_rgba(138,138,138,1)_100%)] sm:w-1/3 md:w-1/3 lg:w-1/4  p-5 text-center border-blue-300 border-2 justify-center flex flex-col items-center m-2 md:m-5 rounded-bl-3xl rounded-tr-3xl h-90 transition-transform duration-300 hover:scale-105 hover:shadow-2xl'
                   >
                     <img className='w-7/8 mb-5 rounded-2xl' src={product.imgsrc} alt={product.title ? `Recent work: ${product.title} ${product.desc}` : `Recent work project ${id + 1}`} />
                     <h1> <b>Product :</b> {product.title}</h1>
