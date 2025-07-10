@@ -130,7 +130,7 @@ const About = () => {
           </div></div>
       </div>
       <div className="director flex ">
-        <div className="team-img">
+        <div className="team-img max-md:ml-10">
           <img src="/plant/team-rgp.jpg" alt="RGP Pack Tech Solution team members working together" />
 
         </div>
@@ -162,31 +162,74 @@ const About = () => {
   )
 
   function Carousel() {
-    const images = [
-      '/bg/bg-m6.JPG',
-      '/bg/mach-3.JPG',
-      '/bg/mach-1.JPG',
-      '/bg/bg-m1.JPG',
+  const images = [
+    '/bg/bg-m6.JPG',
+    '/bg/mach-3.JPG',
+    '/bg/mach-1.JPG',
+    '/bg/bg-m1.JPG',
+    '/bg/bg-m7.JPG',
+    '/plant/RGP -HD(7).jpg',
+    '/plant/RGP -HD(9).jpg',
+    '/plant/RGP -HD(11).jpg',
+    '/plant/RGP -HD(12).jpg',
+    
+    '/bg/bg-m8.JPG',
+    '/bg/bg-m5.JPG',
+   
+  ];
 
+  const [current, setCurrent] = React.useState(0);
+  const [loading, setLoading] = React.useState(true);
 
-      '/bg/bg-m7.JPG',
-      '/bg/bg-m2.JPG',
-      '/bg/bg-m3.JPG',
-      '/bg/bg-m8.JPG',
-      '/bg/bg-m5.JPG',
-      '/bg/bg-m9.JPG',
+  const preloadImage = async (src) => {
+    setLoading(true);
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        setLoading(false);
+        resolve();
+      };
+    });
+  };
 
-    ];
-    const [current, setCurrent] = React.useState(0);
+  React.useEffect(() => {
+    preloadImage(images[current]);
+  }, [current]);
 
-    const prevSlide = () => setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-    const nextSlide = () => setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  const prevSlide = async () => {
+    const newIndex = current === 0 ? images.length - 1 : current - 1;
+    await preloadImage(images[newIndex]);
+    setCurrent(newIndex);
+  };
 
-    return (
-      <div style={{ position: 'relative', overflow: 'hidden', borderRadius: 12 }}>
+  const nextSlide = async () => {
+    const newIndex = current === images.length - 1 ? 0 : current + 1;
+    await preloadImage(images[newIndex]);
+    setCurrent(newIndex);
+  };
+
+  return (
+    <div style={{ position: 'relative', overflow: 'hidden', borderRadius: 12 }}>
+      {loading && (
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          background: 'rgba(255,255,255,0.5)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1
+        }}>
+          <div className="spinner"></div>
+        </div>
+      )}
       <img
         src={images[current]}
-        alt={`RGP Pack Tech Solution packaging machine ${current + 1} - Advanced manufacturing equipment`}
+        alt={`RGP Pack Tech Solution packaging machine ${current + 1}`}
         style={{ width: '100%', height: 400, objectFit: 'cover', transition: '0.5s' }}
       />
       <div style={{
@@ -198,25 +241,40 @@ const About = () => {
         justifyContent: 'space-between',
         pointerEvents: 'none'
       }}>
-        <button id="carousel-prev" onClick={prevSlide}> &#8592;</button>
-        <button id="carousel-next"  onClick={nextSlide}> &#8594; </button>
+        <button id="carousel-prev" onClick={prevSlide} style={{ pointerEvents: 'auto' }}> &#8592;</button>
+        <button id="carousel-next" onClick={nextSlide} style={{ pointerEvents: 'auto' }}> &#8594; </button>
       </div>
-      <div style={{ position: 'absolute', bottom: 18, left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: 8 }}>
+      <div style={{
+        position: 'absolute',
+        bottom: 18,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        display: 'flex',
+        gap: 8
+      }}>
         {images.map((_, idx) => (
-        <span
-          key={idx}
-          onClick={() => setCurrent(idx)}
-          style={{
-          width: 8, height: 8, borderRadius: '50%',
-          background: idx === current ? '#fff' : 'rgba(255,255,255,0.5)',
-          display: 'inline-block', cursor: 'pointer', border: '1px solid #ccc'
-          }}
-        />
+          <span
+            key={idx}
+            onClick={async () => {
+              await preloadImage(images[idx]);
+              setCurrent(idx);
+            }}
+            style={{
+              width: 8,
+              height: 8,
+              borderRadius: '50%',
+              background: idx === current ? '#fff' : 'rgba(255,255,255,0.5)',
+              display: 'inline-block',
+              cursor: 'pointer',
+              border: '1px solid #ccc'
+            }}
+          />
         ))}
       </div>
-      </div>
-    );
-  }
+    </div>
+  );
+}
+
 }
 
 export default About
