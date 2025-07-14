@@ -7,6 +7,7 @@ import Contact from "./components/contact";
 import SmoothScroll from "./components/smooth-scroll";
 import Home from "./components/Home";
 import { Scroll } from "@react-three/drei";
+import Error from "./components/error";
 import ScrollToTop from "./components/ScrollToTop";
 
 
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       
         <Footer />
