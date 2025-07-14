@@ -25,7 +25,7 @@ const Home = () => {
         <div className="vd-infra-info text-2xl flex flex-col justify-center items-center">
           <h1 className='font-bold text-white text-3xl bg-[linear-gradient(360deg,_rgba(112,210,255,1)_0%,_rgba(17,81,130,1)_100%)] bg-center w-4xl text-center p-10 rounded-3xl '>We have invested in advanced, high-speed imported machines to offer</h1>
           <div className="mach-cards flex justify-center w-full flex-wrap overflow-hidden py-10">
-            <img src="/bg/bg-m4.JPG" alt="RGP Pack Tech Solution packaging machine 1" /><img src="/bg/bg-m5.JPG" alt="RGP Pack Tech Solution packaging machine 2" /><img src="/bg/bg-m6.JPG" alt="RGP Pack Tech Solution packaging machine 3" /><img src="/bg/bg-m7.JPG" alt="RGP Pack Tech Solution packaging machine 4" /><img src="/bg/bg-m8.JPG" alt="RGP Pack Tech Solution packaging machine 5" /><img src="/bg/bg-m9.JPG" alt="RGP Pack Tech Solution packaging machine 6" /><img src="/bg/bg-m10.JPG" alt="RGP Pack Tech Solution packaging machine 7" />
+            <img src="/bg/bg-m4.webp" alt="RGP Pack Tech Solution packaging machine 1" /><img src="/bg/bg-m5.webp" alt="RGP Pack Tech Solution packaging machine 2" /><img src="/bg/bg-m6.webp" alt="RGP Pack Tech Solution packaging machine 3" /><img src="/bg/bg-m7.webp" alt="RGP Pack Tech Solution packaging machine 4" /><img src="/bg/bg-m8.webp" alt="RGP Pack Tech Solution packaging machine 5" /><img src="/bg/bg-m9.webp" alt="RGP Pack Tech Solution packaging machine 6" /><img src="/bg/bg-m10.webp" alt="RGP Pack Tech Solution packaging machine 7" />
           </div>
         </div>
         <h1 className='w-full bg-black text-5xl/15 text-amber-50  h-80 max-md:h-96 text-center pt-20

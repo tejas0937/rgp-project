@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='footer flex '>
             <div className="box-1 w-1/3 relative ">
                 <div className="logo flex-col items-center">
-                    <img src="./rgplogo-black.png" alt="RGP company logo featuring stylized letters RGP in blue and green, set against a white background, conveying a professional and modern tone" />
+                    <img src="./rgplogo-black.webp" alt="RGP company logo featuring stylized letters RGP in blue and green, set against a white background, conveying a professional and modern tone" />
                     <h1 className='info text-5xl font-bold max-md:text-3xl'>RGPGROUP.IN</h1>
                 </div>
                 <h1 className='quote text-xl text-left font-medium '>"Our Work is our Identity." </h1>

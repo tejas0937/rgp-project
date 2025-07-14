@@ -19,7 +19,7 @@ function Navbar() {
 
     const handleProductChange = (value) => {
         if (value) {
-            setNav(false); // close mobile menu if open
+            setNav(false);
             navigate(value);
         }
     };
@@ -61,14 +61,14 @@ function Navbar() {
         <div className='text-black flex justify-between items-center shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]'>
             <div className='navbarmain flex'>
                 <div className='w-full flex items-center m-1 pl-8'>
-                    <img src="/rgplogo-black.png" alt="RGP Group Logo" className='h-25' />
+                    <img src="/rgplogo-black.webp" alt="RGP Group Logo" className='h-25' />
                     <h1 className='text-2xl font-bold pl-5 hidden sm:block'>
                         RGPGROUP.IN
                         <p className='text-xs'>"Our Work is our Identity"</p>
                     </h1>
                 </div>
 
-                {/* Desktop Menu */}
+                
                 <ul className='justify-start items-center gap-6 text-lg mr-8 hidden lg:flex navg'>
                     <li>
                         <NavLink
@@ -146,7 +146,7 @@ function Navbar() {
 
                 </ul>
 
-                {/* Mobile Menu Icon */}
+                
                 <div onClick={handleNav} className='block lg:hidden'>
                     {!nav ? (
                         <img src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="menu" className='h-10 mr-10 mt-8' />
@@ -156,10 +156,10 @@ function Navbar() {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
+            
             <div className={nav ? 'fixed left-0 top-0 w-[78%] h-full bg-[#cdeeff] ease-in-out duration-500' : 'fixed left-[-100%]'}>
                 <div className='w-full m-0 flex items-center p-4'>
-                    <img src="/rgplogo-black.png" alt="RGP Group Logo" className='h-25' />
+                    <img src="/rgplogo-black.webp" alt="RGP Group Logo" className='h-25' />
                     <h1 className='text-2xl font-semibold ml-2'>
                         RGPGROUP.IN
                         <p className='text-xs'>"Our Work is our Identity"</p>
@@ -168,7 +168,7 @@ function Navbar() {
 
                 <ul className="p-4 flex flex-col font-medium gap-2 text-[16px] navl">
 
-                    {/* Primary links */}
+                    
                     <li className='border-b pb-2'>
                         <NavLink
                             to='/'
@@ -205,12 +205,12 @@ function Navbar() {
                         </NavLink>
                     </li>
 
-                    {/* Section title for products */}
+                    
                     <li className="mt-3 mb-1 px-4 text-sm font-semibold text-gray-500 tracking-wide uppercase">
                         Products
                     </li>
 
-                    {/* Product links */}
+                    
                     {productLinks.map((link, index) => (
                         <li
                             key={index}

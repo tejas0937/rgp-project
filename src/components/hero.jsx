@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   const images = [
-    '/bg/bg1cr.png',
+    '/bg/bg1cr.webp',
     '/bg/bg2cr.png',
     '/bg/bg3cr.png',
     '/bg/bg4cr.png',
