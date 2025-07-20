@@ -26,11 +26,7 @@
 }
 .mach-cards img:hover{
     transform: scale(1.08);}
-.join-info{
-    animation: appear linear; 
-    animation-timeline: view();
-    animation-range: entry 0 cover 25%;
-}
+
 .hp-ind{
     display: flex;
     flex-direction: column;
@@ -76,6 +72,9 @@
         width: 90%;
         height: auto;
         margin: 1px;
+    }
+    .join-info{
+        min-height: min-content;
     }
     .sub-img{
         gap: 12px;

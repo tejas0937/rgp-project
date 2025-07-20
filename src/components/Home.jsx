@@ -17,7 +17,7 @@ const Home = () => {
 
       <div className="video-infra bg-white text-blue-950  w-full h-2/4 mt-0 flex items-center justify-center flex-col">
         <h1 className='text-6xl font-bold m-20text-amber-900 m-16 bg-[linear-gradient(360deg,_rgba(112,210,255,1)_0%,_rgba(17,81,130,1)_100%)] bg-center w-4xl text-center p-10 rounded-3xl text-black'>Company Infrastructure</h1>
-        <video src="/bg/bgvideo-rgp.mp4" controls muted autoPlay loop className='w-6/8 max-md:w-4/4 mb-20 max-md:mb-5 max-md:rounded-xs max-mt-5 rounded-2xl shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.75)]'></video>
+        <video src="/bg/rgpvideo.mp4" controls muted autoPlay loop className='w-6/8 max-md:w-4/4 mb-30 max-md:mb-5 max-md:rounded-xs max-mt-5 rounded-2xl shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.75)]'></video>
         <p className='infraloc-info flex justify-center m-10 gap-8 w-5/6 text-black max-md:m-1'>
         <h2 className='text-black text-3xl font-bold max-md:border-l-2 max-md:pl-4 max-md:h-11 '>Location </h2> Located at the upcoming Industrial Zone Of Chakan Phase II , Near Hyundai and Bridgestone and General Electrical Company
           <h2 className='text-black text-3xl font-bold h-26 border-l-2 pl-4 max-md:h-22'>Factory Constructed area </h2> Buildup 15000+ 25000 sq-ft Total Size of 40000 sq-ft for further Development.
@@ -52,24 +52,19 @@ const Home = () => {
         </div>
 
       </div>
-      <div className="join-info flex w-full h-150 bg-white text-blue-950  my-40 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]">
-        <div className="join-img">
-          <img src="/plant/team-rgp.jpg" alt="RGP Pack Tech Solution team members working together" className='w-9/8 h-full' />
-        </div>
-        <div className="join-info m-15 ">
-          <h1 className='text-4xl font-bold'>Why Choose RGP Pack Tech Solution?</h1>
-          <div className="info-sub pl-15 w-full mt-10">
-            <p className='w-full'><ul className='list-disc text-3xl'><li>8+ Years of Expertise in Industrial Packaging</li>
-              <li>Fully EU-Compliant, Safe Materials</li>
-              <li>Packaging Experts</li>
-              <li>Sales & marketing executives</li>
-              <li>Administrative staff</li>
-              <li>Bulk production capacity with fast turnaround</li>
-              <li>High precision and consistent quality</li>
-              <li>Complete in-house operations</li>
-              <li>Stringent quality checks at every stage</li>
-            </ul></p>
-          </div></div>
+      <div className="join-info flex w-full h-min bg-white text-blue-950  my-40 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]">
+        
+        <div className="join-info m-15 flex flex-col w-full ">
+          <h1 className='text-4xl font-bold w-full text-center mb-20 max-md:mt-10 max-md:mb-10'>Why Choose RGP Pack Tech Solution ?</h1>
+          <div className="join-cont flex flex-wrap w-full gap-10 justify-center  ">
+            <div className="join-card flex justify-center flex-col items-center w-1/4 h-50 max-md:w-4/6 max-md:h-45 max-md:text-xl bg-blue-100 rounded-2xl gap-2 text-2xl text-center"><img src="/join-pngs/experience.png" alt="assurance png" className='w-25' /> 10+ Years of Expertise in Industrial Packaging</div>
+            <div className="join-card flex justify-center flex-col items-center w-1/4 h-50 max-md:w-4/6 max-md:h-45 max-md:text-xl bg-blue-100 rounded-2xl gap-2 text-2xl text-center"><img src="/join-pngs/safety.png" alt="assurance png" className='w-25' />Fully EU-Compliant, Safe Materials</div>
+            <div className="join-card flex justify-center flex-col items-center w-1/4 h-50 max-md:w-4/6 max-md:h-45 max-md:text-xl bg-blue-100 rounded-2xl gap-2 text-2xl text-center"><img src="/join-pngs/procurement.png" alt="assurance png" className='w-25' />Bulk production capacity with fast turn around</div>
+            <div className="join-card flex justify-center flex-col items-center w-1/4 h-50 max-md:w-4/6 max-md:h-45 max-md:text-xl bg-blue-100 rounded-2xl gap-2 text-2xl text-center"><img src="/join-pngs/precision.png" alt="assurance png" className='w-25' />High precision and consistent quality</div>
+            <div className="join-card flex justify-center flex-col items-center w-1/4 h-50 max-md:w-4/6 max-md:h-45 max-md:text-xl bg-blue-100 rounded-2xl gap-2 text-2xl text-center"><img src="/join-pngs/move-in.png" alt="assurance png" className='w-25' />Complete in-house operations</div>
+            <div className="join-card flex justify-center flex-col items-center w-1/4 h-50 max-md:w-4/6 max-md:h-45 max-md:mb-10 max-md:text-xl bg-blue-100 rounded-2xl gap-2 text-2xl text-center"><img src="/join-pngs/assurance.png" alt="assurance png" className='w-25' />Stringent quality checks at every stage</div>
+          </div>
+          </div>
       </div>
       <div className="home-pro flex flex-col w-full  bg-white text-blue-950 items-center py-20 max-md:py-7">
         <h1 id="our-products"className='text-6xl font-bold text-blue-950 text-center '>Our Products</h1>
@@ -97,7 +92,7 @@ const Home = () => {
       </div>
       <div className="vision-board flex ">
 
-        <div className="vision"> <h1 className='text-5xl font-bold pb-4 pt-5 text-blue-950 '>Our Team</h1><p className='team-info text-2xl'>We have always been connected with experienced professionals since our inception, that's why we have a pool of professionals which possess outstanding industry knowledge. The professionals appointed by us are well aware of the latest market trends of packaging industry. The professionals of our firm have complete knowledge of advanced machines and technologies owing to which we are able to develop remarkable products. Also, skills enhancement classes and seminars are organized by us at regular intervals to keep our workforce abreast with latest technologies and market dynamics.
+        <div className="vision"> <h3 className='text-6xl font-bold pb-4 pt-5 text-blue-950 '>Our Team</h3><p className='team-info text-2xl'>We have always been connected with experienced professionals since our inception, that's why we have a pool of professionals which possess outstanding industry knowledge. The professionals appointed by us are well aware of the latest market trends of packaging industry. The professionals of our firm have complete knowledge of advanced machines and technologies owing to which we are able to develop remarkable products. Also, skills enhancement classes and seminars are organized by us at regular intervals to keep our workforce abreast with latest technologies and market dynamics.
         </p>
         </div>
         <img src="/bg/emp-2.JPG" alt="RGP Pack Tech Solution employees at work in the facility" />
@@ -106,7 +101,7 @@ const Home = () => {
       <div className="client-info flex w-full h-150 bg-gradient-to-r  text-blue-950  to-white my-40 items-center flex-col shadow-[0_4px_12px_-4px_rgba(0,0,0,0.55)]">
         <h1 className='text-6xl font-bold  text-blue-950  text-center w-7/8 my-20  white  0 border-b-2 pb-10'>Our Clients</h1>
         <div className="marquee w-7/8">
-        <Marquee autoFill pauseOnClick speed={30} className='bg-[#00000009] p-3'> 
+        <Marquee autoFill pauseOnClick speed={30} className=' p-3'> 
               <img src="/clients/client1.png" width="65px" alt="Client company logo 1" className='bg-amber-white ml-5' />
               <img src="/clients/client2.png" width="65px" alt="Client company logo 2" className='bg-amber-white ml-5' />
               <img src="/clients/client3.png" width="65px" alt="Client company logo 3" className='bg-amber-white ml-5' />
@@ -126,13 +121,13 @@ const Home = () => {
               <img src="/clients/client17.jpg" width="65px" alt="Client company logo 17" className='bg-amber-white ml-5' />
               <img src="/clients/client18.png" width="65px" alt="Client company logo 18" className='bg-amber-white ml-5' />
               <img src="/clients/client19.png" width="65px" alt="Client company logo 19" className='bg-amber-white ml-5' />
-              <img src="/clients/client20.png" width="65px" alt="Client company logo 20" className='bg-amber-white ml-5' />
+              <img src="/clients/client20.png" width="65px" alt="Client company logo-50" className='bg-amber-white ml-5' />
               <img src="/clients/client21.jpg" width="65px" alt="Client company logo 21" className='bg-amber-white ml-5' />
               <img src="/clients/client22.png" width="65px" alt="Client company logo 22" className='bg-amber-white ml-5' />
               <img src="/clients/client23.svg" width="65px" alt="Client company logo 23" className='bg-amber-white ml-5' />
               <img src="/clients/client24.png" width="65px" alt="Client company logo 24" className='bg-amber-white ml-5' />
         </Marquee><br></br>
-        <Marquee autoFill pauseOnClick direction='right' speed={40} className='bg-[#00000008] p-3'>
+        <Marquee autoFill pauseOnClick direction='right' speed={40} className=' p-3'>
               <img src="/clients/client1.png" width="65px" alt="Client company logo 1" className='bg-amber-white ml-5' />
               <img src="/clients/client2.png" width="65px" alt="Client company logo 2" className='bg-amber-white ml-5' />
               <img src="/clients/client3.png" width="65px" alt="Client company logo 3" className='bg-amber-white ml-5' />
@@ -152,7 +147,7 @@ const Home = () => {
               <img src="/clients/client17.jpg" width="65px" alt="Client company logo 17" className='bg-amber-white ml-5' />
               <img src="/clients/client18.png" width="65px" alt="Client company logo 18" className='bg-amber-white ml-5' />
               <img src="/clients/client19.png" width="65px" alt="Client company logo 19" className='bg-amber-white ml-5' />
-              <img src="/clients/client20.png" width="65px" alt="Client company logo 20" className='bg-amber-white ml-5' />
+              <img src="/clients/client20.png" width="65px" alt="Client company logo-50" className='bg-amber-white ml-5' />
               <img src="/clients/client21.jpg" width="65px" alt="Client company logo 21" className='bg-amber-white ml-5' />
               <img src="/clients/client22.png" width="65px" alt="Client company logo 22" className='bg-amber-white ml-5' />
               <img src="/clients/client23.svg" width="65px" alt="Client company logo 23" className='bg-amber-white ml-5' />

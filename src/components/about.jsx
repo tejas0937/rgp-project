@@ -40,7 +40,7 @@ const About = () => {
         <div style={{ position: 'relative' }}>
           <video
             ref={videoRef}
-            src="/bg/bgvideo-rgp.mp4"
+            src="/bg/rgpvideo.mp4"
             autoPlay
             muted={isMuted}
             
@@ -83,7 +83,7 @@ const About = () => {
     <button
       onClick={() => document.getElementById('carousel-prev')?.click()}
       style={{
-        background: 'rgba(0,0,0,0.8)',
+        background: 'rgba(0,0,0,0.5)',
         color: '#fff',
         border: 'none',
         width: "120px",
@@ -97,7 +97,7 @@ const About = () => {
     <button
       onClick={() => document.getElementById('carousel-next')?.click()}
       style={{
-        background: 'rgba(0,0,0,0.8)',
+        background: 'rgba(0,0,0,0.5)',
         color: '#fff',
         border: 'none',
         width: "120px",
@@ -163,18 +163,17 @@ const About = () => {
 
   function Carousel() {
   const images = [
-    '/bg/bg-m6.JPG',
-    '/bg/mach-3.JPG',
-    '/bg/mach-1.JPG',
-    '/bg/bg-m1.JPG',
-    '/bg/bg-m7.JPG',
-    '/plant/RGP -HD(7).jpg',
-    '/plant/RGP -HD(9).jpg',
-    '/plant/RGP -HD(11).jpg',
-    '/plant/RGP -HD(12).jpg',
-    
-    '/bg/bg-m8.JPG',
-    '/bg/bg-m5.JPG',
+    '/bg/bg-m6.webp',
+    '/plant/RGP -HD(7).webp',
+    '/plant/RGP -HD(9).webp',
+    '/bg/mach-1.webp',
+    '/bg/bg-m1.webp',
+    '/plant/RGP -HD(11).webp',
+    '/bg/mach-3.webp',
+    '/bg/bg-m7.webp',
+    '/plant/RGP -HD(12).webp',
+    '/bg/bg-m8.webp',
+    '/bg/bg-m5.webp',
    
   ];
 
@@ -218,7 +217,7 @@ const About = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          background: 'rgba(255,255,255,0.5)',
+          background: 'rgba(250,250,250,0.2)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
