@@ -6,7 +6,6 @@ import Products from "./components/products";
 import Contact from "./components/contact";
 import SmoothScroll from "./components/smooth-scroll";
 import Home from "./components/Home";
-import { Scroll } from "@react-three/drei";
 import Error from "./components/error";
 import ScrollToTop from "./components/ScrollToTop";
 
