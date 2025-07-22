@@ -115,7 +115,7 @@ const About = () => {
 
       <div className="director flex ">
         <div className="dir-img">
-          <img src="/bg/director..webp" alt="Director of RGP Pack Tech Solution, Mr. Ajay Ramdas Jaid" />
+          <img src="/bg/director.webp" alt="Director of RGP Pack Tech Solution, Mr. Ajay Ramdas Jaid" />
           <div className="dir-logo"><img src="/LogoRGP1.webp" alt="RGP Group company logo" /></div>
         </div>
         <div className="dir-info">
@@ -131,7 +131,7 @@ const About = () => {
       </div>
       <div className="director flex ">
         <div className="team-img max-md:ml-10">
-          <img src="/plant/team-rgp..webp" alt="RGP Pack Tech Solution team members working together" />
+          <img src="/plant/team-rgp.webp" alt="RGP Pack Tech Solution team members working together" />
 
         </div>
         <div className="dir-info">
@@ -150,7 +150,7 @@ const About = () => {
         <div className="vision"> <p className='team-info text-2xl'>We have always been connected with experienced professionals since our inception,  that's why we have a pool of professionals which possess outstanding industry knowledge. The professionals appointed by us are well aware of the latest market trends of packaging industry. Moreover, to work efficiently, they work in closesynchronization among themselves as well as with the customers know their exact needs to provide them products accordingly. Further, the professionals of our firm havecomplete knowledge of advanced machines and technologies owing to which we are able to develop remarkable products. Also, skills enhancement classes and seminars are organized by us at regular intervals to keep our workforce abreast with latest technologies and market dynamics.
         </p>
         </div>
-        <img src="/bg/emp-2..webp" alt="RGP Pack Tech Solution employees at work in the facility" />
+        <img src="/bg/emp-2.webp" alt="RGP Pack Tech Solution employees at work in the facility" />
 
       </div>
       <div className="loc flex flex-col items-center">
