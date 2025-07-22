@@ -22,13 +22,13 @@ const Footer = () => {
                 <h2 className="font-bold text-3xl pb-8">Get in touch</h2>
                 <ul className="space-y-4">
                     <li className="transition-colors duration-200 hover:text-blue-800 flex ">
-                        <img src='/location-icon.png' alt="Location pin icon" className='img-loc' /><p className='pl-3'>RGP Group , Behind Surin Auto Company, Village Bhamboli, Chakan Tal - Khed, Pune - 410505,Maharashtra, India</p>
+                        <img src='/location-icon.webp' alt="Location pin icon" className='img-loc' /><p className='pl-3'>RGP Group , Behind Surin Auto Company, Village Bhamboli, Chakan Tal - Khed, Pune - 410505,Maharashtra, India</p>
                     </li>
                     <li className="transition-colors duration-200 hover:text-blue-800 flex items-center">
-                        <img src='/mail-icon.png' alt="Email icon" /> <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
+                        <img src='/mail-icon.webp' alt="Email icon" /> <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
                     </li>
                     <li className="transition-colors duration-200 hover:text-blue-800 flex items-center">
-                        <img src='/call-icon.png' alt="Phone call icon" /><Link to="tel:7083477803" className="hover:underline pl-3">9881340251 | 7083477803 </Link>
+                        <img src='/call-icon.webp' alt="Phone call icon" /><Link to="tel:7083477803" className="hover:underline pl-3">9881340251 | 7083477803 </Link>
                     </li>
                 </ul>
             </div>

@@ -3,10 +3,10 @@ import React from 'react';
 const Hero = () => {
   const images = [
     '/bg/bg1cr.webp',
-    '/bg/bg2cr.png',
-    '/bg/bg3cr.png',
-    '/bg/bg4cr.png',
-    '/bg/bg5cr.png'
+    '/bg/bg2cr.webp',
+    '/bg/bg3cr.webp',
+    '/bg/bg4cr.webp',
+    '/bg/bg5cr.webp'
     
   ];
 

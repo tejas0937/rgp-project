@@ -32,7 +32,7 @@ const Contact = () => {
       
       {showSuccess && (
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-green-100 text-green-800 px-10 py-5 rounded-lg flex items-center gap-2 shadow-lg z-50 animate-fade-in-out text-center">
-          <img src="/check.png" alt="Success checkmark icon" className="w-5 h-5" />
+          <img src="/check.webp" alt="Success checkmark icon" className="w-5 h-5" />
           Message sent successfully!
         </div>
       )}
@@ -52,7 +52,7 @@ const Contact = () => {
          
           <div className="flex gap-4">
             <div className="bg-[#fffaf0] p-3 rounded h-fit">
-              <img src="/location-icon.png" alt="Location pin icon" className="w-6 h-6" />
+              <img src="/location-icon.webp" alt="Location pin icon" className="w-6 h-6" />
             </div>
             <div>
               <h3 className="text-lg font-bold uppercase text-gray-800 mb-2">Address</h3>
@@ -74,11 +74,11 @@ const Contact = () => {
               <h3 className="text-lg font-bold uppercase text-gray-800 mb-2">Contact Details</h3>
               <ul>
                 <li className="hover:text-blue-800 flex items-center w-6 h-6 mb-2">
-                  <img src='/mail-icon.png' alt="Email icon" />
+                  <img src='/mail-icon.webp' alt="Email icon" />
                   <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
                 </li>
                 <li className="hover:text-blue-800 flex items-center w-6 h-6  whitespace-nowrap">
-                  <img src='/call-icon.png' alt="Phone call icon" />
+                  <img src='/call-icon.webp' alt="Phone call icon" />
                   <Link to="tel:9881340251" className="hover:underline pl-3 ">9881340251</Link>
                 </li>
               </ul>
