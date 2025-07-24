@@ -37,42 +37,8 @@ const About = () => {
             <h2>Factory Constructed area </h2> Buildup 4000+4000 sq-ft ( Total Size of 16000 sq-ft ) for further Development.
             <h2>Power </h2> Well connected Capacity for Electrical Power at plant and Genset as a back up .</p>
         </div>
-        <div style={{ position: 'relative' }}>
-          <video
-            ref={videoRef}
-            src="/bg/rgpvideo.mp4"
-            autoPlay
-            muted={isMuted}
-            
-            loop
-            style={{ display: 'block' }}
-          ></video>
-          <button className='mutebtn'
-            onClick={toggleMute}
-            style={{
-              position: 'absolute',
-              bottom: 120,
-              right: 40,
-              background: 'rgba(0,0,0,0.7)',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '50%',
-              width: 40,
-              height: 40,
-              cursor: 'pointer',
-              fontSize: 18,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}
-            aria-label={isMuted ? "Unmute video" : "Mute video"}
-          >
-            {isMuted ? (
-              <span role="img" aria-label="Muted">&#128263;</span>
-            ) : (
-              <span role="img" aria-label="Unmuted">&#128266;</span>
-            )}
-          </button>
+        <div className='relative mt-10 '>
+          <iframe width="690" height="415" src="https://www.youtube.com/embed/DuR1SviAjzA?si=DDaye2UoLZYFvYiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" className='max-md:w-full justify-center max-md:h-90 rounded-2xl' allowfullscreen></iframe>
         </div>
       </div>
       <div className="machines-img flex flex-col w-full">
