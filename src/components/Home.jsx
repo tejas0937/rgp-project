@@ -17,7 +17,7 @@ const Home = () => {
 
       <div className="video-infra bg-white text-blue-950  w-full h-2/4 mt-0 flex items-center justify-center flex-col">
         <h1 className='text-4xl font-bold m-20text-amber-900 m-16 bg-[linear-gradient(360deg,_rgba(112,210,255,1)_0%,_rgba(17,81,130,1)_100%)] bg-center w-xl text-center p-10 rounded-3xl text-black'>Company Infrastructure</h1>
-        <iframe width="690" height="415" src="https://www.youtube.com/embed/DuR1SviAjzA?si=DDaye2UoLZYFvYiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" className='rounded-2xl max-md:w-96 max-md:h-64 max-md:mb-10 ' allowfullscreen></iframe>
+        <iframe width="690" height="415" src="https://www.youtube.com/embed/DuR1SviAjzA?si=DDaye2UoLZYFvYiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" className='rounded-2xl max-md:w-90 max-md:h-64 max-md:mb-10 ' allowfullscreen></iframe>
         {/* <video src="/bg/rgpvideo.mp4" controls muted autoPlay loop className='w-6/8 max-md:w-4/4 mb-30 max-md:mb-5 max-md:rounded-xs max-mt-5 rounded-2xl shadow-navbar shadow-[0_4px_12px_-4px_rgba(0,0,0,0.75)]'></video> */}
         <p className='infraloc-info flex justify-center m-10 gap-8 w-5/6 text-black max-md:m-1'>
           <h2 className='text-black text-3xl font-bold max-md:border-l-2 max-md:pl-4 max-md:h-11 '>Location </h2> Located at the upcoming Industrial Zone Of Chakan Phase II , Near Hyundai and Bridgestone and General Electrical Company
