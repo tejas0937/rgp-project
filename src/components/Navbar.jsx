@@ -151,7 +151,7 @@ function Navbar() {
                     {!nav ? (
                         <img src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="menu" className='h-10 mr-10 mt-8' />
                     ) : (
-                        <img src='https://cdn-icons-png.freepik.com/512/566/566013.png' alt='close' className='h-6 mr-10 mt-8' />
+                        <img src='https://cdn-icons-png.freepik.com/512/566/566013.png' alt='close' className='h-7 mr-11 mt-9' />
                     )}
                 </div>
             </div>
