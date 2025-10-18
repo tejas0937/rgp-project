@@ -305,7 +305,7 @@ const Home = () => {
       >
         <h2 className='text-4xl md:text-5xl font-bold mb-12 text-white'>Our Happy Clients</h2>
         <div className="marquee w-full px-6">
-          <Marquee autoFill pauseOnHover speed={30}>
+          <Marquee autoFill pauseOnHover speed={40}>
             {Array.from({length: 24}, (_, i) => (
               <img key={i} src={`/clients/client${i+1}.webp`} alt={`Client ${i+1}`} className='mx-4 w-26 bg-cyan-50 rounded h-16 object-contain'/>
             ))}

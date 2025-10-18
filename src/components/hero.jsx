@@ -27,7 +27,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full min-h-[90vh] max-md:min-h-[100vh] flex flex-col md:flex-row items-center justify-between overflow-hidden bg-gradient-to-r from-blue-900 via-indigo-800 to-purple-900 text-white">
+    <section className="relative w-full min-h-[90vh] max-md:min-h-[90vh] flex flex-col md:flex-row items-center justify-between overflow-hidden bg-gradient-to-r from-blue-900 via-indigo-800 to-purple-900 text-white">
       {/* Background Glow & Gradient Overlay */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-transparent to-black/60"></div>
