@@ -47,12 +47,12 @@ const Products = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-900 via-purple-800 to-black text-gray-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-blue-900 via-purple-800 to-black text-gray-900 relative overflow-hidden" id='products'>
       <div className="absolute inset-0 bg-black/60 z-0"></div>
       <div className="relative z-10 px-4 sm:px-8 lg:px-16">
 
         {/* Header */}
-        <section className="text-center py-20" id='products'>
+        <section className="text-center py-20" >
           <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
             Our Product Portfolio
           </h1>

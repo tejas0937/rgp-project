@@ -37,12 +37,12 @@ function Navbar() {
   const isActiveHash = (hash) => currentHash === hash;
 
   const productLinks = [
-    { name: "All Products", hash: "#allproduct" },
-    { name: "Corrugated Packaging", hash: "#corrugated" },
-    { name: "Wooden Packaging", hash: "#wooden" },
-    { name: "Protective Accessories", hash: "#protective" },
-    { name: "Custom Solutions", hash: "#custom" },
-    { name: "Our Recent Work", hash: "#our-work" },
+    { name: "All Products", hash: "#products" },
+    { name: "Corrugated Packaging", hash: "#products" },
+    { name: "Wooden Packaging", hash: "#products" },
+    { name: "Protective Accessories", hash: "#products" },
+    { name: "Custom Solutions", hash: "#products" },
+    { name: "Our Recent Work", hash: "#recent-work" },
   ];
 
   return (

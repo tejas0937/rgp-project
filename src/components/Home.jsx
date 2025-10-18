@@ -137,13 +137,14 @@ const Home = () => {
 
       {/* Products Section */}
 <section className="products bg-white py-24 text-center">
-  <h2 id="our-products" className='text-5xl md:text-6xl font-bold mb-12 text-blue-950'>Our Products</h2>
-  <div className="hp-info flex flex-wrap justify-center gap-10 px-6">
-
-    {/* Product Card Template */}
-    {[
+  <h2 id="our-products" className='text-5xl md:text-6xl font-bold mb-12 text-blue-950'>
+    Our Products
+  </h2>
+  
+  <div className="flex flex-wrap justify-center gap-10 px-6 md:px-20">
+    {[ 
       { img: "/Products/Corrugated1.jpg", title: "Corrugated Packaging", link: "/products#products" },
-      { img: "/Products/Wooden1.webp", title: "Wooden Packaging", link: "/products#products" },
+      { img: "/Products/wooden-plywood boxes.jpg", title: "Wooden Packaging", link: "/products#products", },
       { img: "/Products/Protected1.jpg", title: "Protective Accessories", link: "/products#products" },
       { img: "/Products/Custom1.webp", title: "Custom Packaging Solutions", link: "/products#products" },
       { img: "/Products/recentwork.webp", title: "View Our Recent Work", link: "/products#recent-work" }
@@ -151,18 +152,30 @@ const Home = () => {
       <Link 
         to={product.link} 
         key={idx} 
-        className="flex flex-col items-center bg-white rounded-2xl shadow-2xl border border-gray-300 hover:shadow-xl transition transform hover:-translate-y-2 p-4 w-60 h-[26rem]"
+        className="group flex flex-col bg-white rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border border-gray-200 overflow-hidden w-64"
       >
-        <img src={product.img} alt={product.title} className='rounded-xl w-full h-46 object-cover mb-4 border' />
-        <h3 className='font-bold text-xl mb-4 flex-1'>{product.title}</h3>
-        <button className="bg-blue-950 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition mt-auto">
-          View Products
-        </button>
+        {/* Product Image */}
+        <div className="relative w-full h-64 overflow-hidden">
+          <img 
+            src={product.img} 
+            alt={product.title} 
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+
+        {/* Product Info */}
+        <div className="p-6 flex flex-col justify-between flex-1">
+          <h3 className="text-xl font-semibold mb-4 text-gray-900">{product.title}</h3>
+          <button className="mt-auto bg-blue-950 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
+            View Products
+          </button>
+        </div>
       </Link>
     ))}
-
   </div>
 </section>
+
+
 
 
       {/* Advanced Machines 3D Carousel */}
