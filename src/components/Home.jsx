@@ -56,7 +56,7 @@ const Home = () => {
 
       {/* Company Infrastructure Section */}
       <motion.section
-        className="video-infra bg-white text-blue-950 py-10 flex flex-col items-center"
+        className="video-infra bg-white text-blue-950 mx-4 py-10 flex flex-col items-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -74,7 +74,7 @@ const Home = () => {
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerPolicy="strict-origin-when-cross-origin" 
-            className='rounded-2xl shadow-lg w-full md:w-[690px] h-[415px]'
+            className='rounded-2xl shadow-lg w-full md:w-[690px] h-[415px] max-md:w-[340px] max-md:h-[200px]'
             allowFullScreen
           />
           <motion.div 
@@ -83,11 +83,11 @@ const Home = () => {
             whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
             viewport={{ once: true }}
           >
-            <h2 className='text-2xl font-bold text-blue-950'>Location</h2>
+            <h2 className='text-2xl font-bold text-blue-950 mx-4'>Location</h2>
             <p>Located at the upcoming Industrial Zone Of Chakan Phase II, near Hyundai, Bridgestone and General Electrical Company.</p>
-            <h2 className='text-2xl font-bold text-blue-950'>Factory Area</h2>
+            <h2 className='text-2xl font-bold text-blue-950 mx-4'>Factory Area</h2>
             <p>Buildup 15,000+ sq-ft, Total Size: 40,000 sq-ft for further development.</p>
-            <h2 className='text-2xl font-bold text-blue-950'>Power</h2>
+            <h2 className='text-2xl font-bold text-blue-950 mx-4'>Power</h2>
             <p>Well-connected electrical power capacity with backup gensets.</p>
           </motion.div>
         </div>
@@ -101,7 +101,7 @@ const Home = () => {
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeUp}
       >
-        <h2 className='text-4xl md:text-5xl font-bold mb-16 text-blue-950'>Why Choose RGP Pack Tech Solution?</h2>
+        <h2 className='text-4xl md:text-5xl font-bold mb-16 text-blue-950 mx-4'>Why Choose RGP Pack Tech Solution?</h2>
         <div className="join-cont flex flex-wrap justify-center gap-10 px-6 md:px-20">
           {whyChoose.map((card, idx) => (
             <motion.div
@@ -137,7 +137,7 @@ const Home = () => {
 
       {/* Products Section */}
 <section className="products bg-white py-24 text-center">
-  <h2 id="our-products" className='text-5xl md:text-6xl font-bold mb-12 text-blue-950'>
+  <h2 id="our-products" className='text-5xl md:text-6xl font-bold mb-12 text-blue-950 mx-4'>
     Our Products
   </h2>
   
@@ -166,7 +166,7 @@ const Home = () => {
         {/* Product Info */}
         <div className="p-6 flex flex-col justify-between flex-1">
           <h3 className="text-xl font-semibold mb-4 text-gray-900">{product.title}</h3>
-          <button className="mt-auto bg-blue-950 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
+          <button className="mt-auto bg-blue-950 mx-4 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">
             View Products
           </button>
         </div>
@@ -281,7 +281,7 @@ const Home = () => {
           whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
           viewport={{ once: true }}
         >
-          <h2 className='text-4xl md:text-5xl font-bold mb-6 text-blue-950'>Our Team</h2>
+          <h2 className='text-4xl md:text-5xl font-bold mb-6 text-blue-950 mx-4'>Our Team</h2>
           <p className='text-lg text-gray-700'>
             We have always been connected with experienced professionals since our inception, possessing outstanding industry knowledge and awareness of the latest market trends in the packaging industry. Skills enhancement classes and seminars are organized at regular intervals to keep our workforce up-to-date.
           </p>

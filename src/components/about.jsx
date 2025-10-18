@@ -133,13 +133,13 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
           viewport={{ once: true }}
         >
-          <h1 className="text-5xl font-semibold text-white mb-2 text-left">
+          <h1 className="text-5xl font-semibold text-white mb-2 text-left max-md:-ml-10 max-md:text-2xl max-md:mt-2 ">
             About Director
           </h1>
-          <h2 className="text-2xl text-purple-200 mb-3 text-left">
+          <h2 className="text-2xl text-purple-200 mb-3 text-left max-md:-ml-10">
             Mr. Ajay Ramdas Jaid
           </h2>
-          <p className="text-lg text-white/90 max-w-lg mx-auto text-left">
+          <p className="text-lg text-white/90 max-w-lg mx-auto text-left max-md:-ml-10">
             is a tech expert with skills in strategic planning, packaging innovation, supply chain management, team leadership, client relations, export compliance, financial oversight, sustainable packaging, quality assurance, and market analysis. He has worked for Bajaj Electricals Ltd (Chakan & Ranjangaon), Posco India, Raychem RPG Pvt Ltd, Hyt India Pvt Ltd, and many more companies in the area of Wooden Box, Pallet, and Packing materials.
           </p>
         </motion.div>
