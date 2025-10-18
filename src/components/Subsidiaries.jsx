@@ -5,7 +5,7 @@ import './util.css';
 
 const Subsidiaries = () => {
   return (
-    <div className="relative w-full bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 py-20 flex flex-col items-center overflow-hidden">
+    <div className="relative w-full bg-gradient-to-r from-black via-blue-900 to-black py-20 flex flex-col items-center overflow-hidden">
       
       {/* Background Glow Circles */}
       <div className="absolute top-0 left-10 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
