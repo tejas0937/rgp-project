@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import productscor from '../data/productscor.json';
 import productswood from '../data/productswood.json';
 import productsprot from '../data/productsprot.json';
 import productscust from '../data/productscust.json';
 import ourwork from '../data/ourwork.json';
 import { motion } from 'framer-motion';
+import { ArrowUp } from 'lucide-react';
 
 const Products = () => {
   const categories = {
@@ -16,7 +17,9 @@ const Products = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('Corrugated');
   const [showAllWork, setShowAllWork] = useState(false);
-  const [activeCard, setActiveCard] = useState(null); // Works for both desktop & mobile
+  const [activeCard, setActiveCard] = useState(null);
+  const [showScroll, setShowScroll] = useState(false);
+
   const filteredWork = ourwork;
 
   const processData = {
@@ -47,6 +50,19 @@ const Products = () => {
     ],
   };
 
+  // Scroll-to-top visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScroll(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-900 via-purple-800 to-black text-gray-900 relative overflow-hidden" id="products">
       <div className="absolute inset-0 bg-black/60 z-0"></div>
@@ -67,7 +83,10 @@ const Products = () => {
           {Object.keys(categories).map((cat) => (
             <button
               key={cat}
-              onClick={() => setSelectedCategory(cat)}
+              onClick={() => {
+                setSelectedCategory(cat);
+                setActiveCard(null);
+              }}
               className={`px-6 py-2 rounded-lg font-semibold transition transform hover:scale-105
                 ${selectedCategory === cat
                   ? 'bg-yellow-500 text-black'
@@ -78,7 +97,42 @@ const Products = () => {
           ))}
         </div>
 
-        {/* Animated Flowchart */}
+        {/* Product Grid */}
+        <div className="flex justify-center mb-16">
+          <div className="flex flex-wrap justify-center gap-8">
+            {categories[selectedCategory].map((product, id) => (
+              <div
+                key={id}
+                className="relative bg-white/90 rounded-2xl shadow-lg overflow-hidden flex flex-col justify-between group transition-transform duration-300 hover:scale-105 w-64"
+              >
+                <img
+                  src={product.imgsrc}
+                  alt={product.title || `Product ${id + 1}`}
+                  className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+
+                <div className="p-4 flex flex-col justify-between flex-grow relative">
+                  <h2 className="font-semibold text-lg mb-2 text-center">{product.title}</h2>
+
+                  {activeCard === id && (
+                    <p className="text-gray-800 mt-2">{product.desc}</p>
+                  )}
+
+                  {activeCard !== id && (
+                    <button
+                      onClick={() => setActiveCard(id)}
+                      className="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-lg font-semibold transition"
+                    >
+                      View Details
+                    </button>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Process Flow AFTER Product Cards */}
         <section className="mb-20 text-center relative">
           <h2 className="text-3xl font-bold text-yellow-400 mb-12">
             {selectedCategory} Box Manufacturing Process
@@ -115,43 +169,6 @@ const Products = () => {
             ))}
           </div>
         </section>
-
-        {/* Product Grid */}
-        <div className="flex justify-center mb-16">
-          <div className="flex flex-wrap justify-center gap-8">
-            {categories[selectedCategory].map((product, id) => (
-              <div
-                key={id}
-                className="relative bg-white/90 rounded-2xl shadow-lg overflow-hidden flex flex-col justify-between group transition-transform duration-300 hover:scale-105 w-64"
-              >
-                <img
-                  src={product.imgsrc}
-                  alt={product.title || `Product ${id + 1}`}
-                  className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-
-                <div className="p-4 flex flex-col justify-between flex-grow relative">
-                  <h2 className="font-semibold text-lg mb-2 text-center">{product.title}</h2>
-
-                  {/* Description below product if clicked (desktop & mobile) */}
-                  {activeCard === id && (
-                    <p className="text-gray-800 mt-2">{product.desc}</p>
-                  )}
-
-                  {/* View Details button */}
-                  {activeCard !== id && (
-                    <button
-                      onClick={() => setActiveCard(id)}
-                      className="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-lg font-semibold transition"
-                    >
-                      View Details
-                    </button>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Recent Work */}
         <section className="flex flex-col items-center py-10" id="recent-work">
@@ -193,6 +210,15 @@ const Products = () => {
           )}
         </section>
 
+        {/* Scroll To Top (Mobile only) */}
+        {showScroll && (
+          <button
+            onClick={scrollToTop}
+            className="fixed bottom-24 right-5 sm:hidden bg-yellow-400 text-black p-3 rounded-full shadow-lg hover:scale-110 transition z-50"
+          >
+            <ArrowUp size={24} />
+          </button>
+        )}
       </div>
     </div>
   );
