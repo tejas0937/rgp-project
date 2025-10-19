@@ -18,9 +18,6 @@ form{
     background-color: #ffffff;
     box-shadow: 0 4px 12px 1px rgba(0,0,0,0.55);
     border-radius: 20px;
-    animation: appear linear; 
-    animation-timeline: view();
-    animation-range: entry 0 cover 25%;
 }
 
 form .txt_field{
