@@ -105,7 +105,7 @@ const Home = () => {
             { img: "/Products/wooden-plywood boxes.jpg", title: "Wooden Packaging", link: "/products#products" },
             { img: "/Products/Protected1.jpg", title: "Protective Accessories", link: "/products#products" },
             { img: "/Products/Custom1.webp", title: "Custom Packaging Solutions", link: "/products#products" },
-            { img: "/Products/recentwork.webp", title: "View Our Recent Work", link: "/products#recent-work" }
+            { img: "/our-work/HeavyWoodenbox.webp", title: "View Our Recent Work", link: "/products#recent-work" }
           ].map((product, idx) => (
             <Link to={product.link} key={idx} className="group flex flex-col bg-white rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border border-gray-200 overflow-hidden w-64">
               <div className="relative w-full h-64 overflow-hidden">
