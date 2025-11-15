@@ -123,7 +123,7 @@ const Home = () => {
       {/* Advanced Machines Section */}
       <section className="machinery mt-16 w-full flex flex-col items-center py-24 bg-blue-50 overflow-hidden">
         <motion.h2 className='text-3xl md:text-4xl pb-10 font-bold mb-8 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }} viewport={{ once: true }}>
-          We Use Advanced Imported Machinery 
+          We Use Global-Standard Machinery for Unmatched Quality
         </motion.h2>
         <div className="w-full overflow-hidden relative px-4">
           <motion.div className="flex gap-6" animate={scrollX}>
