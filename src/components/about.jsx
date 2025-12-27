@@ -161,7 +161,8 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.1 } }}
           viewport={{ once: true }}
         >
-          Behind Surin Auto Company, Village Bhamboli, Chakan, Pune – 410501
+          Plot no - A-44/1/a-58 , Rajmata jijau mahila industrial premises CHSL ,<br/>
+          chakan industrial area phase 2  wasuli chakan , Pune - 410501
         </motion.h2>
         <motion.iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.253777910555!2d73.7773357093428!3d18.786840382285522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b444de5039ab%3A0xee3d9503fb63bc7d!2sRGP%20Group!5e0!3m2!1sen!2sin!4v1751800429185!5m2!1sen!2sin"

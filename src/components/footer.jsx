@@ -22,7 +22,7 @@ const Footer = () => {
                 <h2 className="font-bold text-3xl pb-8">Get in touch</h2>
                 <ul className="space-y-4">
                     <li className="transition-colors duration-200 hover:text-blue-800 flex ">
-                        <img src='/location-icon.webp' alt="Location pin icon" className='img-loc' /><p className='pl-3'>RGP Group , Behind Surin Auto Company, Village Bhamboli, Chakan Tal - Khed, Pune - 410505,Maharashtra, India</p>
+                        <img src='/location-icon.webp' alt="Location pin icon" className='img-loc' /><p className='pl-3'>RGP Group , Plot no - A-44/1/a-58 , Rajmata jijau mahila industrial premises CHSL , chakan industrial area phase 2  wasuli chakan , Pune - 410501</p>
                     </li>
                     <li className="transition-colors duration-200 hover:text-blue-800 flex items-center">
                         <img src='/mail-icon.webp' alt="Email icon" /> <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>

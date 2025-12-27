@@ -57,10 +57,9 @@ const Contact = () => {
             <div>
               <h3 className="text-lg font-bold uppercase text-gray-800 mb-2">Address</h3>
               <p>
-                Gat No : , Behind Surin Auto Company <br />
-                Village : Bhamboli, Chakan <br />
-                Tal : Khed, Dist : Pune <br />
-                Maharashtra, 410501, INDIA
+                Rgp pack tech solutions, <br/>
+                Plot no - A-44/1/a-58 , Rajmata jijau mahila industrial premises CHSL , <br/>
+                chakan industrial area phase 2  wasuli chakan , Pune - 410501
               </p>
             </div>
           </div>
