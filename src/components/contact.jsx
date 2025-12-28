@@ -16,10 +16,10 @@ const Contact = () => {
       '2gYroeIOoZxiFadt8'
     ).then((res) => {
       console.log('Email sent successfully!', res.text);
-      setShowSuccess(true);     
-      e.target.reset();        
+      setShowSuccess(true);
+      e.target.reset();
 
-     
+
       setTimeout(() => setShowSuccess(false), 5000);
     }).catch((error) => {
       console.error('Email sending failed:', error.text);
@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <div className="w-full bg-[#d4f6ff] py-20 px-6 md:px-24 relative">
-      
+
       {showSuccess && (
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-green-100 text-green-800 px-10 py-5 rounded-lg flex items-center gap-2 shadow-lg z-50 animate-fade-in-out text-center">
           <img src="/check.webp" alt="Success checkmark icon" className="w-5 h-5" />
@@ -37,7 +37,7 @@ const Contact = () => {
         </div>
       )}
 
-      
+
       <h2 className="text-md font-semibold uppercase text-blue-500 mb-2">
         Contact Us
       </h2>
@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="space-y-10 text-gray-700 text-lg">
           <p>Ready to transform your packaging?... Contact us now...</p>
 
-         
+
           <div className="flex gap-4">
             <div className="bg-[#fffaf0] p-3 rounded h-fit">
               <img src="/location-icon.webp" alt="Location pin icon" className="w-6 h-6" />
@@ -57,14 +57,14 @@ const Contact = () => {
             <div>
               <h3 className="text-lg font-bold uppercase text-gray-800 mb-2">Address</h3>
               <p>
-                Rgp pack tech solutions, <br/>
-                Plot no - A-44/1/a-58 , Rajmata jijau mahila industrial premises CHSL , <br/>
+                Rgp pack tech solutions, <br />
+                Plot no - A-44/1/a-58 , Rajmata jijau mahila industrial premises CHSL , <br />
                 chakan industrial area phase 2  wasuli chakan , Pune - 410501
               </p>
             </div>
           </div>
 
-         
+
           <div className="flex gap-4">
             <div className="bg-[#ffffff] p-3 rounded h-fit">
               <img src="/wtsp.svg" alt="WhatsApp icon" className="w-6 h-6" />
@@ -81,30 +81,30 @@ const Contact = () => {
                   <Link to="tel:9881340251" className="hover:underline pl-3 ">9881340251</Link>
                 </li>
               </ul>
-          
+
               <div className="whtsp">
                 <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center bg-green-500 rounded-[50px] text-white hover:bg-green-800 transition-colors duration-500" >
                   <img src="/wtsp.svg" alt="WhatsApp logo" />
                   <h1>Chat with us on WhatsApp</h1>
-                  </Link>
+                </Link>
               </div>
             </div>
           </div>
         </div>
 
-     
+
         <div className="loc-map absolute">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.253777910555!2d73.7773357093428!3d18.786840382285522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b444de5039ab%3A0xee3d9503fb63bc7d!2sRGP%20Group!5e0!3m2!1sen!2sin!4v1751800429185!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            allowFullScreen=""
-            referrerPolicy="no-referrer-when-downgrade"
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d15110.28130627342!2d73.76746626288487!3d18.772720002396035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQ2JzE1LjEiTiA3M8KwNDYnMDYuMSJF!5e0!3m2!1sen!2sin!4v1766942650965!5m2!1sen!2sin" 
+            width="600" 
+            height="450"  
+            allowfullscreen="" 
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
 
-    
+
       <form className="bg-white shadow-md rounded-lg p-8 mt-12" onSubmit={sendEmail}>
         <h2 className="text-lg font-semibold uppercase text-blue-500 mb-2 mt-2">
           Enquiry Form

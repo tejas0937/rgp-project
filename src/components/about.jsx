@@ -165,7 +165,7 @@ const About = () => {
           chakan industrial area phase 2  wasuli chakan , Pune - 410501
         </motion.h2>
         <motion.iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.253777910555!2d73.7773357093428!3d18.786840382285522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b444de5039ab%3A0xee3d9503fb63bc7d!2sRGP%20Group!5e0!3m2!1sen!2sin!4v1751800429185!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d15110.28130627342!2d73.76746626288487!3d18.772720002396035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQ2JzE1LjEiTiA3M8KwNDYnMDYuMSJF!5e0!3m2!1sen!2sin!4v1766942650965!5m2!1sen!2sin"
           className="w-full md:w-3/4 h-[400px] mx-auto rounded-xl border-2 border-purple-400/50 shadow-lg"
           allowFullScreen
           initial={{ opacity: 0, y: 20 }}
