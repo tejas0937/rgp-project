@@ -1,0 +1,343 @@
+
+/* =====================================
+   RGP DIWALI INTRO SCREEN
+===================================== */
+
+.diwali-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 50% 45%, #fff9e9 0%, #f5e7c9 48%, #e8d4ad 100%);
+  color: #30251b;
+  isolation: isolate;
+}
+
+/* Background glow */
+
+.diwali-glow {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.diwali-glow-one {
+  top: -180px;
+  left: -120px;
+  background: #e8a83e;
+}
+
+.diwali-glow-two {
+  right: -150px;
+  bottom: -180px;
+  background: #c65c32;
+}
+
+/* Decorative particles */
+
+.diwali-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.diwali-particles span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c58a32;
+  box-shadow: 0 0 12px 3px rgba(213, 157, 60, 0.35);
+  animation: diwaliSparkle 3s ease-in-out infinite;
+}
+
+@keyframes diwaliSparkle {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.5);
+  }
+}
+
+/* Main content */
+
+.diwali-content {
+  position: relative;
+  z-index: 2;
+  width: min(90%, 850px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 20px;
+}
+
+/* Diyas */
+
+.diwali-diyas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 25px;
+}
+
+.diwali-diyas span {
+  font-size: 35px;
+  filter: drop-shadow(0 5px 12px rgba(190, 112, 25, 0.3));
+  animation: diyaGlow 2s ease-in-out infinite alternate;
+}
+
+.diwali-diyas .diwali-diya-center {
+  font-size: 53px;
+  animation-delay: 0.5s;
+}
+
+@keyframes diyaGlow {
+  from {
+    filter: drop-shadow(0 0 5px rgba(224, 148, 39, 0.25));
+    transform: translateY(0);
+  }
+  to {
+    filter: drop-shadow(0 0 17px rgba(224, 148, 39, 0.7));
+    transform: translateY(-4px);
+  }
+}
+
+/* Typography */
+
+.diwali-eyebrow {
+  color: #9b6b2d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin: 0 0 18px;
+}
+
+.diwali-heading {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(58px, 10vw, 112px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -5px;
+  margin: 0;
+  color: #30251b;
+}
+
+.diwali-heading span {
+  display: block;
+  color: #bd702c;
+  text-shadow: 0 5px 25px rgba(189, 112, 44, 0.13);
+}
+
+.diwali-divider {
+  height: 2px;
+  margin: 27px auto 22px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #c58b39,
+    transparent
+  );
+}
+
+.diwali-from {
+  font-size: clamp(16px, 2.5vw, 21px);
+  font-weight: 400;
+  margin: 0;
+  color: #66513a;
+}
+
+.diwali-from strong {
+  color: #a65c27;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.diwali-quote {
+  max-width: 540px;
+  margin: 23px auto 30px;
+  color: #77654e;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(14px, 2vw, 17px);
+  font-weight: 500;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* Contact details */
+
+.diwali-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #795c38;
+}
+
+.diwali-contact a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.diwali-contact a:hover {
+  color: #bd702c;
+}
+
+.diwali-contact-dot {
+  color: #bd702c;
+}
+
+/* Enter website button */
+
+.diwali-skip {
+  margin-top: 35px;
+  padding: 13px 25px;
+  border: 1px solid rgba(166, 92, 39, 0.45);
+  border-radius: 50px;
+  background: transparent;
+  color: #8d572b;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.diwali-skip span {
+  margin-left: 9px;
+  font-size: 15px;
+}
+
+.diwali-skip:hover {
+  background: #a65c27;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Bottom footer */
+
+.diwali-bottom-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: #9a805e;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+  .diwali-content {
+    width: 94%;
+    padding: 20px 12px;
+  }
+
+  .diwali-diyas {
+    gap: 17px;
+    margin-bottom: 24px;
+  }
+
+  .diwali-diyas span {
+    font-size: 29px;
+  }
+
+  .diwali-diyas .diwali-diya-center {
+    font-size: 43px;
+  }
+
+  .diwali-eyebrow {
+    font-size: 9px;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+  }
+
+  .diwali-heading {
+    font-size: clamp(52px, 15vw, 76px);
+    letter-spacing: -3px;
+  }
+
+  .diwali-divider {
+    margin: 23px auto 18px;
+  }
+
+  .diwali-from {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .diwali-quote {
+    max-width: 320px;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 20px auto 25px;
+  }
+
+  .diwali-contact {
+    flex-direction: column;
+    gap: 9px;
+    font-size: 11px;
+  }
+
+  .diwali-contact-dot {
+    display: none;
+  }
+
+  .diwali-skip {
+    margin-top: 27px;
+  }
+
+  .diwali-bottom-line {
+    bottom: 15px;
+    padding: 0 15px;
+    font-size: 7px;
+    letter-spacing: 0.8px;
+  }
+}
+
+@media (max-height: 650px) {
+  .diwali-content {
+    transform: scale(0.85);
+  }
+
+  .diwali-bottom-line {
+    bottom: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .diwali-particles span,
+  .diwali-diyas span {
+    animation: none;
+  }
+}
