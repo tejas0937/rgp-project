@@ -1,137 +1,139 @@
-import React, { useState } from "react";
-import './contact.css';
-import emailjs from "emailjs-com";
-import { Link } from "react-router-dom";
+
+import {
+  ArrowUpRight,
+  Mail,
+  Phone,
+  MapPin,
+  MessageCircle,
+} from "lucide-react";
 
 const Contact = () => {
-  const [showSuccess, setShowSuccess] = useState(false); // popup state
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm(
-      'service_yzd803e',
-      'template_71jtals',
-      e.target,
-      '2gYroeIOoZxiFadt8'
-    ).then((res) => {
-      console.log('Email sent successfully!', res.text);
-      setShowSuccess(true);
-      e.target.reset();
-
-
-      setTimeout(() => setShowSuccess(false), 5000);
-    }).catch((error) => {
-      console.error('Email sending failed:', error.text);
-      alert("Something went wrong. Please try again.");
-    });
-  };
-
   return (
-    <div className="w-full bg-[#d4f6ff] py-20 px-6 md:px-24 relative">
+    <section className="bg-[#f4f0e8]  ">
+      <div className="rgp-container">
 
-      {showSuccess && (
-        <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-green-100 text-green-800 px-10 py-5 rounded-lg flex items-center gap-2 shadow-lg z-50 animate-fade-in-out text-center">
-          <img src="/check.webp" alt="Success checkmark icon" className="w-5 h-5" />
-          Message sent successfully!
-        </div>
-      )}
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
 
+          {/* LEFT CONTENT */}
+          <div>
+            <p className="section-label">
+              Start a conversation
+            </p>
 
-      <h2 className="text-md font-semibold uppercase text-blue-500 mb-2">
-        Contact Us
-      </h2>
-      <h1 className="text-5xl font-extrabold text-gray-900 mb-10">
-        Get In Touch
-      </h1>
+            <h2 className="display-font text-5xl md:text-7xl font-semibold tracking-[-.07em] leading-[1.05] mt-8 text-[#242521]">
+              Let's talk
+              <br />
+              <span className="text-[#c65c32]">
+                packaging.
+              </span>
+            </h2>
 
-      <div className="grid md:grid-cols-2 gap-16">
-        <div className="space-y-10 text-gray-700 text-lg">
-          <p>Ready to transform your packaging?... Contact us now...</p>
+            <p className="mt-7 max-w-lg text-[#79766d] text-lg leading-relaxed">
+              Have a packaging requirement or a custom
+              project in mind? Connect with our team.
+              We would be happy to understand your
+              requirements and help you find the right solution.
+            </p>
 
+            {/* Email */}
+            <a
+              href="mailto:rgppacktech@gmail.com"
+              className="contact-action-card mt-10"
+            >
+              <span className="contact-action-icon">
+                <Mail size={22} />
+              </span>
 
-          <div className="flex gap-4">
-            <div className="bg-[#fffaf0] p-3 rounded h-fit">
-              <img src="/location-icon.webp" alt="Location pin icon" className="w-6 h-6" />
-            </div>
-            <div>
-              <h3 className="text-lg font-bold uppercase text-gray-800 mb-2">Address</h3>
-              <p>
-                Rgp pack tech solutions, <br />
-                Plot no - A-44/1/a-58 , Rajmata jijau mahila industrial premises CHSL , <br />
-                chakan industrial area phase 2  wasuli chakan , Pune - 410501
-              </p>
-            </div>
+              <span className="flex-1 min-w-0">
+                <small>Email us</small>
+                <strong className="break-all">
+                  rgppacktech@gmail.com
+                </strong>
+              </span>
+
+              <ArrowUpRight size={21} />
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/917083477803?text=Hello%20RGP%20Group%2C%20I%20am%20interested%20in%20your%20packaging%20solutions."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-whatsapp mt-4"
+            >
+              <MessageCircle size={21} />
+              Chat with us on WhatsApp
+              <ArrowUpRight size={19} />
+            </a>
+
+            {/* Phone */}
+            <a
+              href="tel:+917083477803"
+              className="flex items-center gap-4 mt-8 text-[#79766d] hover:text-[#c65c32] transition"
+            >
+              <Phone size={19} />
+              +91 7083477803
+            </a>
+
           </div>
 
+          {/* RIGHT CONTENT */}
+          <div className="relative">
 
-          <div className="flex gap-4">
-            <div className="bg-[#ffffff] p-3 rounded h-fit">
-              <img src="/wtsp.svg" alt="WhatsApp icon" className="w-6 h-6" />
-            </div>
-            <div>
-              <h3 className="text-lg font-bold uppercase text-gray-800 mb-2">Contact Details</h3>
-              <ul>
-                <li className="hover:text-blue-800 flex items-center w-6 h-6 mb-2">
-                  <img src='/mail-icon.webp' alt="Email icon" />
-                  <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
-                </li>
-                <li className="hover:text-blue-800 flex items-center w-6 h-6  whitespace-nowrap">
-                  <img src='/call-icon.webp' alt="Phone call icon" />
-                  <Link to="tel:9881340251" className="hover:underline pl-3 ">9881340251</Link>
-                </li>
-              </ul>
+            <div className="relative overflow-hidden rounded-sm">
+              <img
+                src="/plant/bg-m1.webp"
+                alt="RGP manufacturing infrastructure"
+                className="w-full h-[350px] md:h-[480px] object-cover"
+                loading="lazy"
+              />
 
-              <div className="whtsp">
-                <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center bg-green-500 rounded-[50px] text-white hover:bg-green-800 transition-colors duration-500" >
-                  <img src="/wtsp.svg" alt="WhatsApp logo" />
-                  <h1>Chat with us on WhatsApp</h1>
-                </Link>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+
+              <div className="absolute bottom-8 left-8 right-8 text-white">
+                <p className="text-xs uppercase tracking-[.2em] text-white/70">
+                  Visit RGP Group
+                </p>
+
+                <h3 className="display-font text-3xl font-semibold mt-3">
+                  Chakan MIDC, Pune.
+                </h3>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=RGP+Pack+Tech+Solution+Chakan+Pune"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-5 text-sm font-bold border-b border-white pb-2 hover:text-[#d8784e] transition"
+                >
+                  Get directions
+                  <ArrowUpRight size={17} />
+                </a>
               </div>
             </div>
+
+            <div className="bg-[#eae4d9] p-7 mt-4 flex gap-4 items-start">
+              <MapPin className="text-[#c65c32] shrink-0" size={23} />
+
+              <div>
+                <h4 className="font-bold text-[#242521]">
+                  Our Location
+                </h4>
+
+                <p className="text-sm text-[#79766d] leading-relaxed mt-2">
+                  Plot No. A-44/1/A-58, Rajmata Jijau Mahila
+                  Industrial Premises CHSL, Chakan Industrial
+                  Area Phase II, Wasuli, Pune 410501.
+                </p>
+              </div>
+            </div>
+
           </div>
+
         </div>
 
-
-        <div className="loc-map absolute">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d15110.28130627342!2d73.76746626288487!3d18.772720002396035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQ2JzE1LjEiTiA3M8KwNDYnMDYuMSJF!5e0!3m2!1sen!2sin!4v1766942650965!5m2!1sen!2sin" 
-            width="600" 
-            height="450"  
-            allowfullscreen="" 
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
       </div>
-
-
-      <form className="bg-white shadow-md rounded-lg p-8 mt-12" onSubmit={sendEmail}>
-        <h2 className="text-lg font-semibold uppercase text-blue-500 mb-2 mt-2">
-          Enquiry Form
-        </h2>
-
-        <div className="txt_field">
-          <input type="text" name="name" required />
-          <label>Name</label>
-        </div>
-
-        <div className="txt_field">
-          <input type="email" name="email_id" required />
-          <label>Email</label>
-        </div>
-
-        <div className="txt_field">
-          <textarea rows="3" name="message" placeholder=" " required></textarea>
-          <label>Message</label>
-        </div>
-
-        <button type="submit" className="submit">
-          Send Message
-        </button>
-      </form>
-    </div>
+    </section>
   );
 };
 
 export default Contact;
-

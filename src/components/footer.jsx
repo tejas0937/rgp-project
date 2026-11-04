@@ -1,55 +1,142 @@
-import React from 'react'
-import './footer.css'
-import { Link } from 'react-router-dom';
+
+import { Link } from "react-router-dom";
+import {
+  ArrowUpRight,
+  MapPin,
+  Phone,
+  Mail,
+  Instagram,
+} from "lucide-react";
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear();
-    return (
-        <footer>
-        <div className='footer flex '>
-            <div className="box-1 w-1/3 relative ">
-                <div className="logo flex-col items-center">
-                    <img src="./rgplogo-black.webp" alt="RGP company logo featuring stylized letters RGP in blue and green, set against a white background, conveying a professional and modern tone" />
-                    <h1 className='info text-5xl font-bold max-md:text-3xl'>RGPGROUP.IN</h1>
-                </div>
-                <h1 className='quote text-xl text-left font-medium '>"Our Work is our Identity." </h1>
-                <div className="copyright">
-                    <h2>AS/NZS ISO 9001:2015</h2>
-                    <h1 >&copy; {currentYear} RGPGROUP.IN | All rights reserved.</h1>
-                </div>
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="bg-[#242521] text-white pt-20 pb-8">
+
+      <div className="rgp-container">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-14 pb-16">
+
+          <div>
+            <Link to="/" className="inline-flex items-center gap-3">
+              <img
+                src="/LogoRGP1.webp"
+                alt="RGP Group"
+                className="w-16 h-16 object-contain"
+              />
+
+              <div>
+                <h2 className="display-font text-3xl font-bold">
+                  RGP<span className="text-[#d8784e]">.</span>
+                </h2>
+                <p className="text-[10px] tracking-[.2em] uppercase text-white/50">
+                  Pack Tech Solution
+                </p>
+              </div>
+            </Link>
+
+            <p className="text-white/55 leading-relaxed max-w-sm mt-8">
+              Packaging engineered with purpose.
+              Reliable corrugated and wooden packaging
+              solutions from RGP Group, Chakan Pune.
+            </p>
+
+            <p className="text-sm text-white/40 mt-8">
+              Our work is our identity.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="uppercase tracking-[.18em] text-xs font-bold text-[#d8784e] mb-8">
+              Explore
+            </h3>
+
+            <div className="flex flex-col gap-5 text-white/70">
+              {[
+                ["Home", "/"],
+                ["About RGP", "/about"],
+                ["Products & Solutions", "/products"],
+                ["Contact", "/contact"],
+              ].map(([label, path]) => (
+                <Link
+                  key={path}
+                  to={path}
+                  className="hover:text-[#d8784e] transition-colors"
+                >
+                  {label}
+                </Link>
+              ))}
             </div>
-            <div className="box-2 w-1/3">
-                <h2 className="font-bold text-3xl pb-8">Get in touch</h2>
-                <ul className="space-y-4">
-                    <li className="transition-colors duration-200 hover:text-blue-800 flex ">
-                        <img src='/location-icon.webp' alt="Location pin icon" className='img-loc' /><p className='pl-3'>RGP Group , Plot no - A-44/1/a-58 , Rajmata jijau mahila industrial premises CHSL , chakan industrial area phase 2  wasuli chakan , Pune - 410501</p>
-                    </li>
-                    <li className="transition-colors duration-200 hover:text-blue-800 flex items-center">
-                        <img src='/mail-icon.webp' alt="Email icon" /> <Link to="mailto:rgppacktech@gmail.com" className="hover:underline pl-3">rgppacktech@gmail.com</Link>
-                    </li>
-                    <li className="transition-colors duration-200 hover:text-blue-800 flex items-center">
-                        <img src='/call-icon.webp' alt="Phone call icon" /><Link to="tel:7083477803" className="hover:underline pl-3">9881340251 | 7083477803 </Link>
-                    </li>
-                </ul>
+          </div>
+
+          <div>
+            <h3 className="uppercase tracking-[.18em] text-xs font-bold text-[#d8784e] mb-8">
+              Get in touch
+            </h3>
+
+            <div className="space-y-6 text-white/65 text-sm">
+
+              <div className="flex gap-4">
+                <MapPin className="shrink-0 text-[#d8784e]" size={19}/>
+                <p>
+                  Plot No. A-44/1/A-58, Rajmata Jijau Mahila
+                  Industrial Premises CHSL, Chakan Industrial
+                  Area Phase II, Wasuli, Pune 410501.
+                </p>
+              </div>
+
+              <a
+                href="mailto:rgppacktech@gmail.com"
+                className="flex items-center gap-4 hover:text-white"
+              >
+                <Mail className="text-[#d8784e]" size={19}/>
+                rgppacktech@gmail.com
+              </a>
+
+              <a
+                href="tel:7083477803"
+                className="flex items-center gap-4 hover:text-white"
+              >
+                <Phone className="text-[#d8784e]" size={19}/>
+                +91 7083477803
+              </a>
+
+              <a
+                href="https://wa.me/917083477803"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex gap-3 items-center bg-[#c65c32] text-white px-5 py-3 rounded-full hover:bg-[#d8784e] transition"
+              >
+                WhatsApp us
+                <ArrowUpRight size={17}/>
+              </a>
+
             </div>
-            <div className="box-3 w-1/3  relative">
-                <h2 className="font-bold text-3xl pb-5 ">Links</h2>
-                <ul className="space-y-1">
-                    <li><Link to="/" className="hover:underline ">Home</Link></li>
-                    <li><Link to="/products" className="hover:underline">Products</Link></li>
-                    <li><Link to="/about" className="hover:underline">About us</Link></li>
-                    <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
-                </ul>
-                <div className="wtsp">
-                    <Link to="https://wa.me/917083477803" target="_blank" rel="noopener noreferrer" className="flex items-center w-60 bg-green-500 rounded-[50px] text-white hover:bg-green-700 transition-colors duration-500" >
-                        <img src="/wtsp.svg" alt="WhatsApp logo" />
-                        <h1>Chat with us on WhatsApp</h1>
-                    </Link>
-                </div>
-            </div>
+          </div>
+
         </div>
-        </footer>)
-}
 
-export default Footer
+        <div className="border-t border-white/15 pt-7 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
+          <p>© {year} RGP Pack Tech Solution | RGP Group.</p>
 
+          <p>
+            AS/NZS ISO 9001:2015
+          </p>
+
+          <a
+            href="https://www.rgpgroup.in"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-[#d8784e] transition"
+          >
+            www.rgpgroup.in
+          </a>
+        </div>
+
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

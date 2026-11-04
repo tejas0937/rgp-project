@@ -1,113 +1,280 @@
-import React, { useState, useEffect } from "react";
+
 import { motion } from "framer-motion";
+import {
+  ArrowDownRight,
+  ArrowUpRight,
+  ShieldCheck,
+  Package,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
-const heroImages = [
-  "/bg/bg1cr.jpg",
-  "/bg/bg2cr.jpg",
-  "/bg/bg3cr.jpg",
-];
-
 const Hero = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % heroImages.length);
-    }, 3000); // rotate every 4 seconds
-    return () => clearInterval(interval);
-  }, []);
-
-  const getPosition = (index) => {
-    const total = heroImages.length;
-    if (index === currentIndex) return "center";
-    if (index === (currentIndex - 1 + total) % total) return "left";
-    if (index === (currentIndex + 1) % total) return "right";
-    return "hidden";
-  };
-
   return (
-    <section className="relative w-full min-h-[90vh] max-md:min-h-[90vh] flex flex-col md:flex-row items-center justify-between overflow-hidden bg-gradient-to-r from-blue-900 via-indigo-800 to-purple-900 text-white">
-      {/* Background Glow & Gradient Overlay */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-transparent to-black/60"></div>
-        <div className="absolute top-10 left-10 w-48 h-48 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-10 w-64 h-64 bg-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
-      </div>
+    <section className="rgp-hero relative overflow-hidden">
 
-      {/* Left Content */}
-      <motion.div
-        className="relative z-10 w-full md:w-1/2 px-6 sm:px-10 md:px-16 py-16 md:py-0 flex flex-col items-start md:items-start justify-center text-center md:text-left"
-        initial={{ opacity: 0, x: -60 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
-          Build a{" "}
-          <span className="text-blue-300">Strong</span>,{" "}
-          <span className="text-purple-300">Reliable</span>, and{" "}
-          <span className="text-indigo-300">Smart</span> Packaging Future
-        </h1>
+      {/* Background */}
+      <div className="hero-grid" />
+      <div className="hero-glow" />
 
-        <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-xl mx-auto md:mx-0 leading-relaxed">
-          At <span className="font-semibold text-white">RGP Group</span>, we
-          bring innovation, sustainability, and technology together to provide
-          complete packaging solutions — all under one roof.
-        </p>
+      <div className="rgp-container relative min-h-[760px] lg:min-h-[120px] grid lg:grid-cols-2 items-center gap-8">
 
-        <div className="flex flex-wrap justify-center md:justify-start gap-4">
-          <motion.a
-            className="px-6 sm:px-8 py-3 rounded-full bg-white text-blue-700 font-semibold shadow-lg hover:bg-blue-100 transition duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+        {/* LEFT CONTENT */}
+        <div className="hero-content">
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex items-center gap-3 mb-8"
+          />
+
+          <motion.h1
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.15 }}
+            className="display-font text-[clamp(3.5rem,6.5vw,6.8rem)] leading-[.99] tracking-[-.075em] font-semibold text-[#242521]"
           >
-            <Link to="/about">Explore More</Link>
-          </motion.a>
-          <motion.a
-            className="px-6 sm:px-8 py-3 rounded-full border border-white/60 text-white font-semibold hover:bg-white hover:text-blue-700 transition duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            Packaging
+            <br />
+            with <span className="text-[#c65c32]">purpose.</span>
+            <br />
+            Built to protect.
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-[#79766d] text-base md:text-lg leading-relaxed max-w-lg mt-8"
           >
-            <Link to="/products">View Products</Link>
-          </motion.a>
+            Innovative corrugated and wooden packaging
+            solutions engineered to protect products
+            and power businesses forward.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-wrap gap-4 mt-9"
+          >
+            <Link to="/products" className="hero-primary-btn">
+              Explore Solutions
+              <span>
+                <ArrowUpRight size={19} />
+              </span>
+            </Link>
+
+            <Link to="/contact" className="hero-secondary-btn">
+              Get in touch
+              <ArrowUpRight size={18} />
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+            className="flex items-center gap-3 mt-14 text-[#79766d]"
+          >
+            <ShieldCheck size={19} className="text-[#c65c32]" />
+            <span className="text-xs tracking-wide">
+              Industrial packaging. Engineered with care.
+            </span>
+          </motion.div>
+
         </div>
-      </motion.div>
 
-      {/* Right Carousel Image */}
-      <div className="relative z-10 w-full md:w-1/2 flex justify-center items-center max-md:items-end max-md:mb-4 mt-10 md:mt-0 px-4">
-        {heroImages.map((img, index) => {
-          const pos = getPosition(index);
+        {/* RIGHT WOODEN INDUSTRIAL CRATE */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.75, x: 50 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{
+            duration: 1.2,
+            delay: 0.2,
+            ease: "easeOut",
+          }}
+          className="hero-visual relative flex items-center justify-center"
+        >
 
-          let styles = "";
-          if (pos === "center") {
-            styles = "z-30 w-[80%] opacity-100";
-          } else if (pos === "left") {
-            styles = "z-20 w-[65%] -translate-x-20 opacity-40";
-          } else if (pos === "right") {
-            styles = "z-20 w-[65%] translate-x-20 opacity-40";
-          } else {
-            styles = "hidden";
-          }
+          {/* Decorative circles */}
+          <div className="hero-orbit hero-orbit-one" />
+          <div className="hero-orbit hero-orbit-two" />
 
-          return (
-            <motion.img
-              key={index}
-              src={img}
-              alt="Hero Carousel"
-              className={`absolute rounded-3xl shadow-2xl border border-white/40 object-cover ${styles}`}
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: pos === "center" ? 1 : 0.5,
-                x: pos === "center" ? 0 : pos === "left" ? -100 : 100,
-                scale: pos === "center" ? 1 : 0.8,
-              }}
-              transition={{ duration: 1 }}
-            />
-          );
-        })}
-        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-400/20 to-purple-400/20 blur-3xl pointer-events-none"></div>
+          <div className="box-caption absolute top-5 right-0">
+            <span>RGP / 001</span>
+            <p>ENGINEERED PROTECTION</p>
+          </div>
+
+          {/* Original floating animation */}
+          <motion.div
+            className="floating-box-scene industrial-box-scale"
+            animate={{
+              y: [0, -18, 0],
+              rotateZ: [-2, 1, -2],
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+
+            <div className="box-3d wooden-crate">
+
+              {/* TOP WOODEN FACE */}
+              <div className="box-face box-top crate-top">
+
+                <div className="crate-top-planks" />
+                <div className="crate-top-seam" />
+
+                <div className="crate-metal-edge crate-metal-top-left" />
+                <div className="crate-metal-edge crate-metal-top-right" />
+
+                <div className="crate-brand-top">
+                  RGP GROUP
+                  <small>INDUSTRIAL EXPORT PACKAGING</small>
+                </div>
+
+              </div>
+
+              {/* FRONT WOODEN FACE */}
+              <div className="box-face box-front crate-front">
+
+                <div className="crate-front-planks" />
+
+                {/* Reinforced wooden frame */}
+                <div className="crate-frame crate-frame-left" />
+                <div className="crate-frame crate-frame-right" />
+                <div className="crate-frame crate-frame-top" />
+                <div className="crate-frame crate-frame-bottom" />
+
+                {/* Metal corner protection */}
+                <div className="crate-corner crate-corner-left" />
+                <div className="crate-corner crate-corner-right" />
+
+                {/* RGP branding */}
+                <div className="crate-main-brand">
+                  <Package size={54} strokeWidth={1.2} />
+                  <span>RGP</span>
+                  <small>PACK TECH SOLUTION</small>
+
+                  <div className="crate-brand-line" />
+
+                  <p>BUILT TO PROTECT</p>
+                </div>
+
+                {/* Export shipping label */}
+                <div className="crate-shipping-label">
+                  <strong>EXPORT CARGO</strong>
+                  <span>RGP / 2016</span>
+
+                  <div className="crate-barcode">
+                    || ||| || |||| ||| || ||
+                  </div>
+
+                  <small>HANDLE WITH CARE</small>
+                </div>
+
+                {/* Handling symbols */}
+                <div className="crate-handling">
+                  <span>↑ ↑</span>
+                  <span>KEEP DRY</span>
+                  <span>FRAGILE</span>
+                </div>
+
+                <div className="box-corrugation" />
+
+              </div>
+
+              {/* RIGHT WOODEN SIDE */}
+              <div className="box-face box-side crate-side">
+
+                <div className="crate-side-planks" />
+
+                <div className="crate-side-frame" />
+
+                <div className="crate-side-brand">
+                  RGP
+                  <small>PACKAGING</small>
+                </div>
+
+                <div className="crate-side-stamp">
+                  <span>EXPORT QUALITY</span>
+                  <span>EST. 2016</span>
+                </div>
+
+                <div className="crate-side-arrows">
+                  ↑ ↑
+                </div>
+
+                <div className="side-lines" />
+
+              </div>
+
+            </div>
+
+          </motion.div>
+
+          {/* Original shadow animation */}
+          <motion.div
+            className="box-shadow"
+            animate={{
+              scaleX: [1, 0.86, 1],
+              opacity: [0.22, 0.12, 0.22],
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+
+          {/* Floating information tags */}
+          <motion.div
+            className="hero-float-tag hero-tag-one"
+            animate={{ y: [0, -9, 0] }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+            }}
+          >
+            <Package size={18} />
+            <span>Custom Packaging</span>
+          </motion.div>
+
+          <motion.div
+            className="hero-float-tag hero-tag-two"
+            animate={{ y: [0, 9, 0] }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+            }}
+          >
+            <ShieldCheck size={18} />
+            <span>Built for Protection</span>
+          </motion.div>
+
+        </motion.div>
+
       </div>
+
+      {/* BOTTOM STRIP */}
+      <div className="hero-bottom-strip">
+        <div className="rgp-container flex justify-between items-center gap-5 flex-wrap py-5">
+
+          <span>01 / INDUSTRIAL PACKAGING</span>
+
+          <span>CORRUGATED · WOODEN · PROTECTIVE</span>
+
+          <a href="#solutions" className="flex items-center gap-2">
+            DISCOVER MORE
+            <ArrowDownRight size={16} />
+          </a>
+
+        </div>
+      </div>
+
     </section>
   );
 };
