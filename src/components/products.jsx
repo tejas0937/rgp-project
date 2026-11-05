@@ -827,22 +827,7 @@ const Products = () => {
       </section>
 
 
-      {/* =====================================
-          SCROLL TO TOP
-      ====================================== */}
-
-      {showScroll && (
-
-        <button
-          type="button"
-          onClick={scrollToTop}
-          aria-label="Scroll to top"
-          className="fixed bottom-7 right-6 sm:hidden bg-[#c65c32] text-white p-4 rounded-full shadow-xl hover:bg-[#a94927] transition-all duration-300 z-50"
-        >
-          <ArrowUp size={22} />
-        </button>
-
-      )}
+      
 
     </main>
   );
