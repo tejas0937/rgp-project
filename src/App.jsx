@@ -2,7 +2,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
-import DiwaliIntro from "./components/DiwaliIntro";
+import SiteIntro from "./components/SiteIntro";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import About from "./components/about";
@@ -45,7 +45,7 @@ const App = () => {
   return (
     <>
       {/* Diwali Welcome Screen */}
-      <DiwaliIntro />
+      <SiteIntro />
 
       <div className="main relative">
 

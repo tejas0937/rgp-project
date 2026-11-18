@@ -1,0 +1,355 @@
+
+/* =====================================
+   RGP GROUP WEBSITE INTRO
+===================================== */
+
+.site-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  isolation: isolate;
+  background: #f4f0e8;
+  color: #242521;
+}
+
+/* Background grid */
+
+.site-intro-grid {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  opacity: 0.16;
+  pointer-events: none;
+  background-image:
+    linear-gradient(#b9aa96 1px, transparent 1px),
+    linear-gradient(90deg, #b9aa96 1px, transparent 1px);
+  background-size: 75px 75px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black,
+    transparent
+  );
+}
+
+/* Background glow */
+
+.site-intro-glow {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(198, 92, 50, 0.12),
+    rgba(217, 201, 172, 0.12) 45%,
+    transparent 70%
+  );
+  filter: blur(25px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Main content */
+
+.site-intro-content {
+  position: relative;
+  z-index: 2;
+  width: min(90%, 850px);
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Brand */
+
+.site-intro-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 45px;
+}
+
+.site-intro-logo {
+  width: 115px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.site-intro-brand span {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #79766d;
+}
+
+/* Heading */
+
+.site-intro-eyebrow {
+  color: #c65c32;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin: 0 0 22px;
+}
+
+.site-intro-heading h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(52px, 9vw, 100px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -4px;
+  margin: 0;
+  color: #242521;
+}
+
+.site-intro-heading h1 span {
+  display: block;
+  color: #c65c32;
+}
+
+/* Divider */
+
+.site-intro-divider {
+  height: 2px;
+  margin: 27px auto 23px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #c65c32,
+    transparent
+  );
+}
+
+/* Tagline */
+
+.site-intro-tagline {
+  color: #79766d;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.9;
+  margin: 0;
+  font-weight: 500;
+}
+
+.site-intro-tagline strong {
+  color: #242521;
+  font-weight: 700;
+}
+
+/* Company details */
+
+.site-intro-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+  color: #79766d;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.site-intro-dot {
+  color: #c65c32;
+}
+
+/* Explore button */
+
+.site-intro-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 38px;
+  padding: 7px 8px 7px 23px;
+  border: none;
+  border-radius: 50px;
+  background: #242521;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.site-intro-button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background: #c65c32;
+  transition: transform 0.3s ease;
+}
+
+.site-intro-button:hover {
+  background: #c65c32;
+  transform: translateY(-3px);
+}
+
+.site-intro-button:hover span {
+  background: #242521;
+  transform: rotate(45deg);
+}
+
+/* Contact */
+
+.site-intro-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 28px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #79766d;
+}
+
+.site-intro-contact a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.site-intro-contact a:hover {
+  color: #c65c32;
+}
+
+/* Footer */
+
+.site-intro-footer {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  color: #969084;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+  .site-intro-content {
+    width: 94%;
+    padding: 20px 12px;
+  }
+
+  .site-intro-brand {
+    margin-bottom: 35px;
+  }
+
+  .site-intro-logo {
+    width: 95px;
+    height: 55px;
+  }
+
+  .site-intro-brand span {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .site-intro-eyebrow {
+    font-size: 8px;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+  }
+
+  .site-intro-heading h1 {
+    font-size: clamp(45px, 13vw, 68px);
+    letter-spacing: -2.5px;
+  }
+
+  .site-intro-divider {
+    margin: 22px auto 18px;
+  }
+
+  .site-intro-tagline {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .site-intro-details {
+    flex-direction: column;
+    gap: 9px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    margin-top: 23px;
+  }
+
+  .site-intro-dot {
+    display: none;
+  }
+
+  .site-intro-button {
+    margin-top: 29px;
+  }
+
+  .site-intro-contact {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 10px;
+    margin-top: 22px;
+  }
+
+  .site-intro-contact span {
+    display: none;
+  }
+
+  .site-intro-footer {
+    bottom: 14px;
+    padding: 0 14px;
+    font-size: 7px;
+    letter-spacing: 0.7px;
+  }
+}
+
+/* Short screens */
+
+@media (max-height: 650px) {
+  .site-intro-content {
+    transform: scale(0.82);
+  }
+
+  .site-intro-footer {
+    bottom: 8px;
+  }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .site-intro *,
+  .site-intro *::before,
+  .site-intro *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
